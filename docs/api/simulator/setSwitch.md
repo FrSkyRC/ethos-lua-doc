@@ -26,5 +26,3 @@ simulator.setSwitch(swtch, position)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← pressFunctionSwitch](pressFunctionSwitch.md) · [simulator overview](index.md) · [resetSwitches →](resetSwitches.md)</div>

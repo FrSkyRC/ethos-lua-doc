@@ -13,17 +13,15 @@ title: simulator.setDateTime
 Set the date & time.
 
 ```lua
-simulator.setDateTime(table)
+simulator.setDateTime(params)
 ```
 
 ## Parameters
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `table` |  | yes | { sec, min, hour, day, month, year, lock } |
+| `params` | table | yes | { sec, min, hour, day, month, year, lock } |
 
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← injectSPortFrame](injectSPortFrame.md) · [simulator overview](index.md) · [screenshot →](screenshot.md)</div>

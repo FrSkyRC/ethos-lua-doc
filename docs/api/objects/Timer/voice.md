@@ -32,5 +32,3 @@ voice (integer)
 timer = model.getTimer(0)
 timer:voice(0)
 ```
-
-<div class="api-pager">[← countingSource](countingSource.md) · [Timer overview](index.md) · [audioActions →](audioActions.md)</div>

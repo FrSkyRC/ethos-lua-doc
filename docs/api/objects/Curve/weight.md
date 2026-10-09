@@ -25,5 +25,3 @@ local weight = curve:weight([weight])
 ## Returns
 
 weight (integer)
-
-<div class="api-pager">[← exponent](exponent.md) · [Curve overview](index.md) · [offset →](offset.md)</div>

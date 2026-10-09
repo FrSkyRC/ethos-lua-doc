@@ -91,5 +91,3 @@ end
     ```
 
     <small>[src/ethos-flight-training/games/shared/trainer-core.lua:1189](https://github.com/robthomson/ethos-flight-training/blob/de627d533d7fa0e02377497ff5caf521a112e929/src/ethos-flight-training/games/shared/trainer-core.lua#L1189-L1189)</small>
-
-<div class="api-pager">[← drawAnnulusSector](drawAnnulusSector.md) · [lcd overview](index.md) · [drawNumber →](drawNumber.md)</div>

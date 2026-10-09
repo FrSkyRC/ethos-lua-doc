@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← invalidate](invalidate.md) · [form overview](index.md) · [addExpansionPanel →](addExpansionPanel.md)</div>

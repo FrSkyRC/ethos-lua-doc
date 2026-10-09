@@ -30,5 +30,3 @@ state (boolean)
 ls = model.getLogicSwitch(0)
 print(ls:state())
 ```
-
-<div class="api-pager">[← minDuration](minDuration.md) · [LogicSwitch overview](index.md) · [func →](func.md)</div>

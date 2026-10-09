@@ -23,5 +23,3 @@ None.
 ## Returns
 
 ids (table of integers)
-
-<div class="api-pager">[← bitmap](bitmap.md) · [model overview](index.md) · [createTimer →](createTimer.md)</div>

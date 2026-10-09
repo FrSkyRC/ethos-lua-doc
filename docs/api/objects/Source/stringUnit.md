@@ -23,5 +23,3 @@ None.
 ## Returns
 
 unit (integer)
-
-<div class="api-pager">[← protocolUnit](protocolUnit.md) · [Source overview](index.md) · [decimals →](decimals.md)</div>

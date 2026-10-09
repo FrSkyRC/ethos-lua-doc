@@ -72,5 +72,3 @@ Real projects also kill touch sequences after acting on a touch (`system.killEve
     ```
 
     <small>[src/rfsuite/app/pages/ports.lua:574](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/ports.lua#L574-L577)</small>
-
-<div class="api-pager">[← playHaptic](playHaptic.md) · [system overview](index.md) · [listFiles →](listFiles.md)</div>

@@ -69,5 +69,3 @@ form.addTextButton(line, nil, "Text Button", function() end)
     ```
 
     <small>[src/ethos-heli-training/games/collective-balance/game.lua:578](https://github.com/robthomson/ethos-heli-training/blob/395dc60d4d89d4c5832b14014e01f567e1c34041/src/ethos-heli-training/games/collective-balance/game.lua#L578-L578)</small>
-
-<div class="api-pager">[← addTextField](addTextField.md) · [form overview](index.md) · [addButton →](addButton.md)</div>

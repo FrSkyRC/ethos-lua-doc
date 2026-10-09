@@ -23,5 +23,3 @@ None.
 ## Returns
 
 result (boolean)
-
-<div class="api-pager">[← pushFrame](pushFrame.md) · [LuaSPortSensor overview](index.md) · [popFrame →](popFrame.md)</div>

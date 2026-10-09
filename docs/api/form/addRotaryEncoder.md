@@ -32,5 +32,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 form.addRotaryEncoder(nil, {x=0, y=0})
 ```
-
-<div class="api-pager">[← addFunctionSwitch](addFunctionSwitch.md) · [form overview](index.md) · [addRadioHardware →](addRadioHardware.md)</div>

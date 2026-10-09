@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← enterText](enterText.md) · [simulator overview](index.md) · [setDebug →](setDebug.md)</div>

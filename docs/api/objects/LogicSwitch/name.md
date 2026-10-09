@@ -33,5 +33,3 @@ ls = model.getLogicSwitch(0)
 ls:name("My logic switch")
 print(ls:name())
 ```
-
-<div class="api-pager">[LogicSwitch overview](index.md) · [negative →](negative.md)</div>

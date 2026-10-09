@@ -30,5 +30,3 @@ Nothing.
 timer = model.getTimer(0)
 timer:reset()
 ```
-
-<div class="api-pager">[← resetCondition](resetCondition.md) · [Timer overview](index.md) · [running →](running.md)</div>

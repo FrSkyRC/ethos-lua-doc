@@ -32,5 +32,3 @@ reset ([Source](../../objects/Source/index.md))
 timer = model.getTimer(0)
 timer:resetCondition({category=CATEGORY_SYSTEM_EVENT, member=SYSTEM_EVENT_THROTTLE_CUT})
 ```
-
-<div class="api-pager">[← audioActions](audioActions.md) · [Timer overview](index.md) · [reset →](reset.md)</div>

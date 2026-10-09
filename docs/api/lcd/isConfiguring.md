@@ -29,5 +29,3 @@ configuring (boolean)
 ```lua title="From the official Ethos documentation"
 lcd.isConfiguring()
 ```
-
-<div class="api-pager">[← isSwiping](isSwiping.md) · [lcd overview](index.md) · [setWindowTitle →](setWindowTitle.md)</div>

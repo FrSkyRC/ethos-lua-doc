@@ -31,5 +31,3 @@ source = system.getSource({name="RxBatt"})
 source:minimum(4.5)
 print(source:minimum())
 ```
-
-<div class="api-pager">[← maximum](maximum.md) · [Source overview](index.md) · [value →](value.md)</div>

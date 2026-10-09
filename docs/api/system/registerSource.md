@@ -20,7 +20,7 @@ system.registerSource(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -50,5 +50,3 @@ end
 
 - [Lua source](../../cookbook/lua-source.md)
 - [source](../../examples/official/source.md)
-
-<div class="api-pager">[← registerGlasses](registerGlasses.md) · [system overview](index.md) · [registerSensor →](registerSensor.md)</div>

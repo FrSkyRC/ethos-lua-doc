@@ -25,5 +25,3 @@ local rx = sensor:rx([rx])
 ## Returns
 
 rx (integer)
-
-<div class="api-pager">[← band](band.md) · [LuaSPortSensor overview](index.md) · [physId →](physId.md)</div>

@@ -323,7 +323,7 @@
  },
  {
   "name": "lcd.pen",
-  "signature": "local pen = lcd.pen(peninteger)",
+  "signature": "local pen = lcd.pen(pen)",
   "brief": "Get / Set the current pen style.",
   "since": "1.1.0",
   "url": "lcd/pen/"
@@ -694,14 +694,14 @@
  },
  {
   "name": "simulator.pressKey",
-  "signature": "simulator.pressKey(key, duration)",
+  "signature": "simulator.pressKey(key[, duration])",
   "brief": "Simulate a key press.",
   "since": "1.5.0",
   "url": "simulator/pressKey/"
  },
  {
   "name": "simulator.pressFunctionSwitch",
-  "signature": "simulator.pressFunctionSwitch(index, duration)",
+  "signature": "simulator.pressFunctionSwitch(index[, duration])",
   "brief": "Simulate a function switch press.",
   "since": "26.1.0",
   "url": "simulator/pressFunctionSwitch/"
@@ -757,7 +757,7 @@
  },
  {
   "name": "simulator.setDateTime",
-  "signature": "simulator.setDateTime(table)",
+  "signature": "simulator.setDateTime(params)",
   "brief": "Set the date & time.",
   "since": "1.5.0",
   "url": "simulator/setDateTime/"
@@ -834,7 +834,7 @@
  },
  {
   "name": "system.getAudioVoice",
-  "signature": "system.getAudioVoice(voice)",
+  "signature": "system.getAudioVoice([voice])",
   "brief": "Return the current audio voice.",
   "since": "1.5.7",
   "url": "system/getAudioVoice/"
@@ -897,7 +897,7 @@
  },
  {
   "name": "system.playTone",
-  "signature": "system.playTone(frequency, duration, pause)",
+  "signature": "system.playTone(frequency, duration[, pause])",
   "brief": "Play a tone.",
   "since": "1.1.0",
   "url": "system/playTone/"
@@ -1821,14 +1821,14 @@
  },
  {
   "name": "Source:decimals",
-  "signature": "local decimals = source:decimals(decimals)",
+  "signature": "local decimals = source:decimals([decimals])",
   "brief": "Return the source decimals (and modify it on Vars and Sensors)",
   "since": "1.5.5",
   "url": "objects/Source/decimals/"
  },
  {
   "name": "Source:protocolDecimals",
-  "signature": "local decimals = source:protocolDecimals(decimals)",
+  "signature": "local decimals = source:protocolDecimals([decimals])",
   "brief": "Get / Set sensor internal decimals.",
   "since": "1.5.10",
   "url": "objects/Source/protocolDecimals/"
@@ -1968,7 +1968,7 @@
  },
  {
   "name": "Timer:stopCondition",
-  "signature": "timer:stopCondition(None)",
+  "signature": "timer:stopCondition([condition])",
   "brief": "Get / Set the stop condition of the timer.",
   "since": "26.1.0",
   "url": "objects/Timer/stopCondition/"

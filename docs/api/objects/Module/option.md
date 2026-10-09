@@ -31,5 +31,3 @@ value (integer)
 ```lua title="From the official Ethos documentation"
 module.option("Disable channel mapping", 0x01000000)
 ```
-
-<div class="api-pager">[← enable](enable.md) · [Module overview](index.md) · [options →](options.md)</div>

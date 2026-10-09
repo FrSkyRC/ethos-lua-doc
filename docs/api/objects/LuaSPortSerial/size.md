@@ -23,5 +23,3 @@ None.
 ## Returns
 
 size (integer)
-
-<div class="api-pager">[← empty](empty.md) · [LuaSPortSerial overview](index.md) · [read →](read.md)</div>

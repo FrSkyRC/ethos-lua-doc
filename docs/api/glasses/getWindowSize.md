@@ -40,5 +40,3 @@ width (integer): window with
     ```
 
     <small>[src/rfsuite/widgets/activelook.lua:244](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/activelook.lua#L244-L245)</small>
-
-<div class="api-pager">[glasses overview](index.md) · [createLayout →](createLayout.md)</div>

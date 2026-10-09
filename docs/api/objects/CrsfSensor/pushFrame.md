@@ -32,5 +32,3 @@ result (boolean)
 ```lua title="From the official Ethos documentation"
 sensor:pushFrame(0x2D, { 0x00, 0xEA })
 ```
-
-<div class="api-pager">[CrsfSensor overview](index.md) · [popFrame →](popFrame.md)</div>

@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← hasFocus](hasFocus.md) · [lcd overview](index.md) · [loadBitmap →](loadBitmap.md)</div>

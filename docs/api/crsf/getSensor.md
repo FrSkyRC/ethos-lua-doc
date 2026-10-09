@@ -82,5 +82,3 @@ local sensor = crsf.getSensor()
     ```
 
     <small>[src/wfsuite/lib/elrslink_task.lua:243](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/lib/elrslink_task.lua#L243-L254)</small>
-
-<div class="api-pager">[crsf overview](index.md)</div>

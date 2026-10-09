@@ -81,5 +81,3 @@ The current color applies to every following `lcd.draw*` call **and** to masks d
     ```
 
     <small>[src/ofs3/widgets/dashboard/lib/logviewer.lua:653](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/widgets/dashboard/lib/logviewer.lua#L653-L653)</small>
-
-<div class="api-pager">[← GREY](GREY.md) · [lcd overview](index.md) · [themeColor →](themeColor.md)</div>

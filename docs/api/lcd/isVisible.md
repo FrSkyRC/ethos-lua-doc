@@ -57,5 +57,3 @@ lcd.isVisible()
     ```
 
     <small>[src/rfsuite/widgets/performance/performance.lua:191](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/widgets/performance/performance.lua#L191-L191)</small>
-
-<div class="api-pager">[← invalidate](invalidate.md) · [lcd overview](index.md) · [isSwiping →](isSwiping.md)</div>

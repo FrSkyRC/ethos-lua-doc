@@ -33,5 +33,3 @@ local function wakeup(context)
   context.layout:clearAndDisplay("ARMED!")
 end
 ```
-
-<div class="api-pager">[GlassesLayout overview](index.md) · [clearAndDisplayExtended →](clearAndDisplayExtended.md)</div>

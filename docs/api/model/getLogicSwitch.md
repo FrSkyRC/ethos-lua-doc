@@ -32,5 +32,3 @@ logic switch
 local ls = model.getLogicSwitch("Test")
 local ls = model.getLogicSwitch(0)
 ```
-
-<div class="api-pager">[← createLogicSwitch](createLogicSwitch.md) · [model overview](index.md) · [createSensor →](createSensor.md)</div>

@@ -25,5 +25,3 @@ field:value(value)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← color](color.md) · [FrSkyStaticTextLib overview](index.md)</div>

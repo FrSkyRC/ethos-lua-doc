@@ -74,5 +74,3 @@ form.addChoiceField(line, nil, values, function() return value end, function(new
     ```
 
     <small>[src/bmfa-caller/widget_impl.lua:132](https://github.com/robthomson/ethos-bmfa-caller/blob/f4bb5511dbe666567fc5406ca60124be65b9c830/src/bmfa-caller/widget_impl.lua#L132-L135)</small>
-
-<div class="api-pager">[← addNumberField](addNumberField.md) · [form overview](index.md) · [addSliderField →](addSliderField.md)</div>

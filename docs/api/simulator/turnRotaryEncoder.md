@@ -25,5 +25,3 @@ simulator.turnRotaryEncoder(steps)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← sleep](sleep.md) · [simulator overview](index.md) · [enterText →](enterText.md)</div>

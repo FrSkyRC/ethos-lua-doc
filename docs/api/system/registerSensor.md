@@ -20,7 +20,7 @@ system.registerSensor(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -50,5 +50,3 @@ system.registerSensor({appIdStart=0x5150, appIdEnd=0x515F, name="My sensor", uni
 ## Used in
 
 - [custom-sensor](../../examples/official/custom-sensor.md)
-
-<div class="api-pager">[← registerSource](registerSource.md) · [system overview](index.md) · [registerTask →](registerTask.md)</div>

@@ -25,5 +25,3 @@ local functionType = curve:functionType([functionType])
 ## Returns
 
 functionType (integer)
-
-<div class="api-pager">[← offset](offset.md) · [Curve overview](index.md) · [pointsCount →](pointsCount.md)</div>

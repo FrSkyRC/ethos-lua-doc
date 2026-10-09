@@ -103,6 +103,36 @@ def parse_param_desc(raw: str) -> dict:
     return out
 
 
+TYPES = ("string", "number", "integer", "boolean", "table", "function", "Source", "Bitmap", "Mask")
+
+
+def normalize_param(p: dict) -> dict:
+    """Repair upstream inconsistencies so every parameter has a name and a type."""
+    name, desc = p["name"], p["description"]
+    m = re.fullmatch(r"(\w+)\((\w+)\)", name)                      # "pen(integer)"
+    if m:
+        p["name"], p["type"] = m.group(1), p["type"] or m.group(2)
+    if p["name"] == "None" and desc.startswith("or "):              # "None" | "or condition (Source, optional)"
+        m = re.match(r"or (\w+)\s*\((\w+)(?:,\s*optional)?\)", desc)
+        if m:
+            p["name"], p["type"], p["optional"] = m.group(1), m.group(2), True
+            p["description"] = "omit to read the current value"
+    if p["name"] in ("table",) and not p["type"]:                  # type used as the name
+        p["name"], p["type"] = "params", "table"
+    if not p["type"]:
+        if re.match(r"function\s*\(", desc):                        # "function(state)"
+            p["type"] = "function"
+        m = re.search(r"\((\w+)(?:,\s*(optional|default (?:is |= ?)?(\S+?)))?\)\s*$", desc)
+        if m and m.group(1) in TYPES:                               # "index (number, default is 0)"
+            p["type"] = m.group(1)
+            if m.group(2):
+                p["optional"] = True
+                if m.group(3):
+                    p["default"] = m.group(3)
+            p["description"] = desc[:m.start()].strip()
+    return p
+
+
 def parse_memdoc(doc: Tag) -> dict:
     out: dict = {"brief": "", "description": "", "since": "", "params": [],
                  "returns": "", "examples": [], "notes": []}
@@ -133,7 +163,7 @@ def parse_memdoc(doc: Tag) -> dict:
                         continue
                     p = parse_param_desc(raw)
                     p["name"] = pname
-                    out["params"].append(p)
+                    out["params"].append(normalize_param(p))
                 continue
             dt = child.find("dt")
             dd = child.find("dd")

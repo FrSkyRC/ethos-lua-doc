@@ -64,5 +64,3 @@ Nothing.
     ```
 
     <small>[src/dashx/app/app.lua:47](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/app/app.lua#L47-L54)</small>
-
-<div class="api-pager">[← height](height.md) · [form overview](index.md) · [create →](create.md)</div>

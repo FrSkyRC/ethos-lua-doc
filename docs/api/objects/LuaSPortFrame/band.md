@@ -25,5 +25,3 @@ local band = frame:band([band])
 ## Returns
 
 band (integer)
-
-<div class="api-pager">[LuaSPortFrame overview](index.md) · [rx →](rx.md)</div>

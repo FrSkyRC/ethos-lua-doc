@@ -87,5 +87,3 @@ Using theme colors keeps a script readable on light and dark themes. All indexes
     ```
 
     <small>[src/wfsuite/widgets/dashboard.lua:464](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard.lua#L464-L469)</small>
-
-<div class="api-pager">[← color](color.md) · [lcd overview](index.md) · [darkMode →](darkMode.md)</div>

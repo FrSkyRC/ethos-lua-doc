@@ -61,5 +61,3 @@ local module = model.getModule(0)
     ```
 
     <small>[src/inav-dashboard/sensors/telemetry.lua:208](https://github.com/iNavFlight/ETHOS-Telemetry-Dashboard/blob/656975b84cbbbc3bd7861bdf2a92b4686937280e/src/inav-dashboard/sensors/telemetry.lua#L208-L209)</small>
-
-<div class="api-pager">[← resetFlight](resetFlight.md) · [model overview](index.md) · [getChannel →](getChannel.md)</div>

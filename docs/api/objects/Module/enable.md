@@ -23,5 +23,3 @@ None.
 ## Returns
 
 enable (boolean)
-
-<div class="api-pager">[← protocol](protocol.md) · [Module overview](index.md) · [option →](option.md)</div>

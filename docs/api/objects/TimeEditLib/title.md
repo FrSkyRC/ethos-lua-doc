@@ -25,5 +25,3 @@ field:title(text)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[TimeEditLib overview](index.md)</div>

@@ -76,5 +76,3 @@ end
     ```
 
     <small>[src/rfsuite/app/alignment_visual.lua:213](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/alignment_visual.lua#L213-L214)</small>
-
-<div class="api-pager">[← drawFilledTriangle](drawFilledTriangle.md) · [lcd overview](index.md) · [drawFilledRectangle →](drawFilledRectangle.md)</div>

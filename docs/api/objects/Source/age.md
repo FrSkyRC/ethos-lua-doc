@@ -30,5 +30,3 @@ value age in milliseconds (integer)
 source = system.getSource("ALT")
 print(source:age())
 ```
-
-<div class="api-pager">[← reset](reset.md) · [Source overview](index.md) · [unit →](unit.md)</div>

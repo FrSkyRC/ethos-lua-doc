@@ -41,5 +41,3 @@ form.addColorField(line, nil, function() return color end, function(newValue) co
 - [tool-form](../../examples/official/tool-form.md)
 - [widget-form](../../examples/official/widget-form.md)
 - [widget-gauge](../../examples/official/widget-gauge.md)
-
-<div class="api-pager">[← addSensorField](addSensorField.md) · [form overview](index.md) · [addTimeField →](addTimeField.md)</div>

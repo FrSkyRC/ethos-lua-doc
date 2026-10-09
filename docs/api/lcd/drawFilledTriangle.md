@@ -62,5 +62,3 @@ Nothing.
     ```
 
     <small>[src/ofs3/widgets/dashboard/objects/navigation/ah.lua:107](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/widgets/dashboard/objects/navigation/ah.lua#L107-L107)</small>
-
-<div class="api-pager">[← drawTriangle](drawTriangle.md) · [lcd overview](index.md) · [drawRectangle →](drawRectangle.md)</div>

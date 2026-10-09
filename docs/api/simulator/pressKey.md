@@ -13,7 +13,7 @@ title: simulator.pressKey
 Simulate a key press.
 
 ```lua
-simulator.pressKey(key, duration)
+simulator.pressKey(key[, duration])
 ```
 
 ## Parameters
@@ -21,10 +21,8 @@ simulator.pressKey(key, duration)
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | `key` | integer | yes |  |
-| `duration` |  | yes | in seconds (number, optional) |
+| `duration` | number | optional | in seconds |
 
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← loadModel](loadModel.md) · [simulator overview](index.md) · [pressFunctionSwitch →](pressFunctionSwitch.md)</div>

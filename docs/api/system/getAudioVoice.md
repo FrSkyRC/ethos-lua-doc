@@ -13,14 +13,14 @@ title: system.getAudioVoice
 Return the current audio voice.
 
 ```lua
-system.getAudioVoice(voice)
+system.getAudioVoice([voice])
 ```
 
 ## Parameters
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `voice` |  | yes | index (number, default is 0) |
+| `voice` | number | optional (default `0`) | index |
 
 ## Returns
 
@@ -53,5 +53,3 @@ Audio voice as a string, i.e. "en/default"
     ```
 
     <small>[src/dashx/lib/utils.lua:247](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/lib/utils.lua#L247-L247)</small>
-
-<div class="api-pager">[← getLocale](getLocale.md) · [system overview](index.md) · [getVersion →](getVersion.md)</div>

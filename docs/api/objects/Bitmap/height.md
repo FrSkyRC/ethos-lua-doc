@@ -23,5 +23,3 @@ None.
 ## Returns
 
 height (integer)
-
-<div class="api-pager">[← width](width.md) · [Bitmap overview](index.md) · [rotate →](rotate.md)</div>

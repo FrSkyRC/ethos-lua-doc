@@ -50,5 +50,3 @@ conn:flush()
     ```
 
     <small>[lua/frsky/XAct/config/ui.lua:25](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/XAct/config/ui.lua#L25-L25)</small>
-
-<div class="api-pager">[serial overview](index.md)</div>

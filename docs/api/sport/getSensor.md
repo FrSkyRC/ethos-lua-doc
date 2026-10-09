@@ -87,5 +87,3 @@ local sensor = sport.getSensor({module=0, band=0, rx=0, physId=0x1B, appId=0x680
     ```
 
     <small>[src/rfsuite/tasks/mspcore/transport_sport.lua:27](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/tasks/mspcore/transport_sport.lua#L27-L41)</small>
-
-<div class="api-pager">[sport overview](index.md)</div>

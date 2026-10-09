@@ -23,5 +23,3 @@ None.
 ## Returns
 
 protocol (integer)
-
-<div class="api-pager">[← type](type.md) · [Module overview](index.md) · [enable →](enable.md)</div>

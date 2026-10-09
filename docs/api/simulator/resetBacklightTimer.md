@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← resetInactivityTimer](resetInactivityTimer.md) · [simulator overview](index.md) · [loadModel →](loadModel.md)</div>

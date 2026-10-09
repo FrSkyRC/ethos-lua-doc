@@ -70,5 +70,3 @@ lcd.setClipping()                          -- reset
     ```
 
     <small>[src/wfsuite/widgets/dashboard/objects/navigation/ah.lua:270](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard/objects/navigation/ah.lua#L270-L270)</small>
-
-<div class="api-pager">[← getWindowSize](getWindowSize.md) · [lcd overview](index.md) · [invalidate →](invalidate.md)</div>

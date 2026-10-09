@@ -34,5 +34,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 form.addSwitch(nil, {x=0, y=0}, 0, "push")
 ```
-
-<div class="api-pager">[← addTrim](addTrim.md) · [form overview](index.md) · [addFunctionSwitch →](addFunctionSwitch.md)</div>

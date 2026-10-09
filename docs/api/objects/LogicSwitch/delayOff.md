@@ -32,5 +32,3 @@ delayOff (integer)
 ls = model.getLogicSwitch(0)
 ls:delayOff(100)
 ```
-
-<div class="api-pager">[← negative](negative.md) · [LogicSwitch overview](index.md) · [delayOn →](delayOn.md)</div>

@@ -25,5 +25,3 @@ simulator.screenshot(path)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← setDateTime](setDateTime.md) · [simulator overview](index.md) · [sleep →](sleep.md)</div>

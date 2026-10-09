@@ -13,14 +13,14 @@ title: lcd.pen
 Get / Set the current pen style.
 
 ```lua
-local pen = lcd.pen(peninteger)
+local pen = lcd.pen(pen)
 ```
 
 ## Parameters
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `pen(integer)` |  | yes | a binary mask or one of the values SOLID, DOTTED or DASHED |
+| `pen` | integer | yes | a binary mask or one of the values SOLID, DOTTED or DASHED |
 
 ## Returns
 
@@ -62,5 +62,3 @@ lcd.pen(PEN_SOLID)                            -- back to solid for the rest
     ```
 
     <small>[src/rfsuite/app/pages/logs.lua:222](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/logs.lua#L222-L223)</small>
-
-<div class="api-pager">[← font](font.md) · [lcd overview](index.md) · [drawPoint →](drawPoint.md)</div>

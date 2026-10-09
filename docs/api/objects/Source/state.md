@@ -23,5 +23,3 @@ None.
 ## Returns
 
 state (boolean)
-
-<div class="api-pager">[← value](value.md) · [Source overview](index.md) · [reset →](reset.md)</div>

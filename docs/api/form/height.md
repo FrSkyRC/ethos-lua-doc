@@ -62,5 +62,3 @@ print(form.height())
     ```
 
     <small>[src/dashx/app/modules/logs/logs_logs.lua:143](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/app/modules/logs/logs_logs.lua#L143-L143)</small>
-
-<div class="api-pager">[← clear](clear.md) · [form overview](index.md) · [invalidate →](invalidate.md)</div>

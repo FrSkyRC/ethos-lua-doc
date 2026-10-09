@@ -23,5 +23,3 @@ None.
 ## Returns
 
 width (integer)
-
-<div class="api-pager">[Bitmap overview](index.md) · [height →](height.md)</div>

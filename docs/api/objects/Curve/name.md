@@ -25,5 +25,3 @@ local name = curve:name([name])
 ## Returns
 
 name (string)
-
-<div class="api-pager">[Curve overview](index.md) · [type →](type.md)</div>

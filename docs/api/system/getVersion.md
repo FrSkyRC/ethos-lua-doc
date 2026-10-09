@@ -85,5 +85,3 @@ Prefer feature checks (`if system.getSources then`) over version checks where po
     ```
 
     <small>[src/ofs3/widgets/dashboard/lib/utils.lua:464](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/widgets/dashboard/lib/utils.lua#L464-L464)</small>
-
-<div class="api-pager">[← getAudioVoice](getAudioVoice.md) · [system overview](index.md) · [getMemoryUsage →](getMemoryUsage.md)</div>

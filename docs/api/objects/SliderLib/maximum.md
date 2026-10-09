@@ -25,5 +25,3 @@ field:maximum(maximum)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← minimum](minimum.md) · [SliderLib overview](index.md) · [help →](help.md)</div>

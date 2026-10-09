@@ -1590,9 +1590,9 @@
           "since": "1.6.0",
           "params": [
             {
-              "type": "",
+              "type": "number",
               "optional": false,
-              "description": "in seconds (number)",
+              "description": "in seconds",
               "name": "duration"
             }
           ],
@@ -1670,7 +1670,7 @@
           "since": "1.5.14",
           "params": [
             {
-              "type": "",
+              "type": "function",
               "optional": false,
               "description": "function(state)",
               "name": "handler"
@@ -1913,7 +1913,7 @@
           "since": "1.6.2",
           "params": [
             {
-              "type": "",
+              "type": "function",
               "optional": false,
               "description": "function(state)",
               "name": "handler"
@@ -2196,8 +2196,8 @@
           "since": "1.5.5",
           "params": [
             {
-              "type": "integer, optonal",
-              "optional": false,
+              "type": "integer",
+              "optional": true,
               "description": "",
               "name": "decimals"
             }
@@ -2215,8 +2215,8 @@
           "since": "1.5.10",
           "params": [
             {
-              "type": "integer, optonal",
-              "optional": false,
+              "type": "integer",
+              "optional": true,
               "description": "",
               "name": "decimals"
             }
@@ -2605,10 +2605,10 @@
           "since": "26.1.0",
           "params": [
             {
-              "type": "",
-              "optional": false,
-              "description": "or condition (Source, optional)",
-              "name": "None"
+              "type": "Source",
+              "optional": true,
+              "description": "omit to read the current value",
+              "name": "condition"
             }
           ],
           "returns": "None or condition (Source)",
@@ -6714,10 +6714,10 @@
           "since": "1.1.0",
           "params": [
             {
-              "type": "",
+              "type": "integer",
               "optional": false,
               "description": "a binary mask or one of the values SOLID, DOTTED or DASHED",
-              "name": "pen(integer)"
+              "name": "pen"
             }
           ],
           "returns": "pen (integer)",
@@ -8044,9 +8044,9 @@
               "name": "key"
             },
             {
-              "type": "",
-              "optional": false,
-              "description": "in seconds (number, optional)",
+              "type": "number",
+              "optional": true,
+              "description": "in seconds",
               "name": "duration"
             }
           ],
@@ -8069,9 +8069,9 @@
               "name": "index"
             },
             {
-              "type": "",
-              "optional": false,
-              "description": "in seconds (number, optional)",
+              "type": "number",
+              "optional": true,
+              "description": "in seconds",
               "name": "duration"
             }
           ],
@@ -8221,10 +8221,10 @@
           "since": "1.5.0",
           "params": [
             {
-              "type": "",
+              "type": "table",
               "optional": false,
               "description": "{ sec, min, hour, day, month, year, lock }",
-              "name": "table"
+              "name": "params"
             }
           ],
           "returns": "",
@@ -8259,9 +8259,9 @@
           "since": "1.5.0",
           "params": [
             {
-              "type": "",
+              "type": "number",
               "optional": false,
-              "description": "in seconds (number)",
+              "description": "in seconds",
               "name": "duration"
             }
           ],
@@ -8465,10 +8465,11 @@
           "since": "1.5.7",
           "params": [
             {
-              "type": "",
-              "optional": false,
-              "description": "index (number, default is 0)",
-              "name": "voice"
+              "type": "number",
+              "optional": true,
+              "description": "index",
+              "name": "voice",
+              "default": "0"
             }
           ],
           "returns": "Audio voice as a string, i.e. \"en/default\"",
@@ -8576,9 +8577,9 @@
           "since": "1.1.0",
           "params": [
             {
-              "type": "",
+              "type": "string",
               "optional": false,
-              "description": "file path (string)",
+              "description": "file path",
               "name": "audio"
             }
           ],
@@ -8642,21 +8643,21 @@
           "since": "1.1.0",
           "params": [
             {
-              "type": "",
+              "type": "number",
               "optional": false,
-              "description": "in Hz (number)",
+              "description": "in Hz",
               "name": "frequency"
             },
             {
-              "type": "",
+              "type": "number",
               "optional": false,
-              "description": "in ms (number)",
+              "description": "in ms",
               "name": "duration"
             },
             {
-              "type": "",
-              "optional": false,
-              "description": "in ms (number, optional)",
+              "type": "number",
+              "optional": true,
+              "description": "in ms",
               "name": "pause"
             }
           ],
@@ -8673,9 +8674,9 @@
           "since": "1.1.0",
           "params": [
             {
-              "type": "",
+              "type": "string",
               "optional": false,
-              "description": "in ms (number) or pattern (string)",
+              "description": "in ms (number) or pattern",
               "name": "duration"
             },
             {

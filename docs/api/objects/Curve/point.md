@@ -25,5 +25,3 @@ local x = curve:point([indexintegerx])
 ## Returns
 
 x (number) and y (number)
-
-<div class="api-pager">[← smooth](smooth.md) · [Curve overview](index.md)</div>

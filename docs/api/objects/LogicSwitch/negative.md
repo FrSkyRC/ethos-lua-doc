@@ -32,5 +32,3 @@ negative (boolean)
 ls = model.getLogicSwitch(0)
 ls:negative(true)
 ```
-
-<div class="api-pager">[← name](name.md) · [LogicSwitch overview](index.md) · [delayOff →](delayOff.md)</div>

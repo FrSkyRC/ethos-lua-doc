@@ -25,5 +25,3 @@ field:prefix(prefix)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← enableInstantChange](enableInstantChange.md) · [NumberEditLib overview](index.md) · [suffix →](suffix.md)</div>

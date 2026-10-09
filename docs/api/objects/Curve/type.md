@@ -25,5 +25,3 @@ local type = curve:type([type])
 ## Returns
 
 type (integer)
-
-<div class="api-pager">[← name](name.md) · [Curve overview](index.md) · [exponent →](exponent.md)</div>

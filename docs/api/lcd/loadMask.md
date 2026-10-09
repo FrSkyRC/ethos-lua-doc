@@ -82,5 +82,3 @@ Loading is lazy by default (`lazy = true`): the image is decoded on first draw. 
     ```
 
     <small>[src/rfsuite/app/app.lua:657](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/app/app.lua#L657-L657)</small>
-
-<div class="api-pager">[← loadBitmap](loadBitmap.md) · [lcd overview](index.md) · [renderQrCode →](renderQrCode.md)</div>

@@ -33,5 +33,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 system.startLatencyTest(0, 100, 50) -- set CH1 value to +100% during 50ms and observe the delay with Trainer input (Bluetooth / S.Port / External module)
 ```
-
-<div class="api-pager">[← emergency](emergency.md) · [system overview](index.md) · [getLatencyTestResult →](getLatencyTestResult.md)</div>

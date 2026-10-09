@@ -69,5 +69,3 @@ end
     ```
 
     <small>[src/ofs3/widgets/dashboard/lib/loaders.lua:99](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/widgets/dashboard/lib/loaders.lua#L99-L100)</small>
-
-<div class="api-pager">[← drawCircle](drawCircle.md) · [lcd overview](index.md) · [drawAnnulusSector →](drawAnnulusSector.md)</div>

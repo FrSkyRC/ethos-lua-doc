@@ -33,5 +33,3 @@ local model.resetFlight()
 local model.resetFlight("timers")
 local model.resetFlight("telemetry")
 ```
-
-<div class="api-pager">[← createMix](createMix.md) · [model overview](index.md) · [getModule →](getModule.md)</div>

@@ -56,5 +56,3 @@ form.addFileField(line, nil, "/audio/en/system", "audio", function() return file
     ```
 
     <small>[lua/frsky/RB25_S/stab/basic/basic.lua:101](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/RB25_S/stab/basic/basic.lua#L101-L105)</small>
-
-<div class="api-pager">[← addButton](addButton.md) · [form overview](index.md) · [addBitmapField →](addBitmapField.md)</div>

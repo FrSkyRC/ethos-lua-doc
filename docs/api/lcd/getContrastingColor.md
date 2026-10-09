@@ -25,5 +25,3 @@ local color = lcd.getContrastingColor(color)
 ## Returns
 
 color (integer): the contrasting color
-
-<div class="api-pager">[← getTextSize](getTextSize.md) · [lcd overview](index.md) · [getWindowSize →](getWindowSize.md)</div>

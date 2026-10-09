@@ -66,5 +66,3 @@ system.openPage({sensor=0}) -- Sensor 1 configuration
     ```
 
     <small>[src/rfsuite/widgets/dashboard.lua:1284](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard.lua#L1284-L1290)</small>
-
-<div class="api-pager">[← compile](compile.md) · [system overview](index.md)</div>

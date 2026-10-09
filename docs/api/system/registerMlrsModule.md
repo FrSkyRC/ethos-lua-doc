@@ -31,5 +31,3 @@ local function init()
   system.registerMlrsModule({configure = {name = "mLRS Configuration", create = create, wakeup = wakeup, event = event, close = close}})
 end
 ```
-
-<div class="api-pager">[← registerElrsModule](registerElrsModule.md) · [system overview](index.md) · [registerCrossfireModule →](registerCrossfireModule.md)</div>

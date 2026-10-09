@@ -29,5 +29,3 @@ options (table)
 ```lua title="From the official Ethos documentation"
 module.options()
 ```
-
-<div class="api-pager">[← option](option.md) · [Module overview](index.md) · [muteSensorLost →](muteSensorLost.md)</div>

@@ -33,5 +33,3 @@ Nothing.
 local w, h = lcd.getWindowSize()
 form.addRadioHardware(nil, {x=0, y=0, w=w, h=h})
 ```
-
-<div class="api-pager">[← addRotaryEncoder](addRotaryEncoder.md) · [form overview](index.md) · [getFieldSlots →](getFieldSlots.md)</div>

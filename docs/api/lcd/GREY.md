@@ -67,5 +67,3 @@ local SUBTLE = lcd.GREY(160, 0.5)    -- light grey, 50 % transparent
     ```
 
     <small>[src/rfsuite/app/pages/setup_governor_curves.lua:82](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/setup_governor_curves.lua#L82-L82)</small>
-
-<div class="api-pager">[← RGB](RGB.md) · [lcd overview](index.md) · [color →](color.md)</div>

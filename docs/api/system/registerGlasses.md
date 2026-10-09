@@ -31,5 +31,3 @@ local function init()
   system.registerGlasses()
 end
 ```
-
-<div class="api-pager">[← registerCrossfireModule](registerCrossfireModule.md) · [system overview](index.md) · [registerSource →](registerSource.md)</div>

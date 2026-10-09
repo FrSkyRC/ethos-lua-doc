@@ -31,5 +31,3 @@ local function init()
   system.registerElrsModule({configure = {name = "ELRS Configuration", create = create, wakeup = wakeup, event = event, close = close}})
 end
 ```
-
-<div class="api-pager">[← registerGhostModule](registerGhostModule.md) · [system overview](index.md) · [registerMlrsModule →](registerMlrsModule.md)</div>

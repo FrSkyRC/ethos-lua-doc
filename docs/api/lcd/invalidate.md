@@ -77,5 +77,3 @@ lcd.invalidate(0, 0, 100, 100)
     ```
 
     <small>[src/ofs3/widgets/dashboard/lib/logviewer.lua:914](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/widgets/dashboard/lib/logviewer.lua#L914-L915)</small>
-
-<div class="api-pager">[← setClipping](setClipping.md) · [lcd overview](index.md) · [isVisible →](isVisible.md)</div>

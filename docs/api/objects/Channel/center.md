@@ -25,5 +25,3 @@ local center = channel:center([center])
 ## Returns
 
 center (number)
-
-<div class="api-pager">[← max](max.md) · [Channel overview](index.md) · [pwmCenter →](pwmCenter.md)</div>

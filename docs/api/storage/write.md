@@ -85,5 +85,3 @@ Keep the keys and order in step with your `read` callback.
     ```
 
     <small>[src/bmfa-caller/widget_impl.lua:161](https://github.com/robthomson/ethos-bmfa-caller/blob/f4bb5511dbe666567fc5406ca60124be65b9c830/src/bmfa-caller/widget_impl.lua#L161-L167)</small>
-
-<div class="api-pager">[← read](read.md) · [storage overview](index.md)</div>

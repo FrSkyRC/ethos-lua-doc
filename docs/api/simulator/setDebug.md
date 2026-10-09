@@ -32,5 +32,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 simulator.setDebug("malloc", true)
 ```
-
-<div class="api-pager">[← reloadScripts](reloadScripts.md) · [simulator overview](index.md)</div>

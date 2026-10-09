@@ -25,5 +25,3 @@ field:help(text)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[ChoiceLib overview](index.md) · [title →](title.md)</div>

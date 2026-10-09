@@ -25,5 +25,3 @@ local value = field:maximum([value])
 ## Returns
 
 value (integer)
-
-<div class="api-pager">[← minimum](minimum.md) · [NumberEditLib overview](index.md) · [help →](help.md)</div>

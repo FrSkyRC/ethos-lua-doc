@@ -50,5 +50,3 @@ print(source:value({options=OPTION_CHANNEL_OUTPUT+OPTION_CHANNEL_PWM}))
 source = system.getSource("MySensor")
 print(source:value()) -- get the value of MySensor
 ```
-
-<div class="api-pager">[← minimum](minimum.md) · [Source overview](index.md) · [state →](state.md)</div>

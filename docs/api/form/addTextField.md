@@ -106,5 +106,3 @@ form.addTextField(line, form.getFieldSlots(line, {100, 0, "slot3"})[0], function
     ```
 
     <small>[src/dashx/app/lib/ui.lua:534](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/app/lib/ui.lua#L534-L547)</small>
-
-<div class="api-pager">[← addTimeField](addTimeField.md) · [form overview](index.md) · [addTextButton →](addTextButton.md)</div>

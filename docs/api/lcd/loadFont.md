@@ -29,5 +29,3 @@ font index(integer)
 ## Used in
 
 - [xxxxl](../../examples/official/xxxxl.md)
-
-<div class="api-pager">[← renderQrCode](renderQrCode.md) · [lcd overview](index.md) · [getFont →](getFont.md)</div>

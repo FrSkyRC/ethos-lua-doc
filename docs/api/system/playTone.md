@@ -13,19 +13,17 @@ title: system.playTone
 Play a tone.
 
 ```lua
-system.playTone(frequency, duration, pause)
+system.playTone(frequency, duration[, pause])
 ```
 
 ## Parameters
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `frequency` |  | yes | in Hz (number) |
-| `duration` |  | yes | in ms (number) |
-| `pause` |  | yes | in ms (number, optional) |
+| `frequency` | number | yes | in Hz |
+| `duration` | number | yes | in ms |
+| `pause` | number | optional | in ms |
 
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← playNumber](playNumber.md) · [system overview](index.md) · [playHaptic →](playHaptic.md)</div>

@@ -13,17 +13,15 @@ title: Source:decimals
 Return the source decimals (and modify it on Vars and Sensors)
 
 ```lua
-local decimals = source:decimals(decimals)
+local decimals = source:decimals([decimals])
 ```
 
 ## Parameters
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `decimals` | integer, optonal | yes |  |
+| `decimals` | integer | optional |  |
 
 ## Returns
 
 decimals (integer)
-
-<div class="api-pager">[← stringUnit](stringUnit.md) · [Source overview](index.md) · [protocolDecimals →](protocolDecimals.md)</div>

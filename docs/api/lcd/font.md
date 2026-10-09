@@ -92,5 +92,3 @@ All font constants are under [Fonts](../constants.md#fonts).
     ```
 
     <small>[src/wfsuite/app/alignment_visual.lua:223](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/alignment_visual.lua#L223-L223)</small>
-
-<div class="api-pager">[← focusStyle](focusStyle.md) · [lcd overview](index.md) · [pen →](pen.md)</div>

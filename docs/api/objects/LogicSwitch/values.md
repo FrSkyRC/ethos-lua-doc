@@ -32,5 +32,3 @@ values (table of [Source](../../objects/Source/index.md))
 ls = model.getLogicSwitch(0)
 ls:values({{category=CATEGORY_TELEMETRY, member=0}, {category=CATEGORY_ANALOG, member=0}})
 ```
-
-<div class="api-pager">[← activeCondition](activeCondition.md) · [LogicSwitch overview](index.md)</div>

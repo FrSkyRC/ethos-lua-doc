@@ -20,7 +20,7 @@ system.registerTheme(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -57,5 +57,3 @@ return {init=init}
 ## Used in
 
 - [theme](../../examples/official/theme.md)
-
-<div class="api-pager">[← registerLayout](registerLayout.md) · [system overview](index.md) · [registerWidget →](registerWidget.md)</div>

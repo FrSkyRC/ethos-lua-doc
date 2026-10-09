@@ -33,5 +33,3 @@ timer = model.getTimer(0)
 timer:alarm(120) -- seconds
 print(timer:alarm())
 ```
-
-<div class="api-pager">[← stringValue](stringValue.md) · [Timer overview](index.md) · [start →](start.md)</div>

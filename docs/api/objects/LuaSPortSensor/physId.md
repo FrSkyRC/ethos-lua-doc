@@ -25,5 +25,3 @@ local physId = sensor:physId([physId])
 ## Returns
 
 physId (integer)
-
-<div class="api-pager">[← rx](rx.md) · [LuaSPortSensor overview](index.md) · [appId →](appId.md)</div>

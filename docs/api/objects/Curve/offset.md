@@ -25,5 +25,3 @@ local offset = curve:offset([offset])
 ## Returns
 
 offset (integer)
-
-<div class="api-pager">[← weight](weight.md) · [Curve overview](index.md) · [functionType →](functionType.md)</div>

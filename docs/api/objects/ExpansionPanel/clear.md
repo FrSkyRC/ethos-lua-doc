@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← open](open.md) · [ExpansionPanel overview](index.md) · [addLine →](addLine.md)</div>

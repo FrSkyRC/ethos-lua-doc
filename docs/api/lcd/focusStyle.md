@@ -23,5 +23,3 @@ None.
 ## Returns
 
 focusStyle (string)
-
-<div class="api-pager">[← darkMode](darkMode.md) · [lcd overview](index.md) · [font →](font.md)</div>

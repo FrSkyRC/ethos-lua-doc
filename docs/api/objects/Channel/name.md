@@ -25,5 +25,3 @@ local name = channel:name([name])
 ## Returns
 
 name (string)
-
-<div class="api-pager">[Channel overview](index.md) · [direction →](direction.md)</div>

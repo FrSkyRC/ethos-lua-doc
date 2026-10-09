@@ -53,5 +53,3 @@ name (string)
     ```
 
     <small>[src/dashx/lib/runtime.lua:87](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/lib/runtime.lua#L87-L92)</small>
-
-<div class="api-pager">[← name](name.md) · [model overview](index.md) · [bitmap →](bitmap.md)</div>

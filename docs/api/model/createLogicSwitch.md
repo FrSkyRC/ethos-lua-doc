@@ -32,5 +32,3 @@ ls:name("My Logic Switch")
 ls:function(LS_FN_AND)
 print(ls:value())
 ```
-
-<div class="api-pager">[← getTimer](getTimer.md) · [model overview](index.md) · [getLogicSwitch →](getLogicSwitch.md)</div>

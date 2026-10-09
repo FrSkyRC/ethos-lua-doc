@@ -100,5 +100,3 @@ Full example in [Drawing on screen](../../guides/drawing.md#shapes).
     ```
 
     <small>[src/ofs3/widgets/dashboard/lib/utils.lua:995](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/widgets/dashboard/lib/utils.lua#L995-L1012)</small>
-
-<div class="api-pager">[← drawFilledCircle](drawFilledCircle.md) · [lcd overview](index.md) · [drawText →](drawText.md)</div>

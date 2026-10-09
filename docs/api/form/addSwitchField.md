@@ -81,5 +81,3 @@ form.addSwitchField(line, nil, function() return switch end, function(newValue) 
     ```
 
     <small>[src/rfsuite/app/pages/settings_activelook_settings.lua:36](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/settings_activelook_settings.lua#L36-L42)</small>
-
-<div class="api-pager">[← addSourceField](addSourceField.md) · [form overview](index.md) · [addSensorField →](addSensorField.md)</div>

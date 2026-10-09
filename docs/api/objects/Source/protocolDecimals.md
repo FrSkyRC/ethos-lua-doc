@@ -13,17 +13,15 @@ title: Source:protocolDecimals
 Get / Set sensor internal decimals.
 
 ```lua
-local decimals = source:protocolDecimals(decimals)
+local decimals = source:protocolDecimals([decimals])
 ```
 
 ## Parameters
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `decimals` | integer, optonal | yes |  |
+| `decimals` | integer | optional |  |
 
 ## Returns
 
 decimals (integer)
-
-<div class="api-pager">[← decimals](decimals.md) · [Source overview](index.md) · [stringValue →](stringValue.md)</div>

@@ -33,5 +33,3 @@ source = system.getSource({name="Tx SNR"})
 source:crsfId(0x0110)
 print(source:name() .. " module:" .. source:module() .. " crsfId:" .. source:crsfId()) .. " subId:" .. source:subId())
 ```
-
-<div class="api-pager">[← physId](physId.md) · [Source overview](index.md) · [subId →](subId.md)</div>

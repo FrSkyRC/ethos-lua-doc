@@ -78,5 +78,3 @@ The same widget can be placed in slots of very different sizes (and radios range
     ```
 
     <small>[src/rfsuite/app/modules/alignment/alignment.lua:559](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/app/modules/alignment/alignment.lua#L559-L559)</small>
-
-<div class="api-pager">[← getContrastingColor](getContrastingColor.md) · [lcd overview](index.md) · [setClipping →](setClipping.md)</div>

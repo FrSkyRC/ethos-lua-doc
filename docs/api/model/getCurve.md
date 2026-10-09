@@ -32,5 +32,3 @@ curve
 local curve = model.getCurve("My Curve")
 local curve = model.getCurve(0)
 ```
-
-<div class="api-pager">[← createCurve](createCurve.md) · [model overview](index.md) · [createMix →](createMix.md)</div>

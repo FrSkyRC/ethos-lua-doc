@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← read](read.md) · [LuaSPortSerial overview](index.md) · [flush →](flush.md)</div>

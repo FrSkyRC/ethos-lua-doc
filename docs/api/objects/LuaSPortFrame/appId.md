@@ -25,5 +25,3 @@ local appId = frame:appId([appId])
 ## Returns
 
 appId (integer)
-
-<div class="api-pager">[← primId](primId.md) · [LuaSPortFrame overview](index.md) · [value →](value.md)</div>

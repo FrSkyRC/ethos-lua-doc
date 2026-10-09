@@ -32,5 +32,3 @@ condition ([Source](../../objects/Source/index.md))
 ls = model.getLogicSwitch(0)
 ls:activeCondition(CATEGORY_ALWAYS_ON)
 ```
-
-<div class="api-pager">[← func](func.md) · [LogicSwitch overview](index.md) · [values →](values.md)</div>

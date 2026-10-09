@@ -25,5 +25,3 @@ local max = channel:max([max])
 ## Returns
 
 max (number)
-
-<div class="api-pager">[← min](min.md) · [Channel overview](index.md) · [center →](center.md)</div>

@@ -25,5 +25,3 @@ field:values(values)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← title](title.md) · [ChoiceLib overview](index.md)</div>

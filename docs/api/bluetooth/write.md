@@ -30,5 +30,3 @@ Nothing.
 ## Used in
 
 - [bluetooth](../../examples/official/bluetooth.md)
-
-<div class="api-pager">[← listCharacteristics](listCharacteristics.md) · [bluetooth overview](index.md)</div>

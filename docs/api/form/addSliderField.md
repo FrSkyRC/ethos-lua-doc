@@ -80,5 +80,3 @@ form.addSliderField(line, nil, 0, 100, function() return value end, function(new
     ```
 
     <small>[src/rfsuite/app/modules/logs/logs_view.lua:713](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/app/modules/logs/logs_view.lua#L713-L724)</small>
-
-<div class="api-pager">[← addChoiceField](addChoiceField.md) · [form overview](index.md) · [addSourceField →](addSourceField.md)</div>

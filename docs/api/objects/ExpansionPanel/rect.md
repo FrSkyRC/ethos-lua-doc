@@ -25,5 +25,3 @@ local rect = panel:rect([rect])
 ## Returns
 
 rect (Rect)
-
-<div class="api-pager">[← event](event.md) · [ExpansionPanel overview](index.md)</div>

@@ -25,5 +25,3 @@ local pointsCount = curve:pointsCount([pointsCount])
 ## Returns
 
 pointsCount (integer)
-
-<div class="api-pager">[← functionType](functionType.md) · [Curve overview](index.md) · [easyMode →](easyMode.md)</div>

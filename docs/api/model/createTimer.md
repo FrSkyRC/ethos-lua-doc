@@ -32,5 +32,3 @@ timer:name("My Timer")
 timer:direction(-1)
 timer:value(60)
 ```
-
-<div class="api-pager">[← id](id.md) · [model overview](index.md) · [getTimer →](getTimer.md)</div>

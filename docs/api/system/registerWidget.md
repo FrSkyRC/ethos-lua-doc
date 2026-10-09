@@ -20,7 +20,7 @@ system.registerWidget(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -126,5 +126,3 @@ return {init=init}
     ```
 
     <small>[src/rfsuite/widgets/dashboard.lua:2205](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard.lua#L2205-L2209)</small>
-
-<div class="api-pager">[← registerTheme](registerTheme.md) · [system overview](index.md) · [registerSystemTool →](registerSystemTool.md)</div>

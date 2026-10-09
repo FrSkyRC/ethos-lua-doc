@@ -32,5 +32,3 @@ condition ([Source](../../objects/Source/index.md))
 timer = model.getTimer(0)
 timer:startCondition(CATEGORY_ALWAYS_ON)
 ```
-
-<div class="api-pager">[← start](start.md) · [Timer overview](index.md) · [stopCondition →](stopCondition.md)</div>

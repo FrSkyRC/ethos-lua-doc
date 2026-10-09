@@ -23,5 +23,3 @@ None.
 ## Returns
 
 buffer (string)
-
-<div class="api-pager">[← size](size.md) · [LuaSPortSerial overview](index.md) · [write →](write.md)</div>

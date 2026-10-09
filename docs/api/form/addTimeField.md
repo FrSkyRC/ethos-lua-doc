@@ -34,5 +34,3 @@ The new field
 ```lua title="From the official Ethos documentation"
 form.addTimeField(line, nil, function() return time end, function(newValue) time = newValue end)
 ```
-
-<div class="api-pager">[← addColorField](addColorField.md) · [form overview](index.md) · [addTextField →](addTextField.md)</div>

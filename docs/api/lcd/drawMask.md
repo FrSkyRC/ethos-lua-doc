@@ -60,5 +60,3 @@ Masks are single-channel images, cheaper than full-color bitmaps and recolorable
     ```
 
     <small>[src/rfsuite/widgets/dashboard.lua:602](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard.lua#L602-L605)</small>
-
-<div class="api-pager">[← drawBitmap](drawBitmap.md) · [lcd overview](index.md) · [getTextSize →](getTextSize.md)</div>

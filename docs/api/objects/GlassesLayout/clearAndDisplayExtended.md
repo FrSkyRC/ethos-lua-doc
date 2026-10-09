@@ -20,7 +20,7 @@ layout:clearAndDisplayExtended(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -49,5 +49,3 @@ local function wakeup(context)
      }})
 end
 ```
-
-<div class="api-pager">[← clearAndDisplay](clearAndDisplay.md) · [GlassesLayout overview](index.md)</div>

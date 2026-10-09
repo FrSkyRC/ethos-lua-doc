@@ -30,5 +30,3 @@ value (integer)
 timer = model.getTimer(0)
 print(timer:value())
 ```
-
-<div class="api-pager">[← persistent](persistent.md) · [Timer overview](index.md) · [stringValue →](stringValue.md)</div>

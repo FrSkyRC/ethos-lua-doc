@@ -30,5 +30,3 @@ value (string)
 timer = model.getTimer(0)
 print(timer:stringValue())
 ```
-
-<div class="api-pager">[← value](value.md) · [Timer overview](index.md) · [alarm →](alarm.md)</div>

@@ -79,5 +79,3 @@ See the [battery gauge recipe](../../cookbook/battery-gauge.md) for a complete w
     ```
 
     <small>[src/dashx/app/modules/logs/logs_view.lua:415](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/app/modules/logs/logs_view.lua#L415-L415)</small>
-
-<div class="api-pager">[← drawRectangle](drawRectangle.md) · [lcd overview](index.md) · [drawCircle →](drawCircle.md)</div>

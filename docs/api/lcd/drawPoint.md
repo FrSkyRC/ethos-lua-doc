@@ -54,5 +54,3 @@ Nothing.
     ```
 
     <small>[src/ethos-arcade/games/gulaxian/game.lua:668](https://github.com/robthomson/ethos-arcade/blob/0fb9f36a97dc902391c425e97ef79211fc7ae0d9/src/ethos-arcade/games/gulaxian/game.lua#L668-L671)</small>
-
-<div class="api-pager">[← pen](pen.md) · [lcd overview](index.md) · [drawLine →](drawLine.md)</div>

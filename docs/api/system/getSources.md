@@ -31,5 +31,3 @@ sources (Sources list)
 ```lua title="From the official Ethos documentation"
 system.getSources(CATEGORY_TELEMETRY_SENSOR)
 ```
-
-<div class="api-pager">[← getStickMode](getStickMode.md) · [system overview](index.md) · [getSource →](getSource.md)</div>

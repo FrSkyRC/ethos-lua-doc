@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Stick Mode (1, 2, 3 or 4)
-
-<div class="api-pager">[← getInstructionsUsage](getInstructionsUsage.md) · [system overview](index.md) · [getSources →](getSources.md)</div>

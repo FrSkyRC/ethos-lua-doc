@@ -25,5 +25,3 @@ field:help(text)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← maximum](maximum.md) · [NumberEditLib overview](index.md) · [text →](text.md)</div>

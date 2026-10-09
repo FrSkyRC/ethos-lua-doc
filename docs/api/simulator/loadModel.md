@@ -25,5 +25,3 @@ simulator.loadModel(path)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← resetBacklightTimer](resetBacklightTimer.md) · [simulator overview](index.md) · [pressKey →](pressKey.md)</div>

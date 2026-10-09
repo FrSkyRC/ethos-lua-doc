@@ -29,5 +29,3 @@ nil or number (delay between request and response)
 ```lua title="From the official Ethos documentation"
 local result = system.getLatencyTestResult()
 ```
-
-<div class="api-pager">[← startLatencyTest](startLatencyTest.md) · [system overview](index.md) · [resetBacklightTimeout →](resetBacklightTimeout.md)</div>

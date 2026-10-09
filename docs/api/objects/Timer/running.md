@@ -30,5 +30,3 @@ running (boolean)
 timer = model.getTimer(0)
 print(timer:running())
 ```
-
-<div class="api-pager">[← reset](reset.md) · [Timer overview](index.md)</div>

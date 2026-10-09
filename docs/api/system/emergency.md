@@ -29,5 +29,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 system.emergency()
 ```
-
-<div class="api-pager">[← exit](exit.md) · [system overview](index.md) · [startLatencyTest →](startLatencyTest.md)</div>

@@ -25,5 +25,3 @@ local slowUp = channel:slowUp([slowUp])
 ## Returns
 
 slowUp (number)
-
-<div class="api-pager">[← pwmCenter](pwmCenter.md) · [Channel overview](index.md) · [slowDown →](slowDown.md)</div>

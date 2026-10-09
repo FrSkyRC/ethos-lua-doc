@@ -32,5 +32,3 @@ direction (integer)
 timer = model.getTimer(0)
 timer:direction(-1)
 ```
-
-<div class="api-pager">[← name](name.md) · [Timer overview](index.md) · [persistent →](persistent.md)</div>

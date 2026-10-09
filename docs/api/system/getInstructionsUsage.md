@@ -33,5 +33,3 @@ local function wakeup()
   end
 end
 ```
-
-<div class="api-pager">[← getMemoryUsage](getMemoryUsage.md) · [system overview](index.md) · [getStickMode →](getStickMode.md)</div>

@@ -25,5 +25,3 @@ bitmap:rotate(angle)
 ## Returns
 
 the rotated bitmap ([Bitmap](../../objects/Bitmap/index.md))
-
-<div class="api-pager">[← height](height.md) · [Bitmap overview](index.md)</div>

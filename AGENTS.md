@@ -51,7 +51,7 @@ Read this before changing anything. The most common mistake is editing generated
 python -m venv .venv && .venv/bin/pip install -r requirements.txt      # Windows: .venv\Scripts\...
 python scripts/update.py                  # discover + download lua-doc.zip, examples, usage; regenerate
 git diff --stat                           # review
-mkdocs build --strict                     # must pass
+mkdocs build --strict && python scripts/check_site.py   # both must pass
 ```
 
 Flags: `--channel stable|nightly|pinned`, `--url <zip>`, `--zip <local file>`, `--examples <local lua/examples dir>`, `--skip-examples`, `--skip-usage`.

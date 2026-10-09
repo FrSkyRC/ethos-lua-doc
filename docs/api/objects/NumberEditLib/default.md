@@ -25,5 +25,3 @@ field:default(default)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← suffix](suffix.md) · [NumberEditLib overview](index.md) · [minimum →](minimum.md)</div>

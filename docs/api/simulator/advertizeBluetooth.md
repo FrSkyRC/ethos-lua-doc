@@ -25,5 +25,3 @@ simulator.advertizeBluetooth(device)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← connectUsb](connectUsb.md) · [simulator overview](index.md) · [injectSPortFrame →](injectSPortFrame.md)</div>

@@ -211,10 +211,22 @@ class Gen:
                 if "\n" in desc:  # table-of-fields style params -> render list below
                     first, _, rest = desc.partition("\n")
                     desc, nested = first.strip(), rest.strip()
-                req = "optional" if p["optional"] else "yes"
+                ptype, optional = p["type"], p["optional"]
+                if not ptype:  # upstream sometimes puts the type in the description instead
+                    tm = re.match(r"^(table)\b\s*(.*)$", desc)
+                    if tm:
+                        ptype, desc = "table", tm.group(2) or desc
+                        if re.fullmatch(r"(with )?elements:?", desc.strip()):
+                            desc = "see the fields below"
+                    else:
+                        tm = re.search(r"\s*\((\w+)(,\s*optional)?\)\s*$", desc)
+                        if tm and tm.group(1).lower() in ("string", "number", "integer", "boolean", "table", "function"):
+                            ptype, optional = tm.group(1), optional or bool(tm.group(2))
+                            desc = desc[:tm.start()].strip()
+                req = "optional" if optional else "yes"
                 if p.get("default"):
                     req = f"optional (default `{p['default']}`)"
-                typ = self.link_types(p["type"], depth) if p["type"] else ""
+                typ = self.link_types(ptype, depth) if ptype else ""
                 o.append(f"| `{p['name']}` | {typ} | {req} | {desc.replace('|', '&#124;')} |")
                 if nested:
                     o.append("")
@@ -262,16 +274,8 @@ class Gen:
                 o.append(f'=== "{label}"\n\n    ```lua\n    {code}\n    ```\n\n'
                          f'    <small>[{sn["path"]}:{sn["start"]}]({url})</small>\n')
 
-        siblings = [m for m in page["members"] if m["kind"] == "function"]
-        idx = next(i for i, m in enumerate(siblings) if m is member)
-        nav = []
-        if idx > 0:
-            nav.append(f"[← {siblings[idx-1]['name']}]({siblings[idx-1]['name']}.md)")
-        nav.append(f"[{owner} overview](index.md)")
-        if idx + 1 < len(siblings):
-            nav.append(f"[{siblings[idx+1]['name']} →]({siblings[idx+1]['name']}.md)")
-        o.append('<div class="api-pager">' + " · ".join(nav) + "</div>\n")
-
+        # No custom prev/next pager: Material's footer already links neighbours,
+        # and Markdown links inside a raw <div> are not rendered.
         self.write(self.member_rel(page, member), "\n".join(o))
 
     def obtained_from(self, cls: str) -> list[tuple[str, str]]:

@@ -75,5 +75,3 @@ end
     ```
 
     <small>[src/dashx/lib/utils.lua:486](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/lib/utils.lua#L486-L487)</small>
-
-<div class="api-pager">[← resetFocusTimeout](resetFocusTimeout.md) · [lcd overview](index.md) · [loadMask →](loadMask.md)</div>

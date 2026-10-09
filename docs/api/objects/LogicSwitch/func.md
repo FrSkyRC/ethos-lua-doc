@@ -32,5 +32,3 @@ function (integer)
 ls = model.getLogicSwitch(0)
 ls:func(LOGIC_SWITCH_FUNCTION_AROUND)
 ```
-
-<div class="api-pager">[← state](state.md) · [LogicSwitch overview](index.md) · [activeCondition →](activeCondition.md)</div>

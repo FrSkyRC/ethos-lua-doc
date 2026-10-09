@@ -25,5 +25,3 @@ simulator.setReadOnly(path)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← touch](touch.md) · [simulator overview](index.md) · [resetInactivityTimer →](resetInactivityTimer.md)</div>

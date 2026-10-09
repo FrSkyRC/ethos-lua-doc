@@ -25,5 +25,3 @@ local result = sensor:requestParameter(parameter)
 ## Returns
 
 result (boolean)
-
-<div class="api-pager">[← idle](idle.md) · [LuaSPortSensor overview](index.md) · [getParameter →](getParameter.md)</div>

@@ -25,5 +25,3 @@ local value = frame:value([value])
 ## Returns
 
 value (integer)
-
-<div class="api-pager">[← appId](appId.md) · [LuaSPortFrame overview](index.md)</div>

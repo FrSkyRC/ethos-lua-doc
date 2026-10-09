@@ -23,5 +23,3 @@ None.
 ## Returns
 
 type (integer)
-
-<div class="api-pager">[Module overview](index.md) · [protocol →](protocol.md)</div>

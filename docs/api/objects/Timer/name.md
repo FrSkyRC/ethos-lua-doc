@@ -33,5 +33,3 @@ timer = model.getTimer(0)
 timer:name("My timer")
 print(timer:name())
 ```
-
-<div class="api-pager">[Timer overview](index.md) · [direction →](direction.md)</div>

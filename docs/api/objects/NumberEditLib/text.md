@@ -25,5 +25,3 @@ field:text(handler)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← help](help.md) · [NumberEditLib overview](index.md)</div>

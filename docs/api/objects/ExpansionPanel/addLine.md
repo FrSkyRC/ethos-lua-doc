@@ -33,5 +33,3 @@ line (FormLine)
 panel:addLine("Label")
 panel:addLine("Label", false) -- no separator
 ```
-
-<div class="api-pager">[← clear](clear.md) · [ExpansionPanel overview](index.md) · [event →](event.md)</div>

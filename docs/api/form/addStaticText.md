@@ -73,5 +73,3 @@ form.addStaticText(line, nil, "Static Text")
     ```
 
     <small>[src/wfsuite/app/pages/adjustments.lua:727](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/pages/adjustments.lua#L727-L727)</small>
-
-<div class="api-pager">[← addLine](addLine.md) · [form overview](index.md) · [addBooleanField →](addBooleanField.md)</div>

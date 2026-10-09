@@ -58,5 +58,3 @@ Nothing.
     ```
 
     <small>[src/ethos-heli-training/games/piroflip-chase/game.lua:997](https://github.com/robthomson/ethos-heli-training/blob/395dc60d4d89d4c5832b14014e01f567e1c34041/src/ethos-heli-training/games/piroflip-chase/game.lua#L997-L999)</small>
-
-<div class="api-pager">[← drawFilledRectangle](drawFilledRectangle.md) · [lcd overview](index.md) · [drawFilledCircle →](drawFilledCircle.md)</div>

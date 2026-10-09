@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← enable](enable.md) · [FormFieldLib overview](index.md) · [rect →](rect.md)</div>

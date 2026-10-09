@@ -31,5 +31,3 @@ local function init()
   system.registerGhostModule()
 end
 ```
-
-<div class="api-pager">[← isSensorDiscoverActive](isSensorDiscoverActive.md) · [system overview](index.md) · [registerElrsModule →](registerElrsModule.md)</div>

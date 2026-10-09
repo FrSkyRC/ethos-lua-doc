@@ -32,5 +32,3 @@ persistent (boolean)
 timer = model.getTimer(0)
 timer:persistent(true)
 ```
-
-<div class="api-pager">[← direction](direction.md) · [Timer overview](index.md) · [value →](value.md)</div>

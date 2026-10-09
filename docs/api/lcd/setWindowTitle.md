@@ -26,5 +26,3 @@ lcd.setWindowTitle(text[, color])
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← isConfiguring](isConfiguring.md) · [lcd overview](index.md)</div>

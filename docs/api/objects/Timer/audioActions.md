@@ -38,5 +38,3 @@ timer:audioActions({
 })
 local audioActions = timer:audioActions()
 ```
-
-<div class="api-pager">[← voice](voice.md) · [Timer overview](index.md) · [resetCondition →](resetCondition.md)</div>

@@ -82,5 +82,3 @@ Use [`lcd.pen(PEN_DOTTED)`](pen.md) before drawing for dotted lines (grid lines,
     ```
 
     <small>[src/ethos-heli-training/games/piro-rate-lock/game.lua:696](https://github.com/robthomson/ethos-heli-training/blob/395dc60d4d89d4c5832b14014e01f567e1c34041/src/ethos-heli-training/games/piro-rate-lock/game.lua#L696-L696)</small>
-
-<div class="api-pager">[← drawPoint](drawPoint.md) · [lcd overview](index.md) · [drawTriangle →](drawTriangle.md)</div>

@@ -20,7 +20,7 @@ system.registerSystemTool(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -91,5 +91,3 @@ end
     ```
 
     <small>[lua/frsky/SR6MiniE_Cali/main.lua:117](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/SR6MiniE_Cali/main.lua#L117-L123)</small>
-
-<div class="api-pager">[← registerWidget](registerWidget.md) · [system overview](index.md) · [registerMultimoduleProtocol →](registerMultimoduleProtocol.md)</div>

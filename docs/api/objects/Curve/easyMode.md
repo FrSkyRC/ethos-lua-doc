@@ -25,5 +25,3 @@ local easyMode = curve:easyMode([easyMode])
 ## Returns
 
 easyMode (boolean)
-
-<div class="api-pager">[← pointsCount](pointsCount.md) · [Curve overview](index.md) · [smooth →](smooth.md)</div>

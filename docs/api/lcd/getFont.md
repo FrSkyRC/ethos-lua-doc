@@ -25,5 +25,3 @@ lcd.getFont(path)
 ## Returns
 
 font index(integer)
-
-<div class="api-pager">[← loadFont](loadFont.md) · [lcd overview](index.md) · [drawBitmap →](drawBitmap.md)</div>

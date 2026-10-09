@@ -32,5 +32,3 @@ delayOn (integer)
 ls = model.getLogicSwitch(0)
 ls:delayOn(100)
 ```
-
-<div class="api-pager">[← delayOff](delayOff.md) · [LogicSwitch overview](index.md) · [maxDuration →](maxDuration.md)</div>

@@ -25,5 +25,3 @@ field:minimum(minimum)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← step](step.md) · [SliderLib overview](index.md) · [maximum →](maximum.md)</div>

@@ -66,5 +66,3 @@ panel:open(false) -- by default the panel is open, let's keep it closed!
     ```
 
     <small>[src/rfsuite/widgets/dashboard/themes/bastion/configure.lua:154](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/themes/bastion/configure.lua#L154-L154)</small>
-
-<div class="api-pager">[← create](create.md) · [form overview](index.md) · [addLine →](addLine.md)</div>

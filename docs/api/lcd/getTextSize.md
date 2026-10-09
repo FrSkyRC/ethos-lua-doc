@@ -89,5 +89,3 @@ end
     ```
 
     <small>[src/wfsuite/widgets/dashboard.lua:517](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard.lua#L517-L517)</small>
-
-<div class="api-pager">[← drawMask](drawMask.md) · [lcd overview](index.md) · [getContrastingColor →](getContrastingColor.md)</div>

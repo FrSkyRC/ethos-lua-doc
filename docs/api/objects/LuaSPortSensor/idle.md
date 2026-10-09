@@ -25,5 +25,3 @@ local result = sensor:idle([state])
 ## Returns
 
 result (boolean)
-
-<div class="api-pager">[← writeParameter](writeParameter.md) · [LuaSPortSensor overview](index.md) · [requestParameter →](requestParameter.md)</div>

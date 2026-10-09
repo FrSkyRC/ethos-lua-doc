@@ -32,5 +32,3 @@ curve:name("My Curve")
 curve:type(CURVE_TYPE_EXPO)
 curve:exp(60)
 ```
-
-<div class="api-pager">[← createSensor](createSensor.md) · [model overview](index.md) · [getCurve →](getCurve.md)</div>

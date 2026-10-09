@@ -33,5 +33,3 @@ source = system.getSource({name="GPS"})
 source:appId(0x0110)
 print(source:name() .. " module:" .. source:module() .. " band:" .. source:band() .. " appId:" .. source:appId() .. " physId:" .. source:physId())
 ```
-
-<div class="api-pager">[← band](band.md) · [Source overview](index.md) · [physId →](physId.md)</div>

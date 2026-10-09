@@ -25,5 +25,3 @@ local direction = channel:direction([direction])
 ## Returns
 
 direction (integer)
-
-<div class="api-pager">[← name](name.md) · [Channel overview](index.md) · [min →](min.md)</div>

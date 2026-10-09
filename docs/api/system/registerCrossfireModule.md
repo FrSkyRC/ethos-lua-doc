@@ -31,5 +31,3 @@ local function init()
   system.registerCrossfireModule({configure = {name = "CRSF Configuration", create = create, wakeup = wakeup, event = event, close = close}})
 end
 ```
-
-<div class="api-pager">[← registerMlrsModule](registerMlrsModule.md) · [system overview](index.md) · [registerGlasses →](registerGlasses.md)</div>

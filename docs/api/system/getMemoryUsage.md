@@ -78,5 +78,3 @@ On current radios the Lua heap and bitmap memory come from one shared region, so
     ```
 
     <small>[src/wfsuite/app/pages/diagnostics_rfstatus.lua:22](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/pages/diagnostics_rfstatus.lua#L22-L26)</small>
-
-<div class="api-pager">[← getVersion](getVersion.md) · [system overview](index.md) · [getInstructionsUsage →](getInstructionsUsage.md)</div>

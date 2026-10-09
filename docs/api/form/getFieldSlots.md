@@ -68,5 +68,3 @@ form.getFieldSlots(line, {100, 0, "slot3"})
     ```
 
     <small>[src/wfsuite/app/pages/alignment.lua:60](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/pages/alignment.lua#L60-L61)</small>
-
-<div class="api-pager">[← addRadioHardware](addRadioHardware.md) · [form overview](index.md) · [openDialog →](openDialog.md)</div>

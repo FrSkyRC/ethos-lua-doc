@@ -25,5 +25,3 @@ simulator.connectUsb(state)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← resetAnalogs](resetAnalogs.md) · [simulator overview](index.md) · [advertizeBluetooth →](advertizeBluetooth.md)</div>

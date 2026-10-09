@@ -20,7 +20,7 @@ field:onFocus(handler)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `handler` |  | yes | function(state) |
+| `handler` | function | yes | function(state) |
 
 ## Returns
 
@@ -34,5 +34,3 @@ local value = 10
 local field = form.addNumberField(line, nil, 0, 10, function() return value end, function(newValue) value = newValue end)
 field:onFocus(function(state) print("onFocus .. " .. state))
 ```
-
-<div class="api-pager">[NumberEditLib overview](index.md) · [defaultStep →](defaultStep.md)</div>

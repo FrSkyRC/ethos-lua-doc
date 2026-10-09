@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← write](write.md) · [LuaSPortSerial overview](index.md)</div>

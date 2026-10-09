@@ -35,5 +35,3 @@ local command, data = sensor:popFrame() -- all frames
 local command, data = sensor:popFrame(0x10) -- VTX frames
 local command, data = sensor:popFrame(0x7A, 0x7B) -- MSP frames
 ```
-
-<div class="api-pager">[← pushFrame](pushFrame.md) · [CrsfSensor overview](index.md)</div>

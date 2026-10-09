@@ -23,5 +23,3 @@ None.
 ## Returns
 
 category (integer)
-
-<div class="api-pager">[← member](member.md) · [Source overview](index.md) · [options →](options.md)</div>

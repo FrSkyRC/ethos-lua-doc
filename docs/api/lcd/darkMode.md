@@ -51,5 +51,3 @@ darkMode (boolean)
     ```
 
     <small>[src/rfsuite/app/modules/alignment/alignment.lua:566](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/app/modules/alignment/alignment.lua#L566-L566)</small>
-
-<div class="api-pager">[← themeColor](themeColor.md) · [lcd overview](index.md) · [focusStyle →](focusStyle.md)</div>

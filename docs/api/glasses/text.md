@@ -32,5 +32,3 @@ Nothing.
 ## Used in
 
 - [active-look](../../examples/official/active-look.md)
-
-<div class="api-pager">[← createLayout](createLayout.md) · [glasses overview](index.md) · [bitmap →](bitmap.md)</div>

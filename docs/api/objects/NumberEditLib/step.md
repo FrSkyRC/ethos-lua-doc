@@ -25,5 +25,3 @@ local value = field:step([value])
 ## Returns
 
 value (integer)
-
-<div class="api-pager">[← defaultStep](defaultStep.md) · [NumberEditLib overview](index.md) · [decimals →](decimals.md)</div>

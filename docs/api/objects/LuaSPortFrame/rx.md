@@ -25,5 +25,3 @@ local rx = frame:rx([rx])
 ## Returns
 
 rx (integer)
-
-<div class="api-pager">[← band](band.md) · [LuaSPortFrame overview](index.md) · [physId →](physId.md)</div>

@@ -86,5 +86,3 @@ end
     ```
 
     <small>[src/rfsuite/widgets/dashboard/objects/navigation/ah.lua:140](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/objects/navigation/ah.lua#L140-L140)</small>
-
-<div class="api-pager">[lcd overview](index.md) · [GREY →](GREY.md)</div>

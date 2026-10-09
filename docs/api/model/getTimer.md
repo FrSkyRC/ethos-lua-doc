@@ -46,5 +46,3 @@ local timer = model.getTimer(0)
 ## Used in
 
 - [Timer control](../../cookbook/timer-control.md)
-
-<div class="api-pager">[← createTimer](createTimer.md) · [model overview](index.md) · [createLogicSwitch →](createLogicSwitch.md)</div>

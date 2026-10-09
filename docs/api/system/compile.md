@@ -59,5 +59,3 @@ Nothing.
     ```
 
     <small>[gps-qrcode/main.lua:17](https://github.com/flyingeek/ethos-gps-qrcode/blob/e70f80b85f48b00414d84d42a133d5a14a3c0862/gps-qrcode/main.lua#L17-L18)</small>
-
-<div class="api-pager">[← voltageRange](voltageRange.md) · [system overview](index.md) · [openPage →](openPage.md)</div>

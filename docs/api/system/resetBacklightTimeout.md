@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← getLatencyTestResult](getLatencyTestResult.md) · [system overview](index.md) · [voltageRange →](voltageRange.md)</div>

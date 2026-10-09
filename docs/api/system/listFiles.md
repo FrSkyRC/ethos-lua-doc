@@ -64,5 +64,3 @@ Scanning storage is slow. Do it once (on open, or when the pilot asks) and keep 
     ```
 
     <small>[src/ofs3/lib/logs.lua:219](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/lib/logs.lua#L219-L219)</small>
-
-<div class="api-pager">[← killEvents](killEvents.md) · [system overview](index.md) · [registerLayout →](registerLayout.md)</div>

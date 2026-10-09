@@ -33,5 +33,3 @@ timer = model.getTimer(0)
 timer:start(60) -- seconds
 print(timer:start())
 ```
-
-<div class="api-pager">[← alarm](alarm.md) · [Timer overview](index.md) · [startCondition →](startCondition.md)</div>

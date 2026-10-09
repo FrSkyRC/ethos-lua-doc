@@ -31,5 +31,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 simulator.injectSPortFrame({module=0, band=0, rx=0, physId=0x1B, primId=0x10, appId=0x6800, value=0x80})
 ```
-
-<div class="api-pager">[← advertizeBluetooth](advertizeBluetooth.md) · [simulator overview](index.md) · [setDateTime →](setDateTime.md)</div>

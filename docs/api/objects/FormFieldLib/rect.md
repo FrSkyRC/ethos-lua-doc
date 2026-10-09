@@ -23,5 +23,3 @@ None.
 ## Returns
 
 rect (Rect)
-
-<div class="api-pager">[← focus](focus.md) · [FormFieldLib overview](index.md)</div>

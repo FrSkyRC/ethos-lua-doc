@@ -23,5 +23,3 @@ None.
 ## Returns
 
 member (integer)
-
-<div class="api-pager">[← stringValue](stringValue.md) · [Source overview](index.md) · [category →](category.md)</div>

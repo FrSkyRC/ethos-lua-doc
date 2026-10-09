@@ -52,5 +52,3 @@ end
     ```
 
     <small>[src/rfsuite/sensors/providers/frsky.lua:304](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/sensors/providers/frsky.lua#L304-L305)</small>
-
-<div class="api-pager">[← registerMultimoduleProtocol](registerMultimoduleProtocol.md) · [system overview](index.md) · [registerGhostModule →](registerGhostModule.md)</div>

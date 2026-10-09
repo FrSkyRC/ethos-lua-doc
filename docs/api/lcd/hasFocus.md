@@ -65,5 +65,3 @@ On the home screen a widget only receives key events while it has focus. See [Ev
     ```
 
     <small>[src/rfsuite/widgets/dashboard.lua:1893](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard.lua#L1893-L1893)</small>
-
-<div class="api-pager">[← drawNumber](drawNumber.md) · [lcd overview](index.md) · [resetFocusTimeout →](resetFocusTimeout.md)</div>

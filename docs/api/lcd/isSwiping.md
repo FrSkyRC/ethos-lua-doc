@@ -29,5 +29,3 @@ swiping (boolean)
 ```lua title="From the official Ethos documentation"
 lcd.isSwiping()
 ```
-
-<div class="api-pager">[← isVisible](isVisible.md) · [lcd overview](index.md) · [isConfiguring →](isConfiguring.md)</div>

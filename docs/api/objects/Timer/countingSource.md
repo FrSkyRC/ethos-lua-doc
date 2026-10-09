@@ -32,5 +32,3 @@ source ([Source](../../objects/Source/index.md))
 timer = model.getTimer(0)
 timer:countingSource()
 ```
-
-<div class="api-pager">[← stopCondition](stopCondition.md) · [Timer overview](index.md) · [voice →](voice.md)</div>

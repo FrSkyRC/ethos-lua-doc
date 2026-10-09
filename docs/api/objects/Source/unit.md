@@ -34,5 +34,3 @@ print(source:unit()))
 source:unit(UNIT_FOOT)
 print(source:unit()))
 ```
-
-<div class="api-pager">[← age](age.md) · [Source overview](index.md) · [protocolUnit →](protocolUnit.md)</div>

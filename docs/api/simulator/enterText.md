@@ -25,5 +25,3 @@ simulator.enterText(text)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← turnRotaryEncoder](turnRotaryEncoder.md) · [simulator overview](index.md) · [reloadScripts →](reloadScripts.md)</div>

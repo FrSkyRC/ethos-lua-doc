@@ -20,7 +20,7 @@ system.registerLayout(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -69,5 +69,3 @@ return {init=init}
     ```
 
     <small>[lua/frsky/Layout1P3/main.lua:3](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/Layout1P3/main.lua#L3-L10)</small>
-
-<div class="api-pager">[← listFiles](listFiles.md) · [system overview](index.md) · [registerTheme →](registerTheme.md)</div>

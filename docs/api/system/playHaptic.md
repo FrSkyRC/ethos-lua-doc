@@ -20,7 +20,7 @@ system.playHaptic(duration[, strength])
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `duration` |  | yes | in ms (number) or pattern (string) |
+| `duration` | string | yes | in ms (number) or pattern |
 | `strength` | number | optional (default `0`) | % of the max strength, 0 stands for the strength entered in System |
 
 ## Returns
@@ -64,5 +64,3 @@ system.playHaptic("- . -") -- Bzzz Bz Bzzz
     ```
 
     <small>[src/wfsuite/app/header.lua:174](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/header.lua#L174-L179)</small>
-
-<div class="api-pager">[← playTone](playTone.md) · [system overview](index.md) · [killEvents →](killEvents.md)</div>

@@ -23,5 +23,3 @@ None.
 ## Returns
 
 smooth (integer)
-
-<div class="api-pager">[← easyMode](easyMode.md) · [Curve overview](index.md) · [point →](point.md)</div>

@@ -25,5 +25,3 @@ local name = source:name([name])
 ## Returns
 
 name (string)
-
-<div class="api-pager">[Source overview](index.md) · [rawValue →](rawValue.md)</div>

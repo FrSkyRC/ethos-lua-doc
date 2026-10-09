@@ -23,5 +23,3 @@ None.
 ## Returns
 
 raw value (integer)
-
-<div class="api-pager">[← name](name.md) · [Source overview](index.md) · [maximum →](maximum.md)</div>

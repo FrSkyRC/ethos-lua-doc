@@ -32,5 +32,3 @@ source1:reset()
 source2 = system.getSource({category=CATEGORY_TIMER, member=0})
 source2:reset()
 ```
-
-<div class="api-pager">[← state](state.md) · [Source overview](index.md) · [age →](age.md)</div>

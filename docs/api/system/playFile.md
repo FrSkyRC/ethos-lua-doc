@@ -20,7 +20,7 @@ system.playFile(audio)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `audio` |  | yes | file path (string) |
+| `audio` | string | yes | file path |
 
 ## Returns
 
@@ -66,5 +66,3 @@ From callbacks, use absolute paths: relative paths only resolve to your script f
     ```
 
     <small>[src/inav-dashboard/widget.lua:337](https://github.com/iNavFlight/ETHOS-Telemetry-Dashboard/blob/656975b84cbbbc3bd7861bdf2a92b4686937280e/src/inav-dashboard/widget.lua#L337-L339)</small>
-
-<div class="api-pager">[← getSource](getSource.md) · [system overview](index.md) · [playNumber →](playNumber.md)</div>

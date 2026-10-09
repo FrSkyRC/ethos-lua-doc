@@ -20,7 +20,7 @@ system.registerTask(params)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -130,5 +130,3 @@ return {init=init}
     ```
 
     <small>[src/rfsuite/main.lua:43](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/main.lua#L43-L58)</small>
-
-<div class="api-pager">[← registerSensor](registerSensor.md) · [system overview](index.md) · [exit →](exit.md)</div>

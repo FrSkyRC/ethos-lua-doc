@@ -78,5 +78,3 @@ system.getSource({category=CATEGORY_FUNCTION_SWITCH, member=5})
     ```
 
     <small>[src/gps-heading/widget_impl.lua:197](https://github.com/robthomson/ethos-gps-heading/blob/77f02e8f3adf51d9e7c2eba0f2c215b747a0413a/src/gps-heading/widget_impl.lua#L197-L197)</small>
-
-<div class="api-pager">[← getSources](getSources.md) · [system overview](index.md) · [playFile →](playFile.md)</div>

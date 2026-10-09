@@ -30,5 +30,3 @@ Nothing.
 source = system.getSource({name="GPS"})
 source:drop()
 ```
-
-<div class="api-pager">[← subId](subId.md) · [Source overview](index.md)</div>

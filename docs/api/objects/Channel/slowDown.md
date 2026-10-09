@@ -25,5 +25,3 @@ local slowUp = channel:slowDown([slowUp])
 ## Returns
 
 slowUp (number)
-
-<div class="api-pager">[← slowUp](slowUp.md) · [Channel overview](index.md)</div>

@@ -39,5 +39,3 @@ form.addSensorField(line, nil, function() return switch end, function(newValue) 
 ## Used in
 
 - [tool-form](../../examples/official/tool-form.md)
-
-<div class="api-pager">[← addSwitchField](addSwitchField.md) · [form overview](index.md) · [addColorField →](addColorField.md)</div>

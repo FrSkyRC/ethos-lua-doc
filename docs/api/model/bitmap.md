@@ -53,5 +53,3 @@ bitmap (string)
     ```
 
     <small>[src/wfsuite/widgets/dashboard/objects/image/model.lua:163](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard/objects/image/model.lua#L163-L170)</small>
-
-<div class="api-pager">[← path](path.md) · [model overview](index.md) · [id →](id.md)</div>

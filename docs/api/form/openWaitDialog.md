@@ -89,5 +89,3 @@ dialog:close()
     ```
 
     <small>[src/dashx/tools/logs.lua:240](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/tools/logs.lua#L240-L245)</small>
-
-<div class="api-pager">[← openDialog](openDialog.md) · [form overview](index.md)</div>

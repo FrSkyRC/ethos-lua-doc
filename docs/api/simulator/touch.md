@@ -26,5 +26,3 @@ simulator.touch(x, y)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[simulator overview](index.md) · [setReadOnly →](setReadOnly.md)</div>

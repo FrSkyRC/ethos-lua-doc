@@ -25,5 +25,3 @@ bluetooth.listCharacteristics(services)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← listServices](listServices.md) · [bluetooth overview](index.md) · [write →](write.md)</div>

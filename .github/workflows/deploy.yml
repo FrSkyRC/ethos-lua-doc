@@ -38,6 +38,9 @@ jobs:
 
       - run: mkdocs build --strict
 
+      - name: Check rendered pages (unrendered Markdown, untyped parameters)
+        run: python scripts/check_site.py site
+
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:

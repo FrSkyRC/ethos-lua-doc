@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← setSwitch](setSwitch.md) · [simulator overview](index.md) · [setAnalog →](setAnalog.md)</div>

@@ -25,5 +25,3 @@ field:enableInstantChange(enabled)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← decimals](decimals.md) · [NumberEditLib overview](index.md) · [prefix →](prefix.md)</div>

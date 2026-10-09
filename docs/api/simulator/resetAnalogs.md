@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← setAnalog](setAnalog.md) · [simulator overview](index.md) · [connectUsb →](connectUsb.md)</div>

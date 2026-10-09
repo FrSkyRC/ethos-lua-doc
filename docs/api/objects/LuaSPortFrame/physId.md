@@ -25,5 +25,3 @@ local physId = frame:physId([physId])
 ## Returns
 
 physId (integer)
-
-<div class="api-pager">[← rx](rx.md) · [LuaSPortFrame overview](index.md) · [primId →](primId.md)</div>

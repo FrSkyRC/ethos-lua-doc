@@ -25,5 +25,3 @@ field:title(text)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← help](help.md) · [ChoiceLib overview](index.md) · [values →](values.md)</div>

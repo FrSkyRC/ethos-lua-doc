@@ -86,5 +86,3 @@ In a widget's `configure` form, `system.exit()` leaves the configuration page, a
     ```
 
     <small>[src/ofs3/tools/logs.lua:321](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/tools/logs.lua#L321-L331)</small>
-
-<div class="api-pager">[← registerTask](registerTask.md) · [system overview](index.md) · [emergency →](emergency.md)</div>

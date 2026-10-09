@@ -23,5 +23,3 @@ None.
 ## Returns
 
 empty (boolean)
-
-<div class="api-pager">[LuaSPortSerial overview](index.md) · [size →](size.md)</div>

@@ -79,5 +79,3 @@ if src then system.playNumber(src:value(), src:unit(), src:decimals()) end
     ```
 
     <small>[src/ofs3/lib/events.lua:50](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/lib/events.lua#L50-L53)</small>
-
-<div class="api-pager">[← playFile](playFile.md) · [system overview](index.md) · [playTone →](playTone.md)</div>

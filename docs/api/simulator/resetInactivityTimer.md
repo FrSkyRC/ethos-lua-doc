@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← setReadOnly](setReadOnly.md) · [simulator overview](index.md) · [resetBacklightTimer →](resetBacklightTimer.md)</div>

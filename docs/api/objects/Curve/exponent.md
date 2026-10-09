@@ -25,5 +25,3 @@ local exponent = curve:exponent([exponent])
 ## Returns
 
 exponent (integer)
-
-<div class="api-pager">[← type](type.md) · [Curve overview](index.md) · [weight →](weight.md)</div>

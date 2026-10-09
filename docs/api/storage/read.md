@@ -90,5 +90,3 @@ Use it inside `read` callbacks of widgets, tasks and sources. Values live in the
     ```
 
     <small>[src/inav-dashboard/widget.lua:412](https://github.com/iNavFlight/ETHOS-Telemetry-Dashboard/blob/656975b84cbbbc3bd7861bdf2a92b4686937280e/src/inav-dashboard/widget.lua#L412-L419)</small>
-
-<div class="api-pager">[storage overview](index.md) · [write →](write.md)</div>

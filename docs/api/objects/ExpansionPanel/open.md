@@ -25,5 +25,3 @@ panel:open(state)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[ExpansionPanel overview](index.md) · [clear →](clear.md)</div>

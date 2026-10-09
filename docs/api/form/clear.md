@@ -65,5 +65,3 @@ form.clear()
     ```
 
     <small>[src/rfsuite/app/controllers/form_host.lua:97](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/app/controllers/form_host.lua#L97-L98)</small>
-
-<div class="api-pager">[form overview](index.md) · [height →](height.md)</div>

@@ -35,5 +35,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 form.addPot(nil, {x=0, y=0})
 ```
-
-<div class="api-pager">[← addStick](addStick.md) · [form overview](index.md) · [addTrim →](addTrim.md)</div>

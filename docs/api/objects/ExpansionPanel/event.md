@@ -25,5 +25,3 @@ panel:event(handler)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← addLine](addLine.md) · [ExpansionPanel overview](index.md) · [rect →](rect.md)</div>

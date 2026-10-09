@@ -26,5 +26,3 @@ local result = sensor:writeParameter(parameter, value)
 ## Returns
 
 result (boolean)
-
-<div class="api-pager">[← appId](appId.md) · [LuaSPortSensor overview](index.md) · [idle →](idle.md)</div>

@@ -13,7 +13,7 @@ title: simulator.pressFunctionSwitch
 Simulate a function switch press.
 
 ```lua
-simulator.pressFunctionSwitch(index, duration)
+simulator.pressFunctionSwitch(index[, duration])
 ```
 
 ## Parameters
@@ -21,10 +21,8 @@ simulator.pressFunctionSwitch(index, duration)
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
 | `index` | integer | yes |  |
-| `duration` |  | yes | in seconds (number, optional) |
+| `duration` | number | optional | in seconds |
 
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← pressKey](pressKey.md) · [simulator overview](index.md) · [setSwitch →](setSwitch.md)</div>

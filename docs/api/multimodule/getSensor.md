@@ -29,5 +29,3 @@ sensor ([MultimoduleSensor](../objects/MultimoduleSensor/index.md))
 ```lua title="From the official Ethos documentation"
 local sensor = multimodule.getSensor()
 ```
-
-<div class="api-pager">[multimodule overview](index.md)</div>

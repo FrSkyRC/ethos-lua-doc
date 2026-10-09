@@ -23,5 +23,3 @@ None.
 ## Returns
 
 frame (SPortFrame)
-
-<div class="api-pager">[← discover](discover.md) · [LuaSPortSensor overview](index.md)</div>

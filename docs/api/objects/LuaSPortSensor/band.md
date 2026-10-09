@@ -25,5 +25,3 @@ local band = sensor:band([band])
 ## Returns
 
 band (integer)
-
-<div class="api-pager">[LuaSPortSensor overview](index.md) · [rx →](rx.md)</div>

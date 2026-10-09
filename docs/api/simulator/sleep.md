@@ -20,10 +20,8 @@ simulator.sleep(duration)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `duration` |  | yes | in seconds (number) |
+| `duration` | number | yes | in seconds |
 
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← screenshot](screenshot.md) · [simulator overview](index.md) · [turnRotaryEncoder →](turnRotaryEncoder.md)</div>

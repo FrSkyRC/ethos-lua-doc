@@ -38,5 +38,3 @@ lcd.drawNumber(x, y, 121, UNIT_VOLT, 1, LEFT)
 lcd.drawNumber(x, y, 12.121, UNIT_VOLT, 1, RIGHT)
 lcd.drawNumber(x, y, 12.121, 0, 4, CENTERED)
 ```
-
-<div class="api-pager">[← drawText](drawText.md) · [lcd overview](index.md) · [hasFocus →](hasFocus.md)</div>

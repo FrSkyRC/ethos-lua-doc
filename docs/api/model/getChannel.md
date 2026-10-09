@@ -32,5 +32,3 @@ channel
 local channel = model.getChannel("Ch name")
 local channel = model.getChannel(0)
 ```
-
-<div class="api-pager">[← getModule](getModule.md) · [model overview](index.md)</div>

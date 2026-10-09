@@ -33,5 +33,3 @@ model.createMix("free", {actions={{action="offset", condition=armSwitch, active=
 ## Used in
 
 - [wizard](../../examples/official/wizard.md)
-
-<div class="api-pager">[← getCurve](getCurve.md) · [model overview](index.md) · [resetFlight →](resetFlight.md)</div>

@@ -65,5 +65,3 @@ sensor3:value(100)
     ```
 
     <small>[src/dashx/lib/sensors.lua:96](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/lib/sensors.lua#L96-L96)</small>
-
-<div class="api-pager">[← getLogicSwitch](getLogicSwitch.md) · [model overview](index.md) · [createCurve →](createCurve.md)</div>

@@ -61,5 +61,3 @@ local logFile = "LOGS:/mytool/" .. safe .. ".csv"
     ```
 
     <small>[src/rfsuite/widgets/dashboard/themes/danielrc/common.lua:425](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/themes/danielrc/common.lua#L425-L425)</small>
-
-<div class="api-pager">[← dirty](dirty.md) · [model overview](index.md) · [path →](path.md)</div>

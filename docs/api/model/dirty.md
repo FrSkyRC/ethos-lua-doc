@@ -23,5 +23,3 @@ None.
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[model overview](index.md) · [name →](name.md)</div>

@@ -84,5 +84,3 @@ myField:step(2)
     ```
 
     <small>[src/wfsuite/widgets/dashboard/themes/kevd/configure.lua:98](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard/themes/kevd/configure.lua#L98-L99)</small>
-
-<div class="api-pager">[← addBooleanField](addBooleanField.md) · [form overview](index.md) · [addChoiceField →](addChoiceField.md)</div>

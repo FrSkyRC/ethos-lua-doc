@@ -26,5 +26,3 @@ local maskHandle = lcd.renderQrCode(text, pixelSize)
 ## Returns
 
 maskHandle (userdata): mask handle
-
-<div class="api-pager">[← loadMask](loadMask.md) · [lcd overview](index.md) · [loadFont →](loadFont.md)</div>

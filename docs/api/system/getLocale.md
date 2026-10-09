@@ -75,5 +75,3 @@ See [Translations](../../guides/i18n.md) for a translation-file pattern.
     ```
 
     <small>[src/dashx/lib/utils.lua:45](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/lib/utils.lua#L45-L48)</small>
-
-<div class="api-pager">[system overview](index.md) · [getAudioVoice →](getAudioVoice.md)</div>

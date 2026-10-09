@@ -25,5 +25,3 @@ field:enable(enabled)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[FormFieldLib overview](index.md) · [focus →](focus.md)</div>

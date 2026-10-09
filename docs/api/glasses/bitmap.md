@@ -31,5 +31,3 @@ Nothing.
 ## Used in
 
 - [active-look](../../examples/official/active-look.md)
-
-<div class="api-pager">[← text](text.md) · [glasses overview](index.md)</div>

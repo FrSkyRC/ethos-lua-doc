@@ -32,5 +32,3 @@ local data = sensor:popFrame() -- all frames
 local data = sensor:popFrame({i2cAddress=0x00}) -- frames from sensor with I2C address = 0x00
 local data = sensor:popFrame({type=0x04}) -- frames from Spektrum sensors
 ```
-
-<div class="api-pager">[← pushFrame](pushFrame.md) · [MultimoduleSensor overview](index.md)</div>

@@ -26,5 +26,3 @@ simulator.setAnalog(analog, value)
 ## Returns
 
 Nothing.
-
-<div class="api-pager">[← resetSwitches](resetSwitches.md) · [simulator overview](index.md) · [resetAnalogs →](resetAnalogs.md)</div>

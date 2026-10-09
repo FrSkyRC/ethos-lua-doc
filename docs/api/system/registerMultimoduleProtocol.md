@@ -22,7 +22,7 @@ system.registerMultimoduleProtocol(label, id, params)
 | --- | --- | --- | --- |
 | `label` | string | yes | protocol name |
 | `id` | int | yes | protocol ID |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -48,5 +48,3 @@ local function init()
   system.registerMultimoduleProtocol("Hubsan", 2, {variants={"H107", "H301", "H501"}, minChannels=8, maxChannels=16})
 end
 ```
-
-<div class="api-pager">[← registerSystemTool](registerSystemTool.md) · [system overview](index.md) · [isSensorDiscoverActive →](isSensorDiscoverActive.md)</div>

@@ -25,5 +25,3 @@ local value = field:step(value)
 ## Returns
 
 value (number)
-
-<div class="api-pager">[← onFocus](onFocus.md) · [SliderLib overview](index.md) · [minimum →](minimum.md)</div>

@@ -25,5 +25,3 @@ local value = source:stringValue([options])
 ## Returns
 
 value (string)
-
-<div class="api-pager">[← protocolDecimals](protocolDecimals.md) · [Source overview](index.md) · [member →](member.md)</div>

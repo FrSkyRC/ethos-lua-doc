@@ -22,7 +22,7 @@ form.addButton(line, rect, params)
 | --- | --- | --- | --- |
 | `line` | FormLine | yes | the line where the field should be added |
 | `rect` | Rect | yes | the coordinates |
-| `params` |  | yes | table with elements: |
+| `params` | table | yes | see the fields below |
 
 Fields of `params`:
 
@@ -77,5 +77,3 @@ form.addButton(line, nil, {text="Text Button", icon="", press=function() end})
     ```
 
     <small>[src/ethos-flight-training/games/shared/trainer-core.lua:1087](https://github.com/robthomson/ethos-flight-training/blob/de627d533d7fa0e02377497ff5caf521a112e929/src/ethos-flight-training/games/shared/trainer-core.lua#L1087-L1088)</small>
-
-<div class="api-pager">[← addTextButton](addTextButton.md) · [form overview](index.md) · [addFileField →](addFileField.md)</div>

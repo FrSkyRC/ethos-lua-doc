@@ -13,14 +13,14 @@ title: Timer:stopCondition
 Get / Set the stop condition of the timer.
 
 ```lua
-timer:stopCondition(None)
+timer:stopCondition([condition])
 ```
 
 ## Parameters
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `None` |  | yes | or condition (Source, optional) |
+| `condition` | [Source](../../objects/Source/index.md) | optional | omit to read the current value |
 
 ## Returns
 
@@ -34,5 +34,3 @@ timer:stopCondition(nil) -- will set the default stop condition
 timer:stopCondition(CATEGORY_NONE) -- will set a custom stop condition
 print(time:stopCondition())
 ```
-
-<div class="api-pager">[← startCondition](startCondition.md) · [Timer overview](index.md) · [countingSource →](countingSource.md)</div>

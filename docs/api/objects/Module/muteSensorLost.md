@@ -20,7 +20,7 @@ module:muteSensorLost(duration)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `duration` |  | yes | in seconds (number) |
+| `duration` | number | yes | in seconds |
 
 ## Returns
 
@@ -31,5 +31,3 @@ Nothing.
 ```lua title="From the official Ethos documentation"
 module.muteSensorLost(5.0) -- Sensor lost muted during 5 seconds
 ```
-
-<div class="api-pager">[← options](options.md) · [Module overview](index.md)</div>

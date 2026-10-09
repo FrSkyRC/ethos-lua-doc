@@ -25,5 +25,3 @@ local unit = source:protocolUnit([unit])
 ## Returns
 
 unit (integer)
-
-<div class="api-pager">[← unit](unit.md) · [Source overview](index.md) · [stringUnit →](stringUnit.md)</div>

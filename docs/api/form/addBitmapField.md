@@ -39,5 +39,3 @@ form.addBitmapField(line, nil, "/bitmaps/models", function() return bitmap end, 
 ## Used in
 
 - [tool-form](../../examples/official/tool-form.md)
-
-<div class="api-pager">[← addFileField](addFileField.md) · [form overview](index.md) · [addStick →](addStick.md)</div>
