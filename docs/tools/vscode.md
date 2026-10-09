@@ -2,7 +2,10 @@
 
 Large open-source Ethos Lua projects use the same development setup: **VS Code**, the **Ethos simulator extension**, and a **deploy script** that copies the project to the simulator or straight onto a USB-connected radio, then optionally streams the radio's `print()` output back. Press **F5** and the code is on the radio.
 
-This page explains each part and gives you a working, tested version to copy:
+!!! tip "Just want it working?"
+    Start from the **[VS Code project template](vscode-template.md)**: the complete, tested setup (play buttons, radio and simulator deploys, serial debug, i18n, release zips and GitHub workflows) in a repository you can create with one click. This page explains how the pieces work.
+
+This page explains each part and gives you a minimal standalone version to study or copy:
 
 - [`ethos_deploy.py`](https://github.com/FrSkyRC/ethos-lua-doc/blob/main/examples/tooling/ethos_deploy.py): a self-contained deploy tool (~250 lines)
 - [`examples/tooling/vscode/`](https://github.com/FrSkyRC/ethos-lua-doc/tree/main/examples/tooling/vscode): `tasks.json`, `launch.json`, `settings.json`, `ethos-menu.json`

@@ -45,13 +45,13 @@ hide:
 
     [:octicons-arrow-right-24: Recipes](cookbook/index.md)
 
--   :material-monitor-cellphone:{ .lg .middle } **Simulator & Suite**
+-   :material-microsoft-visual-studio-code:{ .lg .middle } **VS Code template**
 
     ---
 
-    Test without a radio in the browser simulator or FrSky Suite, read the console, and load telemetry.
+    A ready-made project: press ▶ to deploy to the simulator or a USB radio, stream `print()` output, translate, and publish release zips from a git tag.
 
-    [:octicons-arrow-right-24: Web simulator](tools/web-simulator.md)
+    [:octicons-arrow-right-24: Project template](tools/vscode-template.md)
 
 -   :material-robot:{ .lg .middle } **AI agents**
 
