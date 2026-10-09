@@ -1,0 +1,9 @@
+{
+  // Copy to .vscode/settings.json. Read by the Ethos extension (bsongis.ethos)
+  // and by the tasks in tasks.json. Simulators live in
+  // <ethos.simulatorsFolder>/<board>_<protocol>@<release>/ (add it to .gitignore).
+  "ethos.board": "X20S",
+  "ethos.protocol": "FCC",
+  "ethos.release": "nightly26",
+  "ethos.simulatorsFolder": "simulators"
+}

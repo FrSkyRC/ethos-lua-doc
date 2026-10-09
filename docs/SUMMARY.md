@@ -3,6 +3,7 @@
     - [Overview](getting-started/index.md)
     - [Your first widget](getting-started/first-widget.md)
     - [Script types & lifecycle](getting-started/script-types.md)
+    - [Lua concepts](getting-started/lua-concepts.md)
     - [The Lua environment](getting-started/lua-environment.md)
     - [Files, folders & packaging](getting-started/packaging.md)
 - Guides
@@ -38,6 +39,7 @@
     - [Overview](tools/index.md)
     - [Web simulator](tools/web-simulator.md)
     - [Ethos Suite](tools/ethos-suite.md)
+    - [VS Code deployments](tools/vscode.md)
     - [AI agents & ethos-tools](tools/ai-agents.md)
     - [Debugging](tools/debugging.md)
 - Contributing

@@ -4,6 +4,9 @@ An Ethos radio is an embedded device. Lua memory is a few hundred KB to a few MB
 
 Most of this section comes from measurements on real radios, made by large open-source Ethos Lua projects that hit these limits first.
 
+!!! tip "New to terms like *closure*, *allocation* or *hot path*?"
+    Read **[Lua concepts](../getting-started/lua-concepts.md)** first. It explains each idea used here in plain language, with links to the official Lua references. Throughout the site, hover over underlined terms for a short definition.
+
 - **[Saving RAM](memory.md)**: what uses memory, what doesn't come back, and the habits that keep a script small.
 - **[Saving CPU](cpu.md)**: hot paths, redraw discipline, throttling, and spreading work across cycles.
 - **[Code patterns](patterns.md)**: module loading and caching, in-place table reuse, change detection, cleanup.

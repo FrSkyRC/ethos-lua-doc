@@ -4,8 +4,9 @@ Ethos runs Lua 5.4 scripts that can draw widgets on the home screens, add tools 
 
 1. **[Your first widget](first-widget.md)**: write a widget, install it, see it on screen.
 2. **[Script types & lifecycle](script-types.md)**: widgets, system tools, tasks, sources, and which callbacks Ethos calls, and when.
-3. **[The Lua environment](lua-environment.md)**: which standard libraries exist, the extra `os` functions, and file paths like `SCRIPTS:` and `AUDIO:`.
-4. **[Files, folders & packaging](packaging.md)**: how scripts are laid out on the radio and how to ship them as an installable zip.
+3. **[Lua concepts](lua-concepts.md)**: tables, closures, garbage collection and the other ideas behind the best-practice rules, explained for non-experts.
+4. **[The Lua environment](lua-environment.md)**: which standard libraries exist, the extra `os` functions, and file paths like `SCRIPTS:` and `AUDIO:`.
+5. **[Files, folders & packaging](packaging.md)**: how scripts are laid out on the radio and how to ship them as an installable zip.
 
 ## What you need
 

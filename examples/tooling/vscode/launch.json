@@ -1,0 +1,33 @@
+{
+  // Copy to .vscode/launch.json. Puts the deploy tasks in the Run and Debug
+  // dropdown so F5 deploys. The "program" is a no-op Python file: the real
+  // work happens in preLaunchTask (and postDebugTask starts the simulator).
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Deploy & launch [simulator]",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/noop.py",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Deploy: simulator",
+      "postDebugTask": "ethos.Start"
+    },
+    {
+      "name": "Deploy [radio]",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/noop.py",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Deploy: radio"
+    },
+    {
+      "name": "Deploy [radio] + serial debug",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/.vscode/noop.py",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Deploy: radio + serial debug"
+    }
+  ]
+}

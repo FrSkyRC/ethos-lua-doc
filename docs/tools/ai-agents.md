@@ -165,6 +165,13 @@ Ethos Lua script for FrSky radios. Source in `src/<folder>/`, deployed to `scrip
 - Done = no errors in `log` + screenshots of the changed UI, listed in your final message.
 ````
 
+## Agents and real radios
+
+The same agent can deploy to a USB-connected radio with [`ethos_deploy.py`](vscode.md#7-the-deploy-tool) and read the radio's `print()` output over serial (`--radio --debug-only --for 30` stops after 30 s, so a non-interactive agent isn't left waiting).
+
+!!! warning "`ELECTRON_RUN_AS_NODE` breaks FrSky Suite's CLI"
+    Agents running inside VS Code inherit `ELECTRON_RUN_AS_NODE=1`. With it set, `FrSky Suite.exe --get-path SCRIPTS` runs as plain Node.js and fails with `bad option`. Unset the variable before calling Suite (details on [Ethos Suite](ethos-suite.md#command-line)), or use `ethos_deploy.py`, which talks to the radio over USB HID and doesn't need Suite.
+
 ## Docs for agents on this site
 
 - **[`/api/api-index.json`](../api/api-index.json)**: every function with signature, summary, version and URL. Small enough for an agent to load whole and use to check that calls exist before writing code.

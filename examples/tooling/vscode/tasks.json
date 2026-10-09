@@ -1,0 +1,57 @@
+{
+  // Copy to .vscode/tasks.json. Assumes your script is in src/<name>/ and
+  // ethos_deploy.py is in tools/. Change "mywidget" to your folder name.
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Deploy: simulator",
+      "type": "shell",
+      "command": "python",
+      "windows": { "command": "${command:python.interpreterPath}" },
+      "osx": { "command": "${command:python.interpreterPath}" },
+      "args": [
+        "${workspaceFolder}/tools/ethos_deploy.py",
+        "--src", "${workspaceFolder}/src/mywidget",
+        "--sim", "${workspaceFolder}/${config:ethos.simulatorsFolder}/${config:ethos.board}_${config:ethos.protocol}@${config:ethos.release}/scripts"
+      ],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared", "clear": true }
+    },
+    {
+      "label": "Deploy: radio",
+      "type": "shell",
+      "command": "python",
+      "windows": { "command": "${command:python.interpreterPath}" },
+      "osx": { "command": "${command:python.interpreterPath}" },
+      "args": ["${workspaceFolder}/tools/ethos_deploy.py", "--src", "${workspaceFolder}/src/mywidget", "--radio"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared", "clear": true }
+    },
+    {
+      "label": "Deploy: radio + serial debug",
+      "type": "shell",
+      "command": "python",
+      "windows": { "command": "${command:python.interpreterPath}" },
+      "osx": { "command": "${command:python.interpreterPath}" },
+      "args": ["${workspaceFolder}/tools/ethos_deploy.py", "--src", "${workspaceFolder}/src/mywidget", "--radio", "--debug"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    },
+    {
+      "label": "Radio: serial debug",
+      "type": "shell",
+      "command": "python",
+      "windows": { "command": "${command:python.interpreterPath}" },
+      "osx": { "command": "${command:python.interpreterPath}" },
+      "args": ["${workspaceFolder}/tools/ethos_deploy.py", "--radio", "--debug-only"],
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true }
+    },
+    {
+      "label": "ethos.Start",
+      "type": "shell",
+      "command": "${command:ethos.start}",
+      "problemMatcher": []
+    }
+  ]
+}

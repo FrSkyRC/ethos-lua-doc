@@ -59,10 +59,15 @@ Remove blanket `pcall`s from hot paths in release builds, or keep them narrow. T
 
 ## On a radio
 
-To see `print` output from scripts running on a real radio, put it in serial debug mode and read the USB serial port:
+To see `print()` output from scripts running on a real radio, switch its USB connection to **serial debug mode**. The radio's drive unmounts and a serial port appears, carrying everything scripts print (115200 baud). Three ways to do it:
 
-- **Ethos Suite:** `--serial start` (and `--serial stop`). See [Ethos Suite](ethos-suite.md#command-line).
-- Then open the radio's USB serial port in any terminal (115200 baud is what open-source deploy tools use).
+| Tool | Start | Stop |
+| --- | --- | --- |
+| FrSky Suite GUI | **Lua development tools → Start debug** (output shown in the panel) | **Stop debug** |
+| FrSky Suite CLI | `--serial start`, then open the port (`COM15`, `/dev/ttyACM0`, ...) | `--serial stop` |
+| [`ethos_deploy.py`](vscode.md#6-serial-debug-print-from-the-radio) | `--radio --debug-only` (finds the port by USB VID/PID and prints lines) | Ctrl+C (switches back to storage) |
+
+An idle radio prints nothing, which is normal. Only your `print()` calls (and errors) appear. Remember to switch back to storage mode before your next deploy, otherwise the drive isn't there.
 
 ## Memory and performance problems
 
