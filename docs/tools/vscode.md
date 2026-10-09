@@ -13,11 +13,11 @@ This page explains each part and gives you a minimal standalone version to study
 ```mermaid
 flowchart LR
   F5[F5 in VS Code] --> T[preLaunchTask:<br/>ethos_deploy.py]
-  T -->|--sim| S[simulators/X20S_FCC@nightly26/scripts/]
-  T -->|--radio| H[USB HID: switch to storage]
+  T -->|"--sim"| S["simulators/X20S_FCC@nightly26/scripts/"]
+  T -->|"--radio"| H[USB HID: switch to storage]
   H --> D[find drive by *.cpuid]
   D --> C[copy changed files only]
-  C -->|--debug| R[USB HID: switch to serial]
+  C -->|"--debug"| R[USB HID: switch to serial]
   R --> P[tail print output]
   S --> E[ethos.start: simulator panel]
 ```
