@@ -1,0 +1,72 @@
+{
+  "channel": "nightly",
+  "lua_doc_url": "https://github.com/FrSkyRC/ETHOS-Feedback-Community/releases/download/nightly26/lua-doc.zip",
+  "examples_repo": "FrSkyRC/ETHOS-Feedback-Community",
+  "usage_repos": [
+    {
+      "repo": "rotorflight/rotorflight-lua-ethos-suite",
+      "branch": "master",
+      "label": "Rotorflight suite"
+    },
+    {
+      "repo": "WingFlight/wingflight-lua-ethos-suite",
+      "branch": "master",
+      "label": "Wingflight suite"
+    },
+    {
+      "repo": "robthomson/dashx-ethos",
+      "branch": "main",
+      "label": "DashX"
+    },
+    {
+      "repo": "robthomson/ethos-app-framework",
+      "branch": "main",
+      "label": "Ethos app framework"
+    },
+    {
+      "repo": "robthomson/ethos-arcade",
+      "branch": "main",
+      "label": "Ethos Arcade"
+    },
+    {
+      "repo": "robthomson/omp-ofs3-dashboard",
+      "branch": "main",
+      "label": "OMP OFS3 dashboard"
+    },
+    {
+      "repo": "robthomson/ethos-gps-heading",
+      "branch": "main",
+      "label": "GPS heading"
+    },
+    {
+      "repo": "robthomson/ethos-flight-training",
+      "branch": "main",
+      "label": "Flight training"
+    },
+    {
+      "repo": "robthomson/ethos-heli-training",
+      "branch": "main",
+      "label": "Heli training"
+    },
+    {
+      "repo": "robthomson/ethos-bmfa-caller",
+      "branch": "main",
+      "label": "BMFA caller"
+    },
+    {
+      "repo": "flyingeek/ethos-gps-qrcode",
+      "branch": "main",
+      "label": "GPS QR code"
+    },
+    {
+      "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+      "branch": "main",
+      "label": "INAV telemetry dashboard"
+    },
+    {
+      "repo": "FrSkyRC/ETHOS-Feedback-Community",
+      "label": "FrSky official scripts",
+      "path": "lua/frsky"
+    }
+  ]
+}

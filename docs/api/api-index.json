@@ -1,0 +1,2018 @@
+[
+ {
+  "name": "bluetooth.listServices",
+  "signature": "bluetooth.listServices(services)",
+  "brief": "List the services.",
+  "since": "26.1.0",
+  "url": "bluetooth/listServices/"
+ },
+ {
+  "name": "bluetooth.listCharacteristics",
+  "signature": "bluetooth.listCharacteristics(services)",
+  "brief": "List the characteristics of the main service.",
+  "since": "26.1.0",
+  "url": "bluetooth/listCharacteristics/"
+ },
+ {
+  "name": "bluetooth.write",
+  "signature": "bluetooth.write(handle, value)",
+  "brief": "Write a characteristic value.",
+  "since": "26.1.0",
+  "url": "bluetooth/write/"
+ },
+ {
+  "name": "crsf.getSensor",
+  "signature": "local sensor = crsf.getSensor()",
+  "brief": "Return a sensor.",
+  "since": "1.6.0",
+  "url": "crsf/getSensor/"
+ },
+ {
+  "name": "form.clear",
+  "signature": "form.clear()",
+  "brief": "Clear the current form.",
+  "since": "1.1.0",
+  "url": "form/clear/"
+ },
+ {
+  "name": "form.height",
+  "signature": "form.height()",
+  "brief": "Get the height of the current form.",
+  "since": "1.5.7",
+  "url": "form/height/"
+ },
+ {
+  "name": "form.invalidate",
+  "signature": "form.invalidate()",
+  "brief": "Invalidate the current form (deprecated)",
+  "since": "",
+  "url": "form/invalidate/"
+ },
+ {
+  "name": "form.create",
+  "signature": "form.create()",
+  "brief": "Create a form (deprecated)",
+  "since": "",
+  "url": "form/create/"
+ },
+ {
+  "name": "form.addExpansionPanel",
+  "signature": "form.addExpansionPanel(text)",
+  "brief": "Add an Expansion Panel to the current form.",
+  "since": "1.4.0",
+  "url": "form/addExpansionPanel/"
+ },
+ {
+  "name": "form.addLine",
+  "signature": "local line = form.addLine(label, panel[, separator])",
+  "brief": "Add a new line to the current form.",
+  "since": "1.1.0",
+  "url": "form/addLine/"
+ },
+ {
+  "name": "form.addStaticText",
+  "signature": "form.addStaticText(line, rect, text)",
+  "brief": "Add a static text to the current form.",
+  "since": "1.1.0",
+  "url": "form/addStaticText/"
+ },
+ {
+  "name": "form.addBooleanField",
+  "signature": "form.addBooleanField(line, rect, getValue, setValue)",
+  "brief": "Add a boolean field to the current form.",
+  "since": "1.1.0",
+  "url": "form/addBooleanField/"
+ },
+ {
+  "name": "form.addNumberField",
+  "signature": "form.addNumberField(line, rect, min, max, getValue, setValue)",
+  "brief": "Add a number field to the current form.",
+  "since": "1.1.0",
+  "url": "form/addNumberField/"
+ },
+ {
+  "name": "form.addChoiceField",
+  "signature": "form.addChoiceField(line, rect, values, getValue, setValue)",
+  "brief": "Add a choice field to the current form.",
+  "since": "1.1.0",
+  "url": "form/addChoiceField/"
+ },
+ {
+  "name": "form.addSliderField",
+  "signature": "form.addSliderField(line, rect, min, max, getValue, setValue)",
+  "brief": "Add a slider field to the current form.",
+  "since": "1.5.2",
+  "url": "form/addSliderField/"
+ },
+ {
+  "name": "form.addSourceField",
+  "signature": "form.addSourceField(line, rect, getValue, setValue)",
+  "brief": "Add a source field to the current form.",
+  "since": "1.1.0",
+  "url": "form/addSourceField/"
+ },
+ {
+  "name": "form.addSwitchField",
+  "signature": "form.addSwitchField(line, rect, getValue, setValue)",
+  "brief": "Add a switch field to the current form.",
+  "since": "1.1.0",
+  "url": "form/addSwitchField/"
+ },
+ {
+  "name": "form.addSensorField",
+  "signature": "form.addSensorField(line, rect, getValue, setValue[, filterValue])",
+  "brief": "Add a sensor field to the current form.",
+  "since": "1.5.4",
+  "url": "form/addSensorField/"
+ },
+ {
+  "name": "form.addColorField",
+  "signature": "form.addColorField(line, rect, getValue, setValue)",
+  "brief": "Add a color field to the current form.",
+  "since": "1.1.0",
+  "url": "form/addColorField/"
+ },
+ {
+  "name": "form.addTimeField",
+  "signature": "form.addTimeField(line, rect, getValue, setValue)",
+  "brief": "Add a time field to the current form.",
+  "since": "26.1.0",
+  "url": "form/addTimeField/"
+ },
+ {
+  "name": "form.addTextField",
+  "signature": "form.addTextField(line, rect, getValue, setValue)",
+  "brief": "Add a text field to the current form.",
+  "since": "1.1.0",
+  "url": "form/addTextField/"
+ },
+ {
+  "name": "form.addTextButton",
+  "signature": "form.addTextButton(line, rect, text, press)",
+  "brief": "Add a text button to the current form (deprecated)",
+  "since": "1.1.0",
+  "url": "form/addTextButton/"
+ },
+ {
+  "name": "form.addButton",
+  "signature": "form.addButton(line, rect, params)",
+  "brief": "Add a button to the current form.",
+  "since": "1.5.10",
+  "url": "form/addButton/"
+ },
+ {
+  "name": "form.addFileField",
+  "signature": "form.addFileField(line, rect, path, fileType, getValue, setValue)",
+  "brief": "Add a file field to the current form.",
+  "since": "1.5.5",
+  "url": "form/addFileField/"
+ },
+ {
+  "name": "form.addBitmapField",
+  "signature": "form.addBitmapField(line, rect, path, getValue, setValue)",
+  "brief": "Add a bitmap field to the current form.",
+  "since": "1.2.11",
+  "url": "form/addBitmapField/"
+ },
+ {
+  "name": "form.addStick",
+  "signature": "form.addStick(line, rect, xIndex, yIndex)",
+  "brief": "Add a stick widget.",
+  "since": "1.6.3",
+  "url": "form/addStick/"
+ },
+ {
+  "name": "form.addPot",
+  "signature": "form.addPot(line, line, rect, index, type)",
+  "brief": "Add a pot widget.",
+  "since": "1.6.3",
+  "url": "form/addPot/"
+ },
+ {
+  "name": "form.addTrim",
+  "signature": "form.addTrim(line, rect, index, type)",
+  "brief": "Add a trim widget.",
+  "since": "1.6.3",
+  "url": "form/addTrim/"
+ },
+ {
+  "name": "form.addSwitch",
+  "signature": "form.addSwitch(line, rect, index, type)",
+  "brief": "Add a switch widget.",
+  "since": "1.6.3",
+  "url": "form/addSwitch/"
+ },
+ {
+  "name": "form.addFunctionSwitch",
+  "signature": "form.addFunctionSwitch(line, rect, index)",
+  "brief": "Add a function switch widget.",
+  "since": "1.6.3",
+  "url": "form/addFunctionSwitch/"
+ },
+ {
+  "name": "form.addRotaryEncoder",
+  "signature": "form.addRotaryEncoder(line, rect)",
+  "brief": "Add a rotary encoder widget.",
+  "since": "26.1.0",
+  "url": "form/addRotaryEncoder/"
+ },
+ {
+  "name": "form.addRadioHardware",
+  "signature": "form.addRadioHardware(line, rect)",
+  "brief": "Add the radio hardware widget (sticks / pots / sliders / switches)",
+  "since": "1.6.3",
+  "url": "form/addRadioHardware/"
+ },
+ {
+  "name": "form.getFieldSlots",
+  "signature": "local rects = form.getFieldSlots(line, fields)",
+  "brief": "Return a table of coordinates for fields in a line.",
+  "since": "1.1.0",
+  "url": "form/getFieldSlots/"
+ },
+ {
+  "name": "form.openDialog",
+  "signature": "form.openDialog(title, message, buttons, options, wakeup, paint, closeWhenClickOutside)",
+  "brief": "Open a dialog.",
+  "since": "1.1.0",
+  "url": "form/openDialog/"
+ },
+ {
+  "name": "form.openWaitDialog",
+  "signature": "form.openWaitDialog(title, message[, progress, wakeup, close])",
+  "brief": "Open a wait dialog.",
+  "since": "1.5.10",
+  "url": "form/openWaitDialog/"
+ },
+ {
+  "name": "glasses.getWindowSize",
+  "signature": "local width = glasses.getWindowSize()",
+  "brief": "Get the window size.",
+  "since": "26.1.0",
+  "url": "glasses/getWindowSize/"
+ },
+ {
+  "name": "glasses.createLayout",
+  "signature": "glasses.createLayout(params)",
+  "brief": "Create a layout.",
+  "since": "26.1.0",
+  "url": "glasses/createLayout/"
+ },
+ {
+  "name": "glasses.text",
+  "signature": "glasses.text(x, y, font, text)",
+  "brief": "Write text at position x, y.",
+  "since": "26.1.0",
+  "url": "glasses/text/"
+ },
+ {
+  "name": "glasses.bitmap",
+  "signature": "glasses.bitmap(x, y, bitmap)",
+  "brief": "Draw a bitmap at position x, y.",
+  "since": "26.1.0",
+  "url": "glasses/bitmap/"
+ },
+ {
+  "name": "lcd.RGB",
+  "signature": "local color = lcd.RGB(red, green, blue[, alpha])",
+  "brief": "Get a color from red, green and blue values with optional alpha opacity.",
+  "since": "1.1.0",
+  "url": "lcd/RGB/"
+ },
+ {
+  "name": "lcd.GREY",
+  "signature": "local color = lcd.GREY(value[, alpha])",
+  "brief": "Get a grey color from a dark value (0 = darker) with optional alpha opacity.",
+  "since": "1.1.0",
+  "url": "lcd/GREY/"
+ },
+ {
+  "name": "lcd.color",
+  "signature": "local color = lcd.color([color])",
+  "brief": "Get / Set the current color.",
+  "since": "1.1.0",
+  "url": "lcd/color/"
+ },
+ {
+  "name": "lcd.themeColor",
+  "signature": "local color = lcd.themeColor(index[, color])",
+  "brief": "Get / Set the theme color.",
+  "since": "1.1.0",
+  "url": "lcd/themeColor/"
+ },
+ {
+  "name": "lcd.darkMode",
+  "signature": "local darkMode = lcd.darkMode()",
+  "brief": "Return true if the dark mode is enable (deprecated)",
+  "since": "1.5.3",
+  "url": "lcd/darkMode/"
+ },
+ {
+  "name": "lcd.focusStyle",
+  "signature": "local focusStyle = lcd.focusStyle()",
+  "brief": "Return the focus style.",
+  "since": "26.1.0",
+  "url": "lcd/focusStyle/"
+ },
+ {
+  "name": "lcd.font",
+  "signature": "local font = lcd.font(font)",
+  "brief": "Get / Set the current font.",
+  "since": "1.1.0",
+  "url": "lcd/font/"
+ },
+ {
+  "name": "lcd.pen",
+  "signature": "local pen = lcd.pen(peninteger)",
+  "brief": "Get / Set the current pen style.",
+  "since": "1.1.0",
+  "url": "lcd/pen/"
+ },
+ {
+  "name": "lcd.drawPoint",
+  "signature": "lcd.drawPoint(x, y)",
+  "brief": "Draw a point at given coordinates.",
+  "since": "1.1.0",
+  "url": "lcd/drawPoint/"
+ },
+ {
+  "name": "lcd.drawLine",
+  "signature": "lcd.drawLine(x1, y1, x2, y2)",
+  "brief": "Draw a line.",
+  "since": "1.1.0",
+  "url": "lcd/drawLine/"
+ },
+ {
+  "name": "lcd.drawTriangle",
+  "signature": "lcd.drawTriangle(x1, y1, x2, y2, x3, y3)",
+  "brief": "Draw a triangle.",
+  "since": "1.5.5",
+  "url": "lcd/drawTriangle/"
+ },
+ {
+  "name": "lcd.drawFilledTriangle",
+  "signature": "lcd.drawFilledTriangle(x1, y1, x2, y2, x3, y3)",
+  "brief": "Draw a filled triangle.",
+  "since": "1.5.5",
+  "url": "lcd/drawFilledTriangle/"
+ },
+ {
+  "name": "lcd.drawRectangle",
+  "signature": "lcd.drawRectangle(x, y, w, h[, thickness])",
+  "brief": "Draw a rectangle.",
+  "since": "1.1.0",
+  "url": "lcd/drawRectangle/"
+ },
+ {
+  "name": "lcd.drawFilledRectangle",
+  "signature": "lcd.drawFilledRectangle(x, y, w, h)",
+  "brief": "Draw a filled rectangle.",
+  "since": "1.1.0",
+  "url": "lcd/drawFilledRectangle/"
+ },
+ {
+  "name": "lcd.drawCircle",
+  "signature": "lcd.drawCircle(x, y, r)",
+  "brief": "Draw a circle.",
+  "since": "1.1.0",
+  "url": "lcd/drawCircle/"
+ },
+ {
+  "name": "lcd.drawFilledCircle",
+  "signature": "lcd.drawFilledCircle(x, y, r)",
+  "brief": "Draw a filled circle.",
+  "since": "1.1.0",
+  "url": "lcd/drawFilledCircle/"
+ },
+ {
+  "name": "lcd.drawAnnulusSector",
+  "signature": "lcd.drawAnnulusSector(x, y, intR, extR, startAngle, endAngle)",
+  "brief": "Draw a circular sector.",
+  "since": "1.1.0",
+  "url": "lcd/drawAnnulusSector/"
+ },
+ {
+  "name": "lcd.drawText",
+  "signature": "lcd.drawText(x, y, text[, flags])",
+  "brief": "Draw a text.",
+  "since": "1.1.0",
+  "url": "lcd/drawText/"
+ },
+ {
+  "name": "lcd.drawNumber",
+  "signature": "lcd.drawNumber(x, y, value[, unit[, decimals[, flags]]])",
+  "brief": "Draw a number with units.",
+  "since": "1.1.0",
+  "url": "lcd/drawNumber/"
+ },
+ {
+  "name": "lcd.hasFocus",
+  "signature": "local focus = lcd.hasFocus()",
+  "brief": "Return true if the current window has the focus, else false.",
+  "since": "1.5.0",
+  "url": "lcd/hasFocus/"
+ },
+ {
+  "name": "lcd.resetFocusTimeout",
+  "signature": "lcd.resetFocusTimeout()",
+  "brief": "Reset the 10s focus timeout on Home screen.",
+  "since": "1.5.1",
+  "url": "lcd/resetFocusTimeout/"
+ },
+ {
+  "name": "lcd.loadBitmap",
+  "signature": "local bitmapHandle = lcd.loadBitmap(path[, lazy])",
+  "brief": "Load a bitmap from a file. Allowed formats are BMP / JPG / PNG. Transparency is supported, but it will use more resources.",
+  "since": "1.1.0",
+  "url": "lcd/loadBitmap/"
+ },
+ {
+  "name": "lcd.loadMask",
+  "signature": "local maskHandle = lcd.loadMask(path[, lazy])",
+  "brief": "Load a mask from a file. Allowed formats are BMP / JPG / PNG, 8-bit/color, RGB.",
+  "since": "1.1.0",
+  "url": "lcd/loadMask/"
+ },
+ {
+  "name": "lcd.renderQrCode",
+  "signature": "local maskHandle = lcd.renderQrCode(text, pixelSize)",
+  "brief": "Render a QR Code from text.",
+  "since": "26.1.1",
+  "url": "lcd/renderQrCode/"
+ },
+ {
+  "name": "lcd.loadFont",
+  "signature": "lcd.loadFont(path)",
+  "brief": "Load a font from file.",
+  "since": "1.1.0",
+  "url": "lcd/loadFont/"
+ },
+ {
+  "name": "lcd.getFont",
+  "signature": "lcd.getFont(path)",
+  "brief": "Check if a font is available.",
+  "since": "26.1.0",
+  "url": "lcd/getFont/"
+ },
+ {
+  "name": "lcd.drawBitmap",
+  "signature": "lcd.drawBitmap(x, y, bitmap[, w[, h]])",
+  "brief": "Draw a bitmap.",
+  "since": "1.1.0",
+  "url": "lcd/drawBitmap/"
+ },
+ {
+  "name": "lcd.drawMask",
+  "signature": "lcd.drawMask(x, y, mask)",
+  "brief": "Draw a mask.",
+  "since": "1.1.0",
+  "url": "lcd/drawMask/"
+ },
+ {
+  "name": "lcd.getTextSize",
+  "signature": "local width = lcd.getTextSize(text)",
+  "brief": "Get the dimensions that will be taken up with text when using the current parameters.",
+  "since": "1.1.0",
+  "url": "lcd/getTextSize/"
+ },
+ {
+  "name": "lcd.getContrastingColor",
+  "signature": "local color = lcd.getContrastingColor(color)",
+  "brief": "Get the contrasting color for a given background.",
+  "since": "26.1.0",
+  "url": "lcd/getContrastingColor/"
+ },
+ {
+  "name": "lcd.getWindowSize",
+  "signature": "local width = lcd.getWindowSize()",
+  "brief": "Get the window size.",
+  "since": "1.1.0",
+  "url": "lcd/getWindowSize/"
+ },
+ {
+  "name": "lcd.setClipping",
+  "signature": "local width = lcd.setClipping(x, y, w, h)",
+  "brief": "Set the clipping rect.",
+  "since": "1.1.0",
+  "url": "lcd/setClipping/"
+ },
+ {
+  "name": "lcd.invalidate",
+  "signature": "lcd.invalidate([x[, y[, w[, h]]]])",
+  "brief": "Invalidate the window or a part of the window (it will be fully drawn on next LCD refresh)",
+  "since": "1.1.0",
+  "url": "lcd/invalidate/"
+ },
+ {
+  "name": "lcd.isVisible",
+  "signature": "local visible = lcd.isVisible()",
+  "brief": "Check if the window is visible on screen or not.",
+  "since": "1.5.0",
+  "url": "lcd/isVisible/"
+ },
+ {
+  "name": "lcd.isSwiping",
+  "signature": "local swiping = lcd.isSwiping()",
+  "brief": "Check if the window is swiping or not.",
+  "since": "26.1.0",
+  "url": "lcd/isSwiping/"
+ },
+ {
+  "name": "lcd.isConfiguring",
+  "signature": "local configuring = lcd.isConfiguring()",
+  "brief": "Check if the window is configuring or not.",
+  "since": "26.1.0",
+  "url": "lcd/isConfiguring/"
+ },
+ {
+  "name": "lcd.setWindowTitle",
+  "signature": "lcd.setWindowTitle(text[, color])",
+  "brief": "Set the window title.",
+  "since": "1.4.6",
+  "url": "lcd/setWindowTitle/"
+ },
+ {
+  "name": "model.dirty",
+  "signature": "model.dirty()",
+  "brief": "Mark the model as dirty.",
+  "since": "1.1.2",
+  "url": "model/dirty/"
+ },
+ {
+  "name": "model.name",
+  "signature": "local name = model.name([name])",
+  "brief": "Get / Set the model name.",
+  "since": "1.1.0",
+  "url": "model/name/"
+ },
+ {
+  "name": "model.path",
+  "signature": "local name = model.path()",
+  "brief": "Get the model relative path.",
+  "since": "1.5.5",
+  "url": "model/path/"
+ },
+ {
+  "name": "model.bitmap",
+  "signature": "local bitmap = model.bitmap([bitmap])",
+  "brief": "Get / Set the model bitmap.",
+  "since": "1.1.0",
+  "url": "model/bitmap/"
+ },
+ {
+  "name": "model.id",
+  "signature": "local ids = model.id()",
+  "brief": "Get the model ids (internal and external modules)",
+  "since": "1.3.2",
+  "url": "model/id/"
+ },
+ {
+  "name": "model.createTimer",
+  "signature": "model.createTimer()",
+  "brief": "Create a timer.",
+  "since": "1.1.0",
+  "url": "model/createTimer/"
+ },
+ {
+  "name": "model.getTimer",
+  "signature": "model.getTimer(Name)",
+  "brief": "Return a timer by name or by index.",
+  "since": "1.1.0",
+  "url": "model/getTimer/"
+ },
+ {
+  "name": "model.createLogicSwitch",
+  "signature": "model.createLogicSwitch()",
+  "brief": "Create a logic switch.",
+  "since": "26.1.0",
+  "url": "model/createLogicSwitch/"
+ },
+ {
+  "name": "model.getLogicSwitch",
+  "signature": "model.getLogicSwitch(Name)",
+  "brief": "Return a logic switch by name or by index.",
+  "since": "26.1.0",
+  "url": "model/getLogicSwitch/"
+ },
+ {
+  "name": "model.createSensor",
+  "signature": "model.createSensor()",
+  "brief": "Create a sensor.",
+  "since": "1.5.5",
+  "url": "model/createSensor/"
+ },
+ {
+  "name": "model.createCurve",
+  "signature": "model.createCurve()",
+  "brief": "Create a curve.",
+  "since": "1.1.0",
+  "url": "model/createCurve/"
+ },
+ {
+  "name": "model.getCurve",
+  "signature": "model.getCurve(Name)",
+  "brief": "Return a curve by name or by index.",
+  "since": "1.1.0",
+  "url": "model/getCurve/"
+ },
+ {
+  "name": "model.createMix",
+  "signature": "model.createMix()",
+  "brief": "Create a mix.",
+  "since": "1.6.0",
+  "url": "model/createMix/"
+ },
+ {
+  "name": "model.resetFlight",
+  "signature": "model.resetFlight(context)",
+  "brief": "Reset Flight data.",
+  "since": "1.4.10",
+  "url": "model/resetFlight/"
+ },
+ {
+  "name": "model.getModule",
+  "signature": "model.getModule(Index)",
+  "brief": "Return module information.",
+  "since": "1.5.0",
+  "url": "model/getModule/"
+ },
+ {
+  "name": "model.getChannel",
+  "signature": "model.getChannel(Name)",
+  "brief": "Return output channel information.",
+  "since": "1.6.0",
+  "url": "model/getChannel/"
+ },
+ {
+  "name": "multimodule.getSensor",
+  "signature": "local sensor = multimodule.getSensor()",
+  "brief": "Return a sensor.",
+  "since": "1.6.0",
+  "url": "multimodule/getSensor/"
+ },
+ {
+  "name": "serial.open",
+  "signature": "serial.open(name[, baudrate[, mode[, power]]])",
+  "brief": "Open a serial connection (only on TANDEM radios)",
+  "since": "1.1.0",
+  "url": "serial/open/"
+ },
+ {
+  "name": "simulator.touch",
+  "signature": "simulator.touch(x, y)",
+  "brief": "Simulate a touch event.",
+  "since": "1.5.0",
+  "url": "simulator/touch/"
+ },
+ {
+  "name": "simulator.setReadOnly",
+  "signature": "simulator.setReadOnly(path)",
+  "brief": "Load a model.",
+  "since": "1.5.0",
+  "url": "simulator/setReadOnly/"
+ },
+ {
+  "name": "simulator.resetInactivityTimer",
+  "signature": "simulator.resetInactivityTimer()",
+  "brief": "Reset the inactivity timer.",
+  "since": "26.1.0",
+  "url": "simulator/resetInactivityTimer/"
+ },
+ {
+  "name": "simulator.resetBacklightTimer",
+  "signature": "simulator.resetBacklightTimer()",
+  "brief": "Reset the backlight timer.",
+  "since": "26.1.0",
+  "url": "simulator/resetBacklightTimer/"
+ },
+ {
+  "name": "simulator.loadModel",
+  "signature": "simulator.loadModel(path)",
+  "brief": "Load a model.",
+  "since": "1.5.0",
+  "url": "simulator/loadModel/"
+ },
+ {
+  "name": "simulator.pressKey",
+  "signature": "simulator.pressKey(key, duration)",
+  "brief": "Simulate a key press.",
+  "since": "1.5.0",
+  "url": "simulator/pressKey/"
+ },
+ {
+  "name": "simulator.pressFunctionSwitch",
+  "signature": "simulator.pressFunctionSwitch(index, duration)",
+  "brief": "Simulate a function switch press.",
+  "since": "26.1.0",
+  "url": "simulator/pressFunctionSwitch/"
+ },
+ {
+  "name": "simulator.setSwitch",
+  "signature": "simulator.setSwitch(swtch, position)",
+  "brief": "Set a switch position.",
+  "since": "1.5.0",
+  "url": "simulator/setSwitch/"
+ },
+ {
+  "name": "simulator.resetSwitches",
+  "signature": "simulator.resetSwitches()",
+  "brief": "Reset the switchs positions.",
+  "since": "26.1.0",
+  "url": "simulator/resetSwitches/"
+ },
+ {
+  "name": "simulator.setAnalog",
+  "signature": "simulator.setAnalog(analog, value)",
+  "brief": "Set an analog position.",
+  "since": "1.5.0",
+  "url": "simulator/setAnalog/"
+ },
+ {
+  "name": "simulator.resetAnalogs",
+  "signature": "simulator.resetAnalogs()",
+  "brief": "Reset the analogs positions.",
+  "since": "26.1.0",
+  "url": "simulator/resetAnalogs/"
+ },
+ {
+  "name": "simulator.connectUsb",
+  "signature": "simulator.connectUsb(state)",
+  "brief": "Simulate USB connect / disconnect.",
+  "since": "1.5.0",
+  "url": "simulator/connectUsb/"
+ },
+ {
+  "name": "simulator.advertizeBluetooth",
+  "signature": "simulator.advertizeBluetooth(device)",
+  "brief": "Simulate Bluetooth advertize.",
+  "since": "26.1.0",
+  "url": "simulator/advertizeBluetooth/"
+ },
+ {
+  "name": "simulator.injectSPortFrame",
+  "signature": "simulator.injectSPortFrame(frame)",
+  "brief": "Simulate S.Port telemetry.",
+  "since": "26.1.0",
+  "url": "simulator/injectSPortFrame/"
+ },
+ {
+  "name": "simulator.setDateTime",
+  "signature": "simulator.setDateTime(table)",
+  "brief": "Set the date & time.",
+  "since": "1.5.0",
+  "url": "simulator/setDateTime/"
+ },
+ {
+  "name": "simulator.screenshot",
+  "signature": "simulator.screenshot(path)",
+  "brief": "Take a screenshot.",
+  "since": "1.5.0",
+  "url": "simulator/screenshot/"
+ },
+ {
+  "name": "simulator.sleep",
+  "signature": "simulator.sleep(duration)",
+  "brief": "Sleep.",
+  "since": "1.5.0",
+  "url": "simulator/sleep/"
+ },
+ {
+  "name": "simulator.turnRotaryEncoder",
+  "signature": "simulator.turnRotaryEncoder(steps)",
+  "brief": "Simulate the rotary encoder.",
+  "since": "1.5.0",
+  "url": "simulator/turnRotaryEncoder/"
+ },
+ {
+  "name": "simulator.enterText",
+  "signature": "simulator.enterText(text)",
+  "brief": "Enter text.",
+  "since": "26.1.0",
+  "url": "simulator/enterText/"
+ },
+ {
+  "name": "simulator.reloadScripts",
+  "signature": "simulator.reloadScripts()",
+  "brief": "Reload the Lua scripts.",
+  "since": "26.1.0",
+  "url": "simulator/reloadScripts/"
+ },
+ {
+  "name": "simulator.setDebug",
+  "signature": "simulator.setDebug(command, value)",
+  "brief": "Enable / Disable debug.",
+  "since": "26.1.0",
+  "url": "simulator/setDebug/"
+ },
+ {
+  "name": "sport.getSensor",
+  "signature": "local sensor = sport.getSensor(appId)",
+  "brief": "Return a sensor.",
+  "since": "1.1.0",
+  "url": "sport/getSensor/"
+ },
+ {
+  "name": "storage.read",
+  "signature": "storage.read(label)",
+  "brief": "Read a value from the current storage.",
+  "since": "1.1.0",
+  "url": "storage/read/"
+ },
+ {
+  "name": "storage.write",
+  "signature": "storage.write(label, value)",
+  "brief": "Write a value to the current storage.",
+  "since": "1.1.0",
+  "url": "storage/write/"
+ },
+ {
+  "name": "system.getLocale",
+  "signature": "system.getLocale()",
+  "brief": "Return the current locale.",
+  "since": "1.1.0",
+  "url": "system/getLocale/"
+ },
+ {
+  "name": "system.getAudioVoice",
+  "signature": "system.getAudioVoice(voice)",
+  "brief": "Return the current audio voice.",
+  "since": "1.5.7",
+  "url": "system/getAudioVoice/"
+ },
+ {
+  "name": "system.getVersion",
+  "signature": "system.getVersion()",
+  "brief": "Return Ethos version.",
+  "since": "1.1.0",
+  "url": "system/getVersion/"
+ },
+ {
+  "name": "system.getMemoryUsage",
+  "signature": "system.getMemoryUsage()",
+  "brief": "Return Ethos Memory Usage.",
+  "since": "1.1.0",
+  "url": "system/getMemoryUsage/"
+ },
+ {
+  "name": "system.getInstructionsUsage",
+  "signature": "local usage = system.getInstructionsUsage()",
+  "brief": "Return the percentage of Lua instructions already used in the current script execution cycle.",
+  "since": "26.1.3",
+  "url": "system/getInstructionsUsage/"
+ },
+ {
+  "name": "system.getStickMode",
+  "signature": "system.getStickMode()",
+  "brief": "Return the stick mode.",
+  "since": "1.1.0",
+  "url": "system/getStickMode/"
+ },
+ {
+  "name": "system.getSources",
+  "signature": "local sources = system.getSources(category)",
+  "brief": "Return the list of sources within a category.",
+  "since": "26.1.0",
+  "url": "system/getSources/"
+ },
+ {
+  "name": "system.getSource",
+  "signature": "local source = system.getSource(name)",
+  "brief": "Return a Source.",
+  "since": "1.1.0",
+  "url": "system/getSource/"
+ },
+ {
+  "name": "system.playFile",
+  "signature": "system.playFile(audio)",
+  "brief": "Play an audio file.",
+  "since": "1.1.0",
+  "url": "system/playFile/"
+ },
+ {
+  "name": "system.playNumber",
+  "signature": "system.playNumber(value[, unit[, decimals[, voice[, priority]]]])",
+  "brief": "Play a number using the current locale.",
+  "since": "1.1.0",
+  "url": "system/playNumber/"
+ },
+ {
+  "name": "system.playTone",
+  "signature": "system.playTone(frequency, duration, pause)",
+  "brief": "Play a tone.",
+  "since": "1.1.0",
+  "url": "system/playTone/"
+ },
+ {
+  "name": "system.playHaptic",
+  "signature": "system.playHaptic(duration[, strength])",
+  "brief": "Play haptic vibration.",
+  "since": "1.1.0",
+  "url": "system/playHaptic/"
+ },
+ {
+  "name": "system.killEvents",
+  "signature": "system.killEvents(event)",
+  "brief": "Kill key events (i.e. after a LONG PRESS event, a KEY RELEASE event may be skipped)",
+  "since": "1.1.0",
+  "url": "system/killEvents/"
+ },
+ {
+  "name": "system.listFiles",
+  "signature": "local files = system.listFiles(directory)",
+  "brief": "List files in a directory.",
+  "since": "1.5.0",
+  "url": "system/listFiles/"
+ },
+ {
+  "name": "system.registerLayout",
+  "signature": "system.registerLayout(params)",
+  "brief": "Register a Lua Layout.",
+  "since": "1.5.8",
+  "url": "system/registerLayout/"
+ },
+ {
+  "name": "system.registerTheme",
+  "signature": "system.registerTheme(params)",
+  "brief": "Register a Lua Theme.",
+  "since": "26.1.0",
+  "url": "system/registerTheme/"
+ },
+ {
+  "name": "system.registerWidget",
+  "signature": "system.registerWidget(params)",
+  "brief": "Register a Lua Widget.",
+  "since": "1.1.0",
+  "url": "system/registerWidget/"
+ },
+ {
+  "name": "system.registerSystemTool",
+  "signature": "system.registerSystemTool(params)",
+  "brief": "Register a Lua System Tool.",
+  "since": "1.1.0",
+  "url": "system/registerSystemTool/"
+ },
+ {
+  "name": "system.registerMultimoduleProtocol",
+  "signature": "system.registerMultimoduleProtocol(label, id, params)",
+  "brief": "Register a Multimodule Protocol.",
+  "since": "1.3.0",
+  "url": "system/registerMultimoduleProtocol/"
+ },
+ {
+  "name": "system.isSensorDiscoverActive",
+  "signature": "system.isSensorDiscoverActive()",
+  "brief": "Return if the sensor discover is active.",
+  "since": "1.6.4",
+  "url": "system/isSensorDiscoverActive/"
+ },
+ {
+  "name": "system.registerGhostModule",
+  "signature": "system.registerGhostModule()",
+  "brief": "Register the Ghost Module.",
+  "since": "1.3.0",
+  "url": "system/registerGhostModule/"
+ },
+ {
+  "name": "system.registerElrsModule",
+  "signature": "system.registerElrsModule()",
+  "brief": "Register the ELRS Module.",
+  "since": "1.3.1",
+  "url": "system/registerElrsModule/"
+ },
+ {
+  "name": "system.registerMlrsModule",
+  "signature": "system.registerMlrsModule()",
+  "brief": "Register the mLRS Module.",
+  "since": "26.1.0",
+  "url": "system/registerMlrsModule/"
+ },
+ {
+  "name": "system.registerCrossfireModule",
+  "signature": "system.registerCrossfireModule()",
+  "brief": "Register the TBS Crossfire Module.",
+  "since": "1.3.1",
+  "url": "system/registerCrossfireModule/"
+ },
+ {
+  "name": "system.registerGlasses",
+  "signature": "system.registerGlasses()",
+  "brief": "Register the ActiveLook glasses support (shows the Model / Glasses page)",
+  "since": "26.1.3",
+  "url": "system/registerGlasses/"
+ },
+ {
+  "name": "system.registerSource",
+  "signature": "system.registerSource(params)",
+  "brief": "Register a Lua Source.",
+  "since": "1.1.0",
+  "url": "system/registerSource/"
+ },
+ {
+  "name": "system.registerSensor",
+  "signature": "system.registerSensor(params)",
+  "brief": "Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.",
+  "since": "26.1.3",
+  "url": "system/registerSensor/"
+ },
+ {
+  "name": "system.registerTask",
+  "signature": "system.registerTask(params)",
+  "brief": "Register a Lua Task.",
+  "since": "1.5.0",
+  "url": "system/registerTask/"
+ },
+ {
+  "name": "system.exit",
+  "signature": "system.exit()",
+  "brief": "Exit the current script.",
+  "since": "1.1.0",
+  "url": "system/exit/"
+ },
+ {
+  "name": "system.emergency",
+  "signature": "system.emergency()",
+  "brief": "Launch the Emergency Mode (EM) - for testing purposes only.",
+  "since": "1.5.8",
+  "url": "system/emergency/"
+ },
+ {
+  "name": "system.startLatencyTest",
+  "signature": "system.startLatencyTest(channel, value, maxDuration)",
+  "brief": "Launch the Latency test on one channel - for testing purposes only.",
+  "since": "26.1.0",
+  "url": "system/startLatencyTest/"
+ },
+ {
+  "name": "system.getLatencyTestResult",
+  "signature": "system.getLatencyTestResult()",
+  "brief": "Get the result of the Latency test - for testing purposes only.",
+  "since": "26.1.0",
+  "url": "system/getLatencyTestResult/"
+ },
+ {
+  "name": "system.resetBacklightTimeout",
+  "signature": "system.resetBacklightTimeout()",
+  "brief": "Reset the backlight timeout.",
+  "since": "1.1.0",
+  "url": "system/resetBacklightTimeout/"
+ },
+ {
+  "name": "system.voltageRange",
+  "signature": "local min = system.voltageRange()",
+  "brief": "Return the Radio voltage range.",
+  "since": "1.5.16",
+  "url": "system/voltageRange/"
+ },
+ {
+  "name": "system.compile",
+  "signature": "system.compile(path[, strip])",
+  "brief": "Compile the lua script into luac.",
+  "since": "1.5.3",
+  "url": "system/compile/"
+ },
+ {
+  "name": "system.openPage",
+  "signature": "system.openPage(page)",
+  "brief": "Open a page.",
+  "since": "26.1.0",
+  "url": "system/openPage/"
+ },
+ {
+  "name": "Bitmap:width",
+  "signature": "local width = bitmap:width()",
+  "brief": "Return the bitmap width.",
+  "since": "1.1.0",
+  "url": "objects/Bitmap/width/"
+ },
+ {
+  "name": "Bitmap:height",
+  "signature": "local height = bitmap:height()",
+  "brief": "Return the bitmap height.",
+  "since": "1.1.0",
+  "url": "objects/Bitmap/height/"
+ },
+ {
+  "name": "Bitmap:rotate",
+  "signature": "bitmap:rotate(angle)",
+  "brief": "Return the rotated bitmap.",
+  "since": "1.5.9",
+  "url": "objects/Bitmap/rotate/"
+ },
+ {
+  "name": "Channel:name",
+  "signature": "local name = channel:name([name])",
+  "brief": "Get / Set the channel name.",
+  "since": "1.6.0",
+  "url": "objects/Channel/name/"
+ },
+ {
+  "name": "Channel:direction",
+  "signature": "local direction = channel:direction([direction])",
+  "brief": "Get / Set the direction of the channel (1 is normal / -1 reverse)",
+  "since": "1.6.0",
+  "url": "objects/Channel/direction/"
+ },
+ {
+  "name": "Channel:min",
+  "signature": "local min = channel:min([min])",
+  "brief": "Get / Set the min percent of the channel.",
+  "since": "1.6.0",
+  "url": "objects/Channel/min/"
+ },
+ {
+  "name": "Channel:max",
+  "signature": "local max = channel:max([max])",
+  "brief": "Get / Set the max percent of the channel.",
+  "since": "1.6.0",
+  "url": "objects/Channel/max/"
+ },
+ {
+  "name": "Channel:center",
+  "signature": "local center = channel:center([center])",
+  "brief": "Get / Set the center percent of the channel.",
+  "since": "1.6.0",
+  "url": "objects/Channel/center/"
+ },
+ {
+  "name": "Channel:pwmCenter",
+  "signature": "local center = channel:pwmCenter([center])",
+  "brief": "Get / Set the pwm center value of the channel.",
+  "since": "1.6.0",
+  "url": "objects/Channel/pwmCenter/"
+ },
+ {
+  "name": "Channel:slowUp",
+  "signature": "local slowUp = channel:slowUp([slowUp])",
+  "brief": "Get / Set the Slow-up value of the channel.",
+  "since": "1.6.4",
+  "url": "objects/Channel/slowUp/"
+ },
+ {
+  "name": "Channel:slowDown",
+  "signature": "local slowUp = channel:slowDown([slowUp])",
+  "brief": "Get / Set the Slow-down value of the channel.",
+  "since": "1.6.4",
+  "url": "objects/Channel/slowDown/"
+ },
+ {
+  "name": "ChoiceLib:help",
+  "signature": "field:help(text)",
+  "brief": "Set the field help text.",
+  "since": "1.5.10",
+  "url": "objects/ChoiceLib/help/"
+ },
+ {
+  "name": "ChoiceLib:title",
+  "signature": "field:title(text)",
+  "brief": "Set the choice menu title.",
+  "since": "1.6.1",
+  "url": "objects/ChoiceLib/title/"
+ },
+ {
+  "name": "ChoiceLib:values",
+  "signature": "field:values(values)",
+  "brief": "Set the choice values.",
+  "since": "1.6.2",
+  "url": "objects/ChoiceLib/values/"
+ },
+ {
+  "name": "CrsfSensor:pushFrame",
+  "signature": "local result = sensor:pushFrame(command, data)",
+  "brief": "Push a CRSF frame.",
+  "since": "1.4.0",
+  "url": "objects/CrsfSensor/pushFrame/"
+ },
+ {
+  "name": "CrsfSensor:popFrame",
+  "signature": "local command = sensor:popFrame([commandFilterMin[, commandFilterMax]])",
+  "brief": "Pop a CRSF frame.",
+  "since": "1.6.0",
+  "url": "objects/CrsfSensor/popFrame/"
+ },
+ {
+  "name": "Curve:name",
+  "signature": "local name = curve:name([name])",
+  "brief": "Get / Set the curve name.",
+  "since": "1.1.0",
+  "url": "objects/Curve/name/"
+ },
+ {
+  "name": "Curve:type",
+  "signature": "local type = curve:type([type])",
+  "brief": "Get / Set the type of the curve.",
+  "since": "1.1.0",
+  "url": "objects/Curve/type/"
+ },
+ {
+  "name": "Curve:exponent",
+  "signature": "local exponent = curve:exponent([exponent])",
+  "brief": "Get / Set the exponent of the curve.",
+  "since": "1.1.0",
+  "url": "objects/Curve/exponent/"
+ },
+ {
+  "name": "Curve:weight",
+  "signature": "local weight = curve:weight([weight])",
+  "brief": "Get / Set the weight of the exponent curve.",
+  "since": "1.1.0",
+  "url": "objects/Curve/weight/"
+ },
+ {
+  "name": "Curve:offset",
+  "signature": "local offset = curve:offset([offset])",
+  "brief": "Get / Set the offset of the exponent curve.",
+  "since": "1.1.0",
+  "url": "objects/Curve/offset/"
+ },
+ {
+  "name": "Curve:functionType",
+  "signature": "local functionType = curve:functionType([functionType])",
+  "brief": "Get / Set the type of the function curve.",
+  "since": "1.1.0",
+  "url": "objects/Curve/functionType/"
+ },
+ {
+  "name": "Curve:pointsCount",
+  "signature": "local pointsCount = curve:pointsCount([pointsCount])",
+  "brief": "Get / Set the points count of the custom curve.",
+  "since": "1.1.0",
+  "url": "objects/Curve/pointsCount/"
+ },
+ {
+  "name": "Curve:easyMode",
+  "signature": "local easyMode = curve:easyMode([easyMode])",
+  "brief": "Get / Set the custom curve mode (1 is easyMode / -1 not)",
+  "since": "1.1.0",
+  "url": "objects/Curve/easyMode/"
+ },
+ {
+  "name": "Curve:smooth",
+  "signature": "local smooth = curve:smooth()",
+  "brief": "Get / Set the custom curve smooth (1 is smooth / -1 not)",
+  "since": "1.1.0",
+  "url": "objects/Curve/smooth/"
+ },
+ {
+  "name": "Curve:point",
+  "signature": "local x = curve:point([indexintegerx])",
+  "brief": "Get / Set the point of the custom curve by index.",
+  "since": "1.1.0",
+  "url": "objects/Curve/point/"
+ },
+ {
+  "name": "ExpansionPanel:open",
+  "signature": "panel:open(state)",
+  "brief": "Open / close the expansion panel.",
+  "since": "1.5.0",
+  "url": "objects/ExpansionPanel/open/"
+ },
+ {
+  "name": "ExpansionPanel:clear",
+  "signature": "panel:clear()",
+  "brief": "Clear the expansion panel.",
+  "since": "1.5.4",
+  "url": "objects/ExpansionPanel/clear/"
+ },
+ {
+  "name": "ExpansionPanel:addLine",
+  "signature": "local line = panel:addLine(label[, separator])",
+  "brief": "Add a new line to the expansion panel.",
+  "since": "1.5.4",
+  "url": "objects/ExpansionPanel/addLine/"
+ },
+ {
+  "name": "ExpansionPanel:event",
+  "signature": "panel:event(handler)",
+  "brief": "Set a handler called when an event (EVT_CLOSE / EVT_OPEN) is received.",
+  "since": "1.5.10",
+  "url": "objects/ExpansionPanel/event/"
+ },
+ {
+  "name": "ExpansionPanel:rect",
+  "signature": "local rect = panel:rect([rect])",
+  "brief": "Get / Set the expansion panel rect.",
+  "since": "26.1.0",
+  "url": "objects/ExpansionPanel/rect/"
+ },
+ {
+  "name": "FormFieldLib:enable",
+  "signature": "field:enable(enabled)",
+  "brief": "Enable / disable the field.",
+  "since": "1.1.0",
+  "url": "objects/FormFieldLib/enable/"
+ },
+ {
+  "name": "FormFieldLib:focus",
+  "signature": "field:focus()",
+  "brief": "Give the focus to the field.",
+  "since": "1.5.10",
+  "url": "objects/FormFieldLib/focus/"
+ },
+ {
+  "name": "FormFieldLib:rect",
+  "signature": "local rect = field:rect()",
+  "brief": "Get the field rect.",
+  "since": "1.5.14",
+  "url": "objects/FormFieldLib/rect/"
+ },
+ {
+  "name": "FrSkyStaticTextLib:color",
+  "signature": "field:color(color)",
+  "brief": "Set the text color.",
+  "since": "1.5.16",
+  "url": "objects/FrSkyStaticTextLib/color/"
+ },
+ {
+  "name": "FrSkyStaticTextLib:value",
+  "signature": "field:value(value)",
+  "brief": "Set the text value.",
+  "since": "1.5.16",
+  "url": "objects/FrSkyStaticTextLib/value/"
+ },
+ {
+  "name": "GlassesLayout:clearAndDisplay",
+  "signature": "layout:clearAndDisplay(text)",
+  "brief": "Clear layout and display text.",
+  "since": "26.1.0",
+  "url": "objects/GlassesLayout/clearAndDisplay/"
+ },
+ {
+  "name": "GlassesLayout:clearAndDisplayExtended",
+  "signature": "layout:clearAndDisplayExtended(params)",
+  "brief": "Clear layout and display text at position x, y with optional extra commands.",
+  "since": "26.1.0",
+  "url": "objects/GlassesLayout/clearAndDisplayExtended/"
+ },
+ {
+  "name": "LogicSwitch:name",
+  "signature": "local name = ls:name([name])",
+  "brief": "Get / Set the logic switch name.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/name/"
+ },
+ {
+  "name": "LogicSwitch:negative",
+  "signature": "local negative = ls:negative([negative])",
+  "brief": "Get / Set the logic switch negative attribute.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/negative/"
+ },
+ {
+  "name": "LogicSwitch:delayOff",
+  "signature": "local delayOff = ls:delayOff([delayOff])",
+  "brief": "Get / Set the logic switch delay OFF.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/delayOff/"
+ },
+ {
+  "name": "LogicSwitch:delayOn",
+  "signature": "local delayOn = ls:delayOn([delayOn])",
+  "brief": "Get / Set the logic switch delay ON.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/delayOn/"
+ },
+ {
+  "name": "LogicSwitch:maxDuration",
+  "signature": "local maxDuration = ls:maxDuration([maxDuration])",
+  "brief": "Get / Set the logic switch max duration.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/maxDuration/"
+ },
+ {
+  "name": "LogicSwitch:minDuration",
+  "signature": "local minDuration = ls:minDuration([minDuration])",
+  "brief": "Get / Set the logic switch min duration.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/minDuration/"
+ },
+ {
+  "name": "LogicSwitch:state",
+  "signature": "local state = ls:state()",
+  "brief": "Get the logic switch state.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/state/"
+ },
+ {
+  "name": "LogicSwitch:func",
+  "signature": "local function = ls:func([function])",
+  "brief": "Get / Set the function of the logic switch.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/func/"
+ },
+ {
+  "name": "LogicSwitch:activeCondition",
+  "signature": "local condition = ls:activeCondition([condition])",
+  "brief": "Get / Set the active condition of the logic switch.",
+  "since": "1.1.0",
+  "url": "objects/LogicSwitch/activeCondition/"
+ },
+ {
+  "name": "LogicSwitch:values",
+  "signature": "local values = ls:values([values])",
+  "brief": "Get / Set the test values of the logic switch.",
+  "since": "26.1.0",
+  "url": "objects/LogicSwitch/values/"
+ },
+ {
+  "name": "LuaSPortFrame:band",
+  "signature": "local band = frame:band([band])",
+  "brief": "Get / Set the band.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortFrame/band/"
+ },
+ {
+  "name": "LuaSPortFrame:rx",
+  "signature": "local rx = frame:rx([rx])",
+  "brief": "Get / Set the rx index.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortFrame/rx/"
+ },
+ {
+  "name": "LuaSPortFrame:physId",
+  "signature": "local physId = frame:physId([physId])",
+  "brief": "Get / Set the physId of the frame.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortFrame/physId/"
+ },
+ {
+  "name": "LuaSPortFrame:primId",
+  "signature": "local primId = frame:primId([primId])",
+  "brief": "Get / Set the primId of the frame.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortFrame/primId/"
+ },
+ {
+  "name": "LuaSPortFrame:appId",
+  "signature": "local appId = frame:appId([appId])",
+  "brief": "Get / Set the appId of the frame.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortFrame/appId/"
+ },
+ {
+  "name": "LuaSPortFrame:value",
+  "signature": "local value = frame:value([value])",
+  "brief": "Get / Set the value of the frame.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortFrame/value/"
+ },
+ {
+  "name": "LuaSPortSensor:band",
+  "signature": "local band = sensor:band([band])",
+  "brief": "Get / Set the band.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/band/"
+ },
+ {
+  "name": "LuaSPortSensor:rx",
+  "signature": "local rx = sensor:rx([rx])",
+  "brief": "Get / Set the rx index.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/rx/"
+ },
+ {
+  "name": "LuaSPortSensor:physId",
+  "signature": "local physId = sensor:physId([physId])",
+  "brief": "Get / Set the physId of sensor.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/physId/"
+ },
+ {
+  "name": "LuaSPortSensor:appId",
+  "signature": "local appId = sensor:appId([appId])",
+  "brief": "Get / Set the appId of sensor.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/appId/"
+ },
+ {
+  "name": "LuaSPortSensor:writeParameter",
+  "signature": "local result = sensor:writeParameter(parameter, value)",
+  "brief": "Write a parameter to the S.Port Sensor.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/writeParameter/"
+ },
+ {
+  "name": "LuaSPortSensor:idle",
+  "signature": "local result = sensor:idle([state])",
+  "brief": "Set / unset the S.Port Sensor IDLE mode.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/idle/"
+ },
+ {
+  "name": "LuaSPortSensor:requestParameter",
+  "signature": "local result = sensor:requestParameter(parameter)",
+  "brief": "Send a parameter request to the S.Port Sensor.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/requestParameter/"
+ },
+ {
+  "name": "LuaSPortSensor:getParameter",
+  "signature": "local result = sensor:getParameter()",
+  "brief": "Get a parameter if received from the S.Port Sensor.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/getParameter/"
+ },
+ {
+  "name": "LuaSPortSensor:pushFrame",
+  "signature": "local result = sensor:pushFrame(frame)",
+  "brief": "Push a S.Port frame.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/pushFrame/"
+ },
+ {
+  "name": "LuaSPortSensor:discover",
+  "signature": "local result = sensor:discover()",
+  "brief": "Return true if the sensor is alive and updates its module / band / rx / appId / physId.",
+  "since": "1.6.3",
+  "url": "objects/LuaSPortSensor/discover/"
+ },
+ {
+  "name": "LuaSPortSensor:popFrame",
+  "signature": "local frame = sensor:popFrame()",
+  "brief": "Pop a S.Port frame.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSensor/popFrame/"
+ },
+ {
+  "name": "LuaSPortSerial:empty",
+  "signature": "local empty = serial:empty()",
+  "brief": "Return true if the read buffer is empty.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSerial/empty/"
+ },
+ {
+  "name": "LuaSPortSerial:size",
+  "signature": "local size = serial:size()",
+  "brief": "Return the read buffer size.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSerial/size/"
+ },
+ {
+  "name": "LuaSPortSerial:read",
+  "signature": "local buffer = serial:read()",
+  "brief": "Return the read buffer.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSerial/read/"
+ },
+ {
+  "name": "LuaSPortSerial:write",
+  "signature": "serial:write()",
+  "brief": "Write a buffer.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSerial/write/"
+ },
+ {
+  "name": "LuaSPortSerial:flush",
+  "signature": "serial:flush()",
+  "brief": "Flush a buffer.",
+  "since": "1.1.0",
+  "url": "objects/LuaSPortSerial/flush/"
+ },
+ {
+  "name": "Module:type",
+  "signature": "local type = module:type()",
+  "brief": "Get the type of the module.",
+  "since": "1.5.0",
+  "url": "objects/Module/type/"
+ },
+ {
+  "name": "Module:protocol",
+  "signature": "local protocol = module:protocol()",
+  "brief": "Get the protocol of the module.",
+  "since": "1.6.2",
+  "url": "objects/Module/protocol/"
+ },
+ {
+  "name": "Module:enable",
+  "signature": "local enable = module:enable()",
+  "brief": "Get the state of the module.",
+  "since": "1.5.0",
+  "url": "objects/Module/enable/"
+ },
+ {
+  "name": "Module:option",
+  "signature": "local value = module:option(name)",
+  "brief": "Get / Set one module option.",
+  "since": "1.6.0",
+  "url": "objects/Module/option/"
+ },
+ {
+  "name": "Module:options",
+  "signature": "local options = module:options()",
+  "brief": "Get the state of all module options.",
+  "since": "1.6.0",
+  "url": "objects/Module/options/"
+ },
+ {
+  "name": "Module:muteSensorLost",
+  "signature": "module:muteSensorLost(duration)",
+  "brief": "Mute all \"Sensor lost\" warnings from a module during a certain duration.",
+  "since": "1.6.0",
+  "url": "objects/Module/muteSensorLost/"
+ },
+ {
+  "name": "MultimoduleSensor:pushFrame",
+  "signature": "local result = sensor:pushFrame(data)",
+  "brief": "Push a Multimodule frame.",
+  "since": "1.6.0",
+  "url": "objects/MultimoduleSensor/pushFrame/"
+ },
+ {
+  "name": "MultimoduleSensor:popFrame",
+  "signature": "sensor:popFrame()",
+  "brief": "Pop a Multimodule frame.",
+  "since": "1.6.0",
+  "url": "objects/MultimoduleSensor/popFrame/"
+ },
+ {
+  "name": "NumberEditLib:onFocus",
+  "signature": "field:onFocus(handler)",
+  "brief": "Function called when the focus is changed.",
+  "since": "1.5.14",
+  "url": "objects/NumberEditLib/onFocus/"
+ },
+ {
+  "name": "NumberEditLib:defaultStep",
+  "signature": "local value = field:defaultStep([value])",
+  "brief": "Get / Set the field default step (may be adjusted by the user)",
+  "since": "26.1.0",
+  "url": "objects/NumberEditLib/defaultStep/"
+ },
+ {
+  "name": "NumberEditLib:step",
+  "signature": "local value = field:step([value])",
+  "brief": "Get / Set the field step.",
+  "since": "1.1.0",
+  "url": "objects/NumberEditLib/step/"
+ },
+ {
+  "name": "NumberEditLib:decimals",
+  "signature": "local value = field:decimals([value])",
+  "brief": "Get / Set the field decimals.",
+  "since": "1.1.0",
+  "url": "objects/NumberEditLib/decimals/"
+ },
+ {
+  "name": "NumberEditLib:enableInstantChange",
+  "signature": "field:enableInstantChange(enabled)",
+  "brief": "Enable / disable the instant change (the value is only updated when the field losts the focus)",
+  "since": "1.1.0",
+  "url": "objects/NumberEditLib/enableInstantChange/"
+ },
+ {
+  "name": "NumberEditLib:prefix",
+  "signature": "field:prefix(prefix)",
+  "brief": "Set the field prefix.",
+  "since": "1.1.0",
+  "url": "objects/NumberEditLib/prefix/"
+ },
+ {
+  "name": "NumberEditLib:suffix",
+  "signature": "field:suffix(suffix)",
+  "brief": "Set the field suffix.",
+  "since": "1.1.0",
+  "url": "objects/NumberEditLib/suffix/"
+ },
+ {
+  "name": "NumberEditLib:default",
+  "signature": "field:default(default)",
+  "brief": "Set the field default value.",
+  "since": "1.1.0",
+  "url": "objects/NumberEditLib/default/"
+ },
+ {
+  "name": "NumberEditLib:minimum",
+  "signature": "local value = field:minimum([value])",
+  "brief": "Get / Set the field minimum value.",
+  "since": "1.6.2",
+  "url": "objects/NumberEditLib/minimum/"
+ },
+ {
+  "name": "NumberEditLib:maximum",
+  "signature": "local value = field:maximum([value])",
+  "brief": "Get / Set the field maximum value.",
+  "since": "1.6.2",
+  "url": "objects/NumberEditLib/maximum/"
+ },
+ {
+  "name": "NumberEditLib:help",
+  "signature": "field:help(text)",
+  "brief": "Set the field help text.",
+  "since": "1.5.10",
+  "url": "objects/NumberEditLib/help/"
+ },
+ {
+  "name": "NumberEditLib:text",
+  "signature": "field:text(handler)",
+  "brief": "Set the NumberEdit text handler.",
+  "since": "1.5.10",
+  "url": "objects/NumberEditLib/text/"
+ },
+ {
+  "name": "SliderLib:onFocus",
+  "signature": "field:onFocus(handler)",
+  "brief": "Function called when the focus is changed.",
+  "since": "1.6.2",
+  "url": "objects/SliderLib/onFocus/"
+ },
+ {
+  "name": "SliderLib:step",
+  "signature": "local value = field:step(value)",
+  "brief": "Get / Set the field step.",
+  "since": "1.6.2",
+  "url": "objects/SliderLib/step/"
+ },
+ {
+  "name": "SliderLib:minimum",
+  "signature": "field:minimum(minimum)",
+  "brief": "Set the field minimum value.",
+  "since": "1.6.2",
+  "url": "objects/SliderLib/minimum/"
+ },
+ {
+  "name": "SliderLib:maximum",
+  "signature": "field:maximum(maximum)",
+  "brief": "Set the field maximum value.",
+  "since": "1.6.2",
+  "url": "objects/SliderLib/maximum/"
+ },
+ {
+  "name": "SliderLib:help",
+  "signature": "field:help(text)",
+  "brief": "Set the field help text.",
+  "since": "1.6.2",
+  "url": "objects/SliderLib/help/"
+ },
+ {
+  "name": "Source:name",
+  "signature": "local name = source:name([name])",
+  "brief": "Return the source name (and modify it on Vars and Sensors)",
+  "since": "1.5.5",
+  "url": "objects/Source/name/"
+ },
+ {
+  "name": "Source:rawValue",
+  "signature": "source:rawValue()",
+  "brief": "Return the source raw value.",
+  "since": "1.1.0",
+  "url": "objects/Source/rawValue/"
+ },
+ {
+  "name": "Source:maximum",
+  "signature": "local value = source:maximum()",
+  "brief": "Return the source maximum (and modify it on Vars and Sensors)",
+  "since": "1.5.0",
+  "url": "objects/Source/maximum/"
+ },
+ {
+  "name": "Source:minimum",
+  "signature": "local value = source:minimum()",
+  "brief": "Return the source minimum (and modify it on Vars and Sensors)",
+  "since": "1.5.0",
+  "url": "objects/Source/minimum/"
+ },
+ {
+  "name": "Source:value",
+  "signature": "local value = source:value([options])",
+  "brief": "Return the source value / Set the source value on Lua sources / Vars / Telemetry sensors.",
+  "since": "1.1.0",
+  "url": "objects/Source/value/"
+ },
+ {
+  "name": "Source:state",
+  "signature": "local state = source:state()",
+  "brief": "Return the source state.",
+  "since": "1.1.0",
+  "url": "objects/Source/state/"
+ },
+ {
+  "name": "Source:reset",
+  "signature": "source:reset()",
+  "brief": "Reset the source (Flight / Timer / Telemetry)",
+  "since": "1.1.0",
+  "url": "objects/Source/reset/"
+ },
+ {
+  "name": "Source:age",
+  "signature": "source:age()",
+  "brief": "Get the last value age (only for Telemetry sources)",
+  "since": "1.6.2",
+  "url": "objects/Source/age/"
+ },
+ {
+  "name": "Source:unit",
+  "signature": "local unit = source:unit([unit])",
+  "brief": "Return the source unit (and modify it on Vars and Sensors)",
+  "since": "1.1.0",
+  "url": "objects/Source/unit/"
+ },
+ {
+  "name": "Source:protocolUnit",
+  "signature": "local unit = source:protocolUnit([unit])",
+  "brief": "Get / Set the sensor internal unit.",
+  "since": "1.5.10",
+  "url": "objects/Source/protocolUnit/"
+ },
+ {
+  "name": "Source:stringUnit",
+  "signature": "local unit = source:stringUnit()",
+  "brief": "Return the source unit.",
+  "since": "1.1.0",
+  "url": "objects/Source/stringUnit/"
+ },
+ {
+  "name": "Source:decimals",
+  "signature": "local decimals = source:decimals(decimals)",
+  "brief": "Return the source decimals (and modify it on Vars and Sensors)",
+  "since": "1.5.5",
+  "url": "objects/Source/decimals/"
+ },
+ {
+  "name": "Source:protocolDecimals",
+  "signature": "local decimals = source:protocolDecimals(decimals)",
+  "brief": "Get / Set sensor internal decimals.",
+  "since": "1.5.10",
+  "url": "objects/Source/protocolDecimals/"
+ },
+ {
+  "name": "Source:stringValue",
+  "signature": "local value = source:stringValue([options])",
+  "brief": "Return the source value as a string.",
+  "since": "1.1.0",
+  "url": "objects/Source/stringValue/"
+ },
+ {
+  "name": "Source:member",
+  "signature": "local member = source:member()",
+  "brief": "Return the source member.",
+  "since": "1.1.2",
+  "url": "objects/Source/member/"
+ },
+ {
+  "name": "Source:category",
+  "signature": "local category = source:category()",
+  "brief": "Return the source category.",
+  "since": "1.1.2",
+  "url": "objects/Source/category/"
+ },
+ {
+  "name": "Source:options",
+  "signature": "local options = source:options()",
+  "brief": "Return the source options.",
+  "since": "1.1.4",
+  "url": "objects/Source/options/"
+ },
+ {
+  "name": "Source:band",
+  "signature": "local band = source:band([band])",
+  "brief": "Get or set the band of the source if it is a FrSky Sensor.",
+  "since": "1.5.5",
+  "url": "objects/Source/band/"
+ },
+ {
+  "name": "Source:appId",
+  "signature": "local appId = source:appId([appId])",
+  "brief": "Get or set the appId of the source if is a FrSky sensor.",
+  "since": "1.5.5",
+  "url": "objects/Source/appId/"
+ },
+ {
+  "name": "Source:physId",
+  "signature": "local physId = source:physId([physId])",
+  "brief": "Get or set the physId of the source if it is a FrSky sensor.",
+  "since": "1.5.5",
+  "url": "objects/Source/physId/"
+ },
+ {
+  "name": "Source:crsfId",
+  "signature": "local crsfId = source:crsfId([crsfId])",
+  "brief": "Get or set the crsfId of the source if it is a CRSF sensor.",
+  "since": "1.6.2",
+  "url": "objects/Source/crsfId/"
+ },
+ {
+  "name": "Source:subId",
+  "signature": "local crsfId = source:subId([crsfId])",
+  "brief": "Get or set the subId of the source if it is a CRSF or a FrSky sensor.",
+  "since": "1.6.2",
+  "url": "objects/Source/subId/"
+ },
+ {
+  "name": "Source:drop",
+  "signature": "source:drop()",
+  "brief": "Drop a telemetry sensor.",
+  "since": "1.5.10",
+  "url": "objects/Source/drop/"
+ },
+ {
+  "name": "TimeEditLib:title",
+  "signature": "field:title(text)",
+  "brief": "Set the field menu title.",
+  "since": "26.1.0",
+  "url": "objects/TimeEditLib/title/"
+ },
+ {
+  "name": "Timer:name",
+  "signature": "local name = timer:name([name])",
+  "brief": "Get / Set the timer name.",
+  "since": "1.1.0",
+  "url": "objects/Timer/name/"
+ },
+ {
+  "name": "Timer:direction",
+  "signature": "local direction = timer:direction([direction])",
+  "brief": "Get / Set the timer direction (1 / -1)",
+  "since": "1.1.0",
+  "url": "objects/Timer/direction/"
+ },
+ {
+  "name": "Timer:persistent",
+  "signature": "local persistent = timer:persistent([persistent])",
+  "brief": "Get / Set the timer persistent attribute.",
+  "since": "26.1.0",
+  "url": "objects/Timer/persistent/"
+ },
+ {
+  "name": "Timer:value",
+  "signature": "local value = timer:value()",
+  "brief": "Get / Set the timer value.",
+  "since": "1.1.0",
+  "url": "objects/Timer/value/"
+ },
+ {
+  "name": "Timer:stringValue",
+  "signature": "local value = timer:stringValue()",
+  "brief": "Return the timer value as a string.",
+  "since": "1.5.8",
+  "url": "objects/Timer/stringValue/"
+ },
+ {
+  "name": "Timer:alarm",
+  "signature": "local alarm = timer:alarm([alarm])",
+  "brief": "Get / Set the alarm value of the timer.",
+  "since": "1.1.0",
+  "url": "objects/Timer/alarm/"
+ },
+ {
+  "name": "Timer:start",
+  "signature": "local start = timer:start([start])",
+  "brief": "Get / Set the start value of the timer.",
+  "since": "1.1.0",
+  "url": "objects/Timer/start/"
+ },
+ {
+  "name": "Timer:startCondition",
+  "signature": "local condition = timer:startCondition([condition])",
+  "brief": "Get / Set the start condition of the timer.",
+  "since": "1.1.0",
+  "url": "objects/Timer/startCondition/"
+ },
+ {
+  "name": "Timer:stopCondition",
+  "signature": "timer:stopCondition(None)",
+  "brief": "Get / Set the stop condition of the timer.",
+  "since": "26.1.0",
+  "url": "objects/Timer/stopCondition/"
+ },
+ {
+  "name": "Timer:countingSource",
+  "signature": "local source = timer:countingSource([source])",
+  "brief": "Get / Set the counting source of the timer.",
+  "since": "26.1.0",
+  "url": "objects/Timer/countingSource/"
+ },
+ {
+  "name": "Timer:voice",
+  "signature": "local voice = timer:voice([voice])",
+  "brief": "Get / Set the voice used by the timer.",
+  "since": "26.1.0",
+  "url": "objects/Timer/voice/"
+ },
+ {
+  "name": "Timer:audioActions",
+  "signature": "timer:audioActions([actions])",
+  "brief": "Get / Set the audio actions of the timer.",
+  "since": "1.5.0",
+  "url": "objects/Timer/audioActions/"
+ },
+ {
+  "name": "Timer:resetCondition",
+  "signature": "local reset = timer:resetCondition([condition])",
+  "brief": "Get / Set the reset condition of the timer.",
+  "since": "1.1.0",
+  "url": "objects/Timer/resetCondition/"
+ },
+ {
+  "name": "Timer:reset",
+  "signature": "timer:reset()",
+  "brief": "Reset the timer.",
+  "since": "1.4.10",
+  "url": "objects/Timer/reset/"
+ },
+ {
+  "name": "Timer:running",
+  "signature": "local running = timer:running()",
+  "brief": "Return the running state of the timer.",
+  "since": "1.5.0",
+  "url": "objects/Timer/running/"
+ }
+]

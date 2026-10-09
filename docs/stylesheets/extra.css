@@ -1,0 +1,86 @@
+/* =============================================================================
+   Ethos brand colors (shared with the Ethos manual site): near-black top bar,
+   brand green #8ec31f from the logo, interactive accent green #78d642.
+   ============================================================================= */
+
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color:        #141414;
+  --md-primary-fg-color--light: #2b2b2b;
+  --md-primary-fg-color--dark:  #000000;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+}
+
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color:              #5fa82e;
+  --md-accent-fg-color--transparent: rgba(120, 214, 66, 0.1);
+  --md-accent-bg-color:              #ffffff;
+  --md-accent-bg-color--light:       rgba(255, 255, 255, 0.7);
+  /* links + active nav item use the accent, not the near-black primary */
+  --md-typeset-a-color: #4f8f22;
+}
+
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #78d642;
+  --md-typeset-a-color: #8ec31f;
+}
+
+.md-header__button.md-logo img { height: 1.4rem; }
+
+.md-typeset .admonition.note,
+.md-typeset details.note { border-color: #8ec31f; }
+.md-typeset .admonition.note > .admonition-title,
+.md-typeset details.note > summary { background-color: rgba(142, 195, 31, 0.1); }
+.md-typeset .admonition.note > .admonition-title::before,
+.md-typeset details.note > summary::before { background-color: #8ec31f; }
+
+/* -----------------------------------------------------------------------------
+   API pages
+   ----------------------------------------------------------------------------- */
+
+.api-badges { margin: -0.4rem 0 0.8rem; display: flex; gap: 0.4rem; flex-wrap: wrap; }
+
+.md-typeset .api-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.3rem 0.55rem;
+  border-radius: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+}
+.md-typeset .api-badge--since { border-color: #8ec31f; color: #4f8f22; }
+.md-typeset .api-badge--new { background: #8ec31f; border-color: #8ec31f; color: #141414; }
+.md-typeset .api-badge--deprecated { border-color: #d9534f; color: #d9534f; }
+[data-md-color-scheme="slate"] .md-typeset .api-badge--since { color: #8ec31f; }
+
+.api-usage, .api-source {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  margin-bottom: 0.6rem;
+}
+
+.api-pager {
+  margin-top: 2rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.75rem;
+}
+
+/* the signature block right under the title reads as the headline */
+.md-typeset h1 + .api-badges + p + .highlight code,
+.md-typeset h1 + p + .highlight code { font-size: 0.9em; }
+
+/* -----------------------------------------------------------------------------
+   Home page cards
+   ----------------------------------------------------------------------------- */
+
+.md-typeset .grid.cards > ul > li { border-radius: 0.4rem; }
+.md-typeset .grid.cards > ul > li:hover { border-color: #8ec31f; }
+
+.hero {
+  padding: 1.2rem 0 0.4rem;
+}
+.hero p.lead { font-size: 1.05rem; color: var(--md-default-fg-color--light); }

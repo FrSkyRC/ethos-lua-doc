@@ -1,0 +1,10 @@
+# build output
+site/
+
+# downloads and clones made by scripts/update.py and scripts/scan_usage.py
+.cache/
+
+# local python env
+.venv/
+__pycache__/
+*.pyc

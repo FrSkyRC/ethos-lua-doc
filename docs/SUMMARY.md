@@ -1,0 +1,47 @@
+- [Home](index.md)
+- Getting started
+    - [Overview](getting-started/index.md)
+    - [Your first widget](getting-started/first-widget.md)
+    - [Script types & lifecycle](getting-started/script-types.md)
+    - [The Lua environment](getting-started/lua-environment.md)
+    - [Files, folders & packaging](getting-started/packaging.md)
+- Guides
+    - [Overview](guides/index.md)
+    - [Drawing on screen](guides/drawing.md)
+    - [Forms & configuration UI](guides/forms.md)
+    - [Sources & telemetry](guides/telemetry.md)
+    - [Events, keys & touch](guides/events.md)
+    - [Saving settings](guides/storage.md)
+    - [Audio & haptics](guides/audio.md)
+    - [Translations](guides/i18n.md)
+- Best practice
+    - [Overview](best-practice/index.md)
+    - [Saving RAM](best-practice/memory.md)
+    - [Saving CPU](best-practice/cpu.md)
+    - [Code patterns](best-practice/patterns.md)
+    - [Measuring](best-practice/measuring.md)
+    - [Pitfalls](best-practice/pitfalls.md)
+- Cookbook
+    - [Overview](cookbook/index.md)
+    - [Telemetry value widget](cookbook/value-widget.md)
+    - [Battery gauge widget](cookbook/battery-gauge.md)
+    - [Background alert task](cookbook/alert-task.md)
+    - [System tool with a form](cookbook/system-tool.md)
+    - [Lua source](cookbook/lua-source.md)
+    - [Timer control](cookbook/timer-control.md)
+    - [Memory monitor](cookbook/memory-monitor.md)
+    - Official examples
+        - [Overview](examples/official/index.md)
+        - examples/official/*.md
+- [API reference](api/)
+- Tools & testing
+    - [Overview](tools/index.md)
+    - [Web simulator](tools/web-simulator.md)
+    - [Ethos Suite](tools/ethos-suite.md)
+    - [AI agents & ethos-tools](tools/ai-agents.md)
+    - [Debugging](tools/debugging.md)
+- Contributing
+    - [Overview](contributing/index.md)
+    - [Updating the API docs](contributing/updating.md)
+    - [Writing examples](contributing/writing-examples.md)
+    - [Real-world usage](contributing/real-world-usage.md)

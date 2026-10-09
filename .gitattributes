@@ -1,0 +1,5 @@
+# Normalise to LF so generated files (docs/api, data/*.json) diff cleanly
+# between Windows and the Linux CI that regenerates them.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

@@ -1,0 +1,8 @@
+# Site build. mkdocs <2 pinned deliberately: MkDocs 2.0 drops the plugin
+# system this site relies on (literate-nav, hooks).
+mkdocs>=1.6,<2
+mkdocs-material>=9.5
+mkdocs-literate-nav>=0.6
+
+# Content generation (scripts/*.py)
+beautifulsoup4>=4.12

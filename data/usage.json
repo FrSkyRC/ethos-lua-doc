@@ -1,0 +1,2472 @@
+{
+ "repos": {
+  "rotorflight/rotorflight-lua-ethos-suite": {
+   "label": "Rotorflight suite",
+   "sha": "53c7e819afe6293cb7623b5972e4a4d276a90ad1"
+  },
+  "WingFlight/wingflight-lua-ethos-suite": {
+   "label": "Wingflight suite",
+   "sha": "0a7b1c61ad582033adebbe65183702650d4e377a"
+  },
+  "robthomson/dashx-ethos": {
+   "label": "DashX",
+   "sha": "6dcae492715da80d210cb4c6b16c3881c9791e2a"
+  },
+  "robthomson/ethos-app-framework": {
+   "label": "Ethos app framework",
+   "sha": "fdfd6e70f8f2865a2742102e009b791ae18e3ca9"
+  },
+  "robthomson/ethos-arcade": {
+   "label": "Ethos Arcade",
+   "sha": "0fb9f36a97dc902391c425e97ef79211fc7ae0d9"
+  },
+  "robthomson/omp-ofs3-dashboard": {
+   "label": "OMP OFS3 dashboard",
+   "sha": "2970572ba2b0a4b47d3789f6cd29c6acdc9b231d"
+  },
+  "robthomson/ethos-gps-heading": {
+   "label": "GPS heading",
+   "sha": "77f02e8f3adf51d9e7c2eba0f2c215b747a0413a"
+  },
+  "robthomson/ethos-flight-training": {
+   "label": "Flight training",
+   "sha": "de627d533d7fa0e02377497ff5caf521a112e929"
+  },
+  "robthomson/ethos-heli-training": {
+   "label": "Heli training",
+   "sha": "395dc60d4d89d4c5832b14014e01f567e1c34041"
+  },
+  "robthomson/ethos-bmfa-caller": {
+   "label": "BMFA caller",
+   "sha": "f4bb5511dbe666567fc5406ca60124be65b9c830"
+  },
+  "flyingeek/ethos-gps-qrcode": {
+   "label": "GPS QR code",
+   "sha": "e70f80b85f48b00414d84d42a133d5a14a3c0862"
+  },
+  "iNavFlight/ETHOS-Telemetry-Dashboard": {
+   "label": "INAV telemetry dashboard",
+   "sha": "656975b84cbbbc3bd7861bdf2a92b4686937280e"
+  },
+  "FrSkyRC/ETHOS-Feedback-Community": {
+   "label": "FrSky official scripts",
+   "sha": "7cab00b5ee95e761965c58ddec2d2b113fedde64"
+  }
+ },
+ "calls": {
+  "crsf.getSensor": {
+   "count": 6,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/tasks/msp/transport_crsf.lua",
+     "line": 23,
+     "start": 22,
+     "snippet": "local function getSensor()\n  if not sensor then sensor = crsf.getSensor() end\n  return sensor\nend"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/tasks/mspcore/transport_crsf.lua",
+     "line": 31,
+     "start": 22,
+     "snippet": "function transport:_ensureSensor()\n    if self.sensor then\n        return self.sensor\n    end\n\n    if not crsf or not crsf.getSensor then\n        return nil\n    end\n\n    self.sensor = crsf.getSensor()\n    return self.sensor\nend"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/lib/elrslink_task.lua",
+     "line": 246,
+     "start": 243,
+     "snippet": "local function getSensor()\n  if sensor ~= nil then return sensor end\n  if crsf and crsf.getSensor then\n    sensor = crsf.getSensor()\n  elseif crsf then\n    sensor = {\n      popFrame = function(_, ...) return crsf.popFrame(...) end,\n      pushFrame = function(_, command, payload) return crsf.pushFrame(command, payload) end,\n    }\n  end\n  return sensor\nend"
+    }
+   ]
+  },
+  "form.clear": {
+   "count": 227,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/adjustments.lua",
+     "line": 812,
+     "start": 811,
+     "snippet": "busy = true\nform.clear()"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/pages/adjustments.lua",
+     "line": 546,
+     "start": 545,
+     "snippet": "liveFields = {}\nform.clear()"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/controllers/form_host.lua",
+     "line": 98,
+     "start": 97,
+     "snippet": "if form and form.clear then\n    form.clear()"
+    }
+   ]
+  },
+  "form.height": {
+   "count": 58,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/main.lua",
+     "line": 468,
+     "start": 468,
+     "snippet": "local y = form.height() + padding"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/pages/curves.lua",
+     "line": 376,
+     "start": 376,
+     "snippet": "local preCountHeight = form.height()"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/logs/logs_logs.lua",
+     "line": 143,
+     "start": 143,
+     "snippet": "if lc == 0 then y = form.height() + (dashx.preferences.general.iconsize == 2 and dashx.app.radio.buttonPadding or dashx.app.radio.buttonPaddingSmall) end"
+    }
+   ]
+  },
+  "form.invalidate": {
+   "count": 44,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/power_smartfuel.lua",
+     "line": 129,
+     "start": 129,
+     "snippet": "if form.invalidate then form.invalidate() end"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/pages/telemetry.lua",
+     "line": 296,
+     "start": 294,
+     "snippet": "markDirty()\nselected[sensorId] = value == true\nif form.invalidate then form.invalidate() end"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/app.lua",
+     "line": 50,
+     "start": 47,
+     "snippet": "function()\n    if app.triggers.exitAPP then\n        app.triggers.exitAPP = false\n        form.invalidate()\n        system.exit()\n        utils.reportMemoryUsage(\"Exit App\")\n    end\nend, function()"
+    }
+   ]
+  },
+  "form.addExpansionPanel": {
+   "count": 86,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard/themes/kevd/configure.lua",
+     "line": 47,
+     "start": 47,
+     "snippet": "local rpm_panel = form.addExpansionPanel(\"RPM\")"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 342,
+     "start": 342,
+     "snippet": "panel = form.addExpansionPanel(\"EGT configure\")"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/themes/bastion/configure.lua",
+     "line": 154,
+     "start": 154,
+     "snippet": "local radio = form.addExpansionPanel(\"Radio link\")"
+    }
+   ]
+  },
+  "form.addLine": {
+   "count": 667,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/model/model.lua",
+     "line": 36,
+     "start": 36,
+     "snippet": "form.addLine(title)"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/alignment/alignment.lua",
+     "line": 200,
+     "start": 200,
+     "snippet": "line = form.addLine(\"\")"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/header.lua",
+     "line": 231,
+     "start": 231,
+     "snippet": "local line = form.addLine(\"\")"
+    }
+   ]
+  },
+  "form.addStaticText": {
+   "count": 219,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/developer/tools/api_tester.lua",
+     "line": 333,
+     "start": 333,
+     "snippet": "form.addStaticText(line, nil, row.value)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/settings_activelook_mode.lua",
+     "line": 41,
+     "start": 41,
+     "snippet": "previewTop = form.addStaticText(layoutLine, slots[2], \"\")"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/pages/adjustments.lua",
+     "line": 727,
+     "start": 727,
+     "snippet": "local enaLive = form.addStaticText(enaLine, {x = xLive, y = y, w = wLive, h = h}, \"--\")"
+    }
+   ]
+  },
+  "form.addBooleanField": {
+   "count": 54,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/settings/tools/development.lua",
+     "line": 29,
+     "start": 26,
+     "snippet": "formFieldCount = formFieldCount + 1\ndashx.session.formLineCnt = dashx.session.formLineCnt + 1\ndashx.app.formLines[dashx.session.formLineCnt] = form.addLine(\"@i18n(app.modules.settings.txt_devtools)@\")\ndashx.app.formFields[formFieldCount] = form.addBooleanField(dashx.app.formLines[dashx.session.formLineCnt], nil, function() if dashx.preferences and dashx.preferences.developer then return settings['devtools'] end end,\n                                           function(newValue) if dashx.preferences and dashx.preferences.developer then settings.devtools = newValue end end)"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/settings/tools/shortcuts.lua",
+     "line": 117,
+     "start": 117,
+     "snippet": "form.addBooleanField(form.addLine(\"@i18n(app.modules.settings.shortcuts_mixed_in_mode)@\"), nil,\n    function()\n        return self.state.mixedIn == true\n    end,\n    function(newValue)\n        self.state.mixedIn = prefBool(newValue, true)\n    end)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/blackbox_edit_page.lua",
+     "line": 365,
+     "start": 364,
+     "snippet": "line = form.addLine(\"@i18n(app.modules.blackbox.rolling_erase)@\")\ncontrolFields.rollingErase = form.addBooleanField(line, nil, function()\n  return (current.rollingErase or 0) == 1\nend, function(value)\n  current.rollingErase = value and 1 or 0\n  markDirty()\nend)"
+    }
+   ]
+  },
+  "form.addNumberField": {
+   "count": 229,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 307,
+     "start": 306,
+     "snippet": "line = panel:addLine(\"Max RPM\")\nrpmMaxEdit = form.addNumberField(line, nil, 0, 10000, function() return widget.maxRpm end, function(newValue) widget.maxRpm = newValue end)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/themes/kevd/configure.lua",
+     "line": 54,
+     "start": 53,
+     "snippet": "local rpm_max_line = rpm_panel:addLine(\"Max\")\nformFields[#formFields + 1] = form.addNumberField(rpm_max_line, nil, 1, 20000, function() return config.rpm_max end, function(val) config.rpm_max = clamp(tonumber(val) or THEME_DEFAULTS.rpm_max, config.rpm_min + 1, 20000) end, 1)"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard/themes/kevd/configure.lua",
+     "line": 99,
+     "start": 98,
+     "snippet": "local esc_max_line = esc_panel:addLine(\"Max\")\nformFields[#formFields + 1] = form.addNumberField(esc_max_line, nil, 1, 200, function() return config.esctemp_max end, function(val) config.esctemp_max = clamp(tonumber(val) or THEME_DEFAULTS.esctemp_max, config.esctemp_warn + 1, 200) end, 1)"
+    }
+   ]
+  },
+  "form.addChoiceField": {
+   "count": 188,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/tune_advisor.lua",
+     "line": 637,
+     "start": 637,
+     "snippet": "form.addChoiceField(axisLine, nil, AXES, function() return AXES[selected][2] end, onAxis)"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/field_layout.lua",
+     "line": 411,
+     "start": 408,
+     "snippet": "local field\nif spec.choices then\n  local access = configureChoiceSlot(runtime, spec)\n  field = form.addChoiceField(line, slot, spec.choices, access.get, access.setWithDirty)"
+    },
+    {
+     "repo": "robthomson/ethos-bmfa-caller",
+     "path": "src/bmfa-caller/widget_impl.lua",
+     "line": 133,
+     "start": 132,
+     "snippet": "line = form.addLine(\"Certificate\")\ncertField = form.addChoiceField(line, nil, certChoices,\n    function() return widget.certIdx end,\n    function(v) widget.certIdx = v; widget.mnvrIdx = 0 end)"
+    }
+   ]
+  },
+  "form.addSliderField": {
+   "count": 6,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/logs/logs_view.lua",
+     "line": 471,
+     "start": 470,
+     "snippet": "local posField = {x = graphPos['x_start'], y = graphPos['slider_y'], w = graphPos['width'] - 10, h = 40}\ndashx.app.formFields[1] = form.addSliderField(nil, posField, 0, 100, function() return sliderPosition end, function(newValue) sliderPosition = newValue end)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/logs.lua",
+     "line": 540,
+     "start": 540,
+     "snippet": "local slider = form.addSliderField(nil, {x = graphPos.x, y = graphPos.sliderY, w = graphPos.w - 8, h = sliderH}, 1, 100, function()\n  return sliderPosition\nend, function(value)\n  sliderPosition = value\nend)"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/logs/logs_view.lua",
+     "line": 713,
+     "start": 713,
+     "snippet": "state.fields.slider = form.addSliderField(nil, {\n    x = layout.graphX,\n    y = layout.sliderY,\n    w = layout.sliderWidth,\n    h = layout.buttonHeight\n}, 1, 100,\nfunction()\n    return state.sliderPosition\nend,\nfunction(newValue)\n    state.sliderPosition = newValue\nend)"
+    }
+   ]
+  },
+  "form.addSourceField": {
+   "count": 6,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 358,
+     "start": 357,
+     "snippet": "line = form.addLine(\"Pump source\")\nform.addSourceField(line, nil, function() return widget.pumpSource end, function(newValue) widget.pumpSource = newValue end)"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 295,
+     "start": 294,
+     "snippet": "local line = form.addLine(\"Altitude source\")\nform.addSourceField(line, nil, function() return widget.altSource end, function(newValue) widget.altSource = newValue end)"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 345,
+     "start": 342,
+     "snippet": "panel = form.addExpansionPanel(\"EGT configure\")\nlocal egtMaxEdit\nline = panel:addLine(\"EGT source\")\nform.addSourceField(line, nil, function() return widget.egtSource end, function(newValue)\n  widget.egtSource = newValue\n  if egtMaxEdit ~= nil then\n    egtMaxEdit:suffix(widget.egtSource ~= nil and widget.egtSource:stringUnit() or \"\")\n  end\nend)"
+    }
+   ]
+  },
+  "form.addSwitchField": {
+   "count": 11,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-bmfa-caller",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-bmfa-caller",
+     "path": "src/bmfa-caller/widget_impl.lua",
+     "line": 148,
+     "start": 147,
+     "snippet": "line = form.addLine(\"Reset Switch\")\nform.addSwitchField(line, form.getFieldSlots(line)[0],\n    function() return widget.rstSwitch end,\n    function(v) widget.rstSwitch = v end)"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/configure.lua",
+     "line": 316,
+     "start": 315,
+     "snippet": "local armLine = addLine(triggersPanel, \"@i18n(app.modules.model.model_armswitch)@\")\nform.addSwitchField(armLine, nil, function()\n    return decodeSwitchSpec(widget.armswitch)\nend, function(newValue)\n    widget.armswitch = encodeSwitchSource(newValue)\nend)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/settings_activelook_settings.lua",
+     "line": 37,
+     "start": 36,
+     "snippet": "line = form.addLine(\"@i18n(app.modules.settings.activelook_hide_display)@\")\nform.addSwitchField(line, nil,\n  function() return switchFromConfig(settings.activelook.display_switch) end,\n  function(source)\n    settings.activelook.display_switch = switchToConfig(source)\n    updateSaveEnabled()\n  end)"
+    }
+   ]
+  },
+  "form.addTextField": {
+   "count": 4,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/configuration/configuration.lua",
+     "line": 663,
+     "start": 663,
+     "snippet": "control = form.addTextField(form.addLine(\"@i18n(app.modules.configuration.craft_name)@\"), textFieldPos(app),\n    function()\n        return state.currentName\n    end,\n    function(newValue)\n        local value = tostring(newValue or \"\")\n        if value ~= state.currentName then\n            state.currentName = value\n            state.dirty = true\n            app:setPageDirty(true)\n        end\n    end)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/configuration.lua",
+     "line": 231,
+     "start": 228,
+     "snippet": "-- header comment for why: the first page needing one, and why it\n-- can't be corrected in place like every other field type).\nlocal nameLine = form.addLine(\"@i18n(app.modules.configuration.craft_name)@\")\nlocal nameField = form.addTextField(nameLine, nil,\n  function()\n    local craftName = dataRef.data.craftName\n    return craftName and craftName.name or \"\"\n  end,\n  function(value)\n    markDirty()\n    local craftName = dataRef.data.craftName\n    if craftName then craftName.name = value or \"\" end\n  end)"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/lib/ui.lua",
+     "line": 534,
+     "start": 534,
+     "snippet": "formFields[i] = form.addTextField(formLines[dashx.session.formLineCnt], posField, function()\n    if not fields or not fields[i] then\n        ui.disableAllFields()\n        ui.disableAllNavigationFields()\n        ui.enableNavigationField('menu')\n        return nil\n    end\n    return dashx.app.utils.getFieldValue(fields[i])\nend, function(value)\n    if f.postEdit then f.postEdit(page) end\n    if f.onChange then f.onChange(page) end\n\n    f.value = dashx.app.utils.saveFieldValue(fields[i], value)\nend)"
+    }
+   ]
+  },
+  "form.addTextButton": {
+   "count": 80,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/retrofight/game.lua",
+     "line": 273,
+     "start": 273,
+     "snippet": "form.addTextButton(backLine, nil, \"Back\", backAction)"
+    },
+    {
+     "repo": "robthomson/ethos-flight-training",
+     "path": "src/ethos-flight-training/games/shared/trainer-core.lua",
+     "line": 1090,
+     "start": 1090,
+     "snippet": "form.addTextButton(bestLine, nil, \"Reset\", resetBest)"
+    },
+    {
+     "repo": "robthomson/ethos-heli-training",
+     "path": "src/ethos-heli-training/games/collective-balance/game.lua",
+     "line": 578,
+     "start": 578,
+     "snippet": "form.addTextButton(backLine, nil, \"Back to Game\", backAction)"
+    }
+   ]
+  },
+  "form.addButton": {
+   "count": 92,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/lib/ui.lua",
+     "line": 899,
+     "start": 899,
+     "snippet": "dashx.app.formNavigationFields['help'] = form.addButton(line, {x = helpOffset, y = y, w = wS, h = h}, {text = \"@i18n(app.navigation_help)@\", icon = nil, options = FONT_S, paint = function() end, press = function() end})"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/retrofight/game.lua",
+     "line": 271,
+     "start": 270,
+     "snippet": "if form.addButton then\n    form.addButton(backLine, nil, {text = \"Back\", press = backAction})"
+    },
+    {
+     "repo": "robthomson/ethos-flight-training",
+     "path": "src/ethos-flight-training/games/shared/trainer-core.lua",
+     "line": 1088,
+     "start": 1087,
+     "snippet": "if form.addButton then\n    form.addButton(bestLine, nil, {text = \"Reset\", press = resetBest})"
+    }
+   ]
+  },
+  "form.addFileField": {
+   "count": 12,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/RB25_S/stab/basic/basic.lua",
+     "line": 101,
+     "start": 101,
+     "snippet": "form.addFileField(ePanelLine, slots[1], \"\", \"csv+ext\", function ()\n  return restoreFileName\nend, function (newFile)\n  restoreFileName = newFile\nend)"
+    }
+   ]
+  },
+  "form.getFieldSlots": {
+   "count": 79,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/ethos-bmfa-caller",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/RB25_S/stab/stab.lua",
+     "line": 362,
+     "start": 362,
+     "snippet": "local slots = form.getFieldSlots(line, fieldLabels)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/header.lua",
+     "line": 255,
+     "start": 255,
+     "snippet": "local slots = form.getFieldSlots(line, {0, SLOT_HINT, SLOT_HINT, SLOT_HINT, SLOT_HINT})"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/pages/alignment.lua",
+     "line": 61,
+     "start": 60,
+     "snippet": "local line = form.addLine(\"\")\nlocal slot = form.getFieldSlots(line, {0})[1]"
+    }
+   ]
+  },
+  "form.openDialog": {
+   "count": 120,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/lib/ui.lua",
+     "line": 765,
+     "start": 765,
+     "snippet": "form.openDialog({width = nil, title = \"@i18n(app.modules.profile_select.save_settings)@\", message = \"@i18n(app.modules.profile_select.save_prompt_local)@\", buttons = buttons, wakeup = function() end, paint = function() end, options = TEXT_LEFT})"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/app.lua",
+     "line": 1068,
+     "start": 1066,
+     "snippet": "if form and form.openDialog then\n    opts.width = nil\n    return form.openDialog(opts)"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/RB25_S/stab/common.lua",
+     "line": 47,
+     "start": 46,
+     "snippet": "Dialog.openDialog = function (dialogParams)\n  Dialog.dialog = form.openDialog(dialogParams)\nend"
+    }
+   ]
+  },
+  "form.openWaitDialog": {
+   "count": 4,
+   "projects": [
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/app.lua",
+     "line": 1060,
+     "start": 1058,
+     "snippet": "if form and form.openWaitDialog then\n    opts.progress = true\n    return form.openWaitDialog(opts)"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/tools/logs.lua",
+     "line": 242,
+     "start": 240,
+     "snippet": "local function openProgressDialog(title, message)\n    if form.openWaitDialog and ofs3.utils.ethosVersionAtLeast({26, 1, 0}) then\n        return form.openWaitDialog({title = title, message = message, progress = true})\n    end\n    return form.openProgressDialog(title, message)\nend"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/tools/logs.lua",
+     "line": 242,
+     "start": 240,
+     "snippet": "local function openProgressDialog(title, message)\n    if form.openWaitDialog and dashx.utils.ethosVersionAtLeast({26, 1, 0}) then\n        return form.openWaitDialog({title = title, message = message, progress = true})\n    end\n    return form.openProgressDialog(title, message)\nend"
+    }
+   ]
+  },
+  "glasses.getWindowSize": {
+   "count": 2,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/activelook.lua",
+     "line": 245,
+     "start": 244,
+     "snippet": "if not glasses or not glasses.getWindowSize or not glasses.createLayout then return false end\nlocal w, h = glasses.getWindowSize()"
+    }
+   ]
+  },
+  "glasses.createLayout": {
+   "count": 2,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/activelook.lua",
+     "line": 272,
+     "start": 269,
+     "snippet": "  preflightTopOffset = floor(14 * scale),\n  preflightBottomOffset = floor(2 * scale),\n}\nwidget.layout = glasses.createLayout({\n  x = floor(padding + 0.5),\n  y = floor(padding + 0.5),\n  w = areaW,\n  h = areaH,\n  text = {x = 0, y = 0, font = 1},\n  border = false,\n})"
+    }
+   ]
+  },
+  "lcd.RGB": {
+   "count": 637,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-gps-heading",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-bmfa-caller",
+     "path": "src/bmfa-caller/widget_impl.lua",
+     "line": 57,
+     "start": 57,
+     "snippet": "lcd.color(lcd.RGB(40, 40, 40))"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/gulaxian/game.lua",
+     "line": 668,
+     "start": 668,
+     "snippet": "lcd.color(lcd.RGB(190, 190, 190))"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/objects/navigation/ah.lua",
+     "line": 140,
+     "start": 140,
+     "snippet": "local skyColor = lcd.RGB(70, 130, 180)"
+    }
+   ]
+  },
+  "lcd.GREY": {
+   "count": 32,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 115,
+     "start": 115,
+     "snippet": "lcd.color(lcd.GREY(0xFF))"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/governor/tools/curves.lua",
+     "line": 443,
+     "start": 443,
+     "snippet": "lcd.color(isDark and lcd.GREY(80) or lcd.GREY(180))"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/setup_governor_curves.lua",
+     "line": 82,
+     "start": 82,
+     "snippet": "if lcd.color and lcd.GREY then lcd.color(lcd.GREY(90)) end"
+    }
+   ]
+  },
+  "lcd.color": {
+   "count": 601,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/alignment_visual.lua",
+     "line": 183,
+     "start": 183,
+     "snippet": "lcd.color(bg)"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/alignment_visual.lua",
+     "line": 219,
+     "start": 219,
+     "snippet": "lcd.color(grid)"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/widgets/dashboard/lib/logviewer.lua",
+     "line": 653,
+     "start": 653,
+     "snippet": "lcd.color(fill)"
+    }
+   ]
+  },
+  "lcd.themeColor": {
+   "count": 10,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "flyingeek/ethos-gps-qrcode",
+     "path": "gps-qrcode/main.lua",
+     "line": 180,
+     "start": 179,
+     "snippet": "lcd.font(FONT_STD)\nlcd.color(lcd.themeColor(THEME_DEFAULT_COLOR))"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/context.lua",
+     "line": 416,
+     "start": 412,
+     "snippet": "local function resolveThemeConstant(name)\n  if not supportsSystemThemeColors() then return nil end\n  local key = _G and _G[name]\n  if type(key) ~= \"number\" then return nil end\n  return lcd.themeColor(key)\nend"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard.lua",
+     "line": 466,
+     "start": 464,
+     "snippet": "local function resolveToolbarThemeColor(themeColorKey, fallback)\n  if type(themeColorKey) == \"number\" and type(lcd.themeColor) == \"function\" and ensureEthosVersion().atLeast({26, 1, 0}) then\n    return lcd.themeColor(themeColorKey)\n  end\n  return fallback\nend"
+    }
+   ]
+  },
+  "lcd.darkMode": {
+   "count": 38,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/logging.lua",
+     "line": 24,
+     "start": 24,
+     "snippet": "if lcd.darkMode() then"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/alignment_visual.lua",
+     "line": 168,
+     "start": 168,
+     "snippet": "local isDark = lcd.darkMode()"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/alignment/alignment.lua",
+     "line": 566,
+     "start": 566,
+     "snippet": "isDark = lcd.darkMode and lcd.darkMode()"
+    }
+   ]
+  },
+  "lcd.font": {
+   "count": 323,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/themes/danielrc/common.lua",
+     "line": 520,
+     "start": 520,
+     "snippet": "lcd.font(font)"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/gulaxian/game.lua",
+     "line": 914,
+     "start": 914,
+     "snippet": "lcd.font(FONT_S)"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/alignment_visual.lua",
+     "line": 223,
+     "start": 223,
+     "snippet": "lcd.font(FONT_XS)"
+    }
+   ]
+  },
+  "lcd.pen": {
+   "count": 15,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/logs/logs_view.lua",
+     "line": 266,
+     "start": 266,
+     "snippet": "lcd.pen(DOTTED)"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/tools/logs.lua",
+     "line": 1144,
+     "start": 1144,
+     "snippet": "lcd.pen(PEN_DOTTED)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/logs.lua",
+     "line": 223,
+     "start": 222,
+     "snippet": "lcd.color(color or COLOR_GREY)\nlcd.pen(pen or SOLID)"
+    }
+   ]
+  },
+  "lcd.drawPoint": {
+   "count": 2,
+   "projects": [
+    "robthomson/ethos-arcade"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/gulaxian/game.lua",
+     "line": 684,
+     "start": 684,
+     "snippet": "lcd.drawPoint(math.floor(star.x), math.floor(star.y))"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/gulaxian/game.lua",
+     "line": 671,
+     "start": 668,
+     "snippet": "lcd.color(lcd.RGB(190, 190, 190))\nfor i = 0, state.backgroundCount do\n    local star = state.lowBackgrounds[i]\n    lcd.drawPoint(math.floor(star.x), math.floor(star.y))"
+    }
+   ]
+  },
+  "lcd.drawLine": {
+   "count": 133,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/logs/logs_view.lua",
+     "line": 279,
+     "start": 279,
+     "snippet": "lcd.drawLine(x1, y1, x2, y2)"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/missilecmd/game.lua",
+     "line": 1809,
+     "start": 1809,
+     "snippet": "lcd.drawLine(x - halfW, y, x + halfW, y)"
+    },
+    {
+     "repo": "robthomson/ethos-heli-training",
+     "path": "src/ethos-heli-training/games/piro-rate-lock/game.lua",
+     "line": 696,
+     "start": 696,
+     "snippet": "lcd.drawLine(cx, cy, playerTipX, playerTipY)"
+    }
+   ]
+  },
+  "lcd.drawFilledTriangle": {
+   "count": 33,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/alignment/alignment.lua",
+     "line": 414,
+     "start": 414,
+     "snippet": "lcd.drawFilledTriangle(x1, y1, x2, y2, x3, y3)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/objects/navigation/ah.lua",
+     "line": 172,
+     "start": 172,
+     "snippet": "lcd.drawFilledTriangle(p1x, p1y, p2x, p2y, p3x, p3y)"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/widgets/dashboard/objects/navigation/ah.lua",
+     "line": 107,
+     "start": 107,
+     "snippet": "lcd.drawFilledTriangle(xL, yL, xR, yR, cx - 2 * w, y)"
+    }
+   ]
+  },
+  "lcd.drawRectangle": {
+   "count": 116,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/luadefender/game.lua",
+     "line": 1693,
+     "start": 1693,
+     "snippet": "lcd.drawRectangle(sx - r, sy - r, r * 2, r * 2, 1)"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/utils.lua",
+     "line": 688,
+     "start": 688,
+     "snippet": "if border then lcd.drawRectangle(x - padX, y - padY, bestW + padX * 2, bestH + padY * 2) end"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/alignment_visual.lua",
+     "line": 214,
+     "start": 213,
+     "snippet": "lcd.color(grid)\nlcd.drawRectangle(infoX, infoY, infoW, infoH)"
+    }
+   ]
+  },
+  "lcd.drawFilledRectangle": {
+   "count": 354,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/objects/gauge/bar.lua",
+     "line": 129,
+     "start": 129,
+     "snippet": "lcd.drawFilledRectangle(x, y, w, h)"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/luafrog/game.lua",
+     "line": 1134,
+     "start": 1134,
+     "snippet": "lcd.drawFilledRectangle(px, py, pw, ph)"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/logs/logs_view.lua",
+     "line": 415,
+     "start": 415,
+     "snippet": "lcd.drawFilledRectangle(z_x, z_y, z_w, z_h)"
+    }
+   ]
+  },
+  "lcd.drawCircle": {
+   "count": 26,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/context.lua",
+     "line": 2208,
+     "start": 2208,
+     "snippet": "lcd.drawCircle(cx, cy, outer)"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/shooter/game.lua",
+     "line": 578,
+     "start": 577,
+     "snippet": "setColor(255, 230, 120)\nlcd.drawCircle(state.aimX, state.aimY, ring)"
+    },
+    {
+     "repo": "robthomson/ethos-heli-training",
+     "path": "src/ethos-heli-training/games/piroflip-chase/game.lua",
+     "line": 999,
+     "start": 997,
+     "snippet": "setColor(52, 70, 96)\nif lcd and lcd.drawCircle then\n    lcd.drawCircle(cx, cy, radius)"
+    }
+   ]
+  },
+  "lcd.drawFilledCircle": {
+   "count": 54,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/loaders.lua",
+     "line": 125,
+     "start": 125,
+     "snippet": "lcd.drawFilledCircle(startX + (i - 1) * spacing, yPos, dotRadius)"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/curves_visual.lua",
+     "line": 103,
+     "start": 102,
+     "snippet": "lcd.color(pointColor)\nlcd.drawFilledCircle(p.x, p.y, r)"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/widgets/dashboard/lib/loaders.lua",
+     "line": 100,
+     "start": 99,
+     "snippet": "if lcd.drawFilledCircle then\n    lcd.drawFilledCircle(cx, cy, radius)"
+    }
+   ]
+  },
+  "lcd.drawAnnulusSector": {
+   "count": 16,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/objects/dial/rainbow.lua",
+     "line": 98,
+     "start": 97,
+     "snippet": "lcd.color(color)\nlcd.drawAnnulusSector(cx, cy, inner, outer, segStart, segEnd)"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/utils.lua",
+     "line": 1122,
+     "start": 1120,
+     "snippet": "local mid = startAngle + sweep / 2\nlcd.drawAnnulusSector(cx, cy, inner, outer, startAngle, mid)\nlcd.drawAnnulusSector(cx, cy, inner, outer, mid, endAngle)"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/widgets/dashboard/lib/utils.lua",
+     "line": 1006,
+     "start": 995,
+     "snippet": "function utils.drawArc(cx, cy, radius, thickness, startAngle, endAngle, color)\n    lcd.color(color)\n    local outer = radius\n    local inner = math.max(1, radius - (thickness or 6))\n\n    startAngle = startAngle % 360\n    endAngle = endAngle % 360\n    if endAngle <= startAngle then endAngle = endAngle + 360 end\n\n    local sweep = endAngle - startAngle\n    if sweep <= 180 then\n        lcd.drawAnnulusSector(cx, cy, inner, outer, startAngle, endAngle)\n    else\n        local mid = startAngle + sweep / 2\n        lcd.drawAnnulusSector(cx, cy, inner, outer, startAngle, mid)\n        lcd.drawAnnulusSector(cx, cy, inner, outer, mid, endAngle)\n    end\nend"
+    }
+   ]
+  },
+  "lcd.drawText": {
+   "count": 409,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-gps-heading",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/utils.lua",
+     "line": 690,
+     "start": 690,
+     "snippet": "lcd.drawText(x, y, msg)"
+    },
+    {
+     "repo": "robthomson/ethos-arcade",
+     "path": "src/ethos-arcade/games/gulaxian/game.lua",
+     "line": 885,
+     "start": 885,
+     "snippet": "lcd.drawText(8, 4, title)"
+    },
+    {
+     "repo": "robthomson/ethos-flight-training",
+     "path": "src/ethos-flight-training/games/shared/trainer-core.lua",
+     "line": 1189,
+     "start": 1189,
+     "snippet": "lcd.drawText(16, 84, stepText)"
+    }
+   ]
+  },
+  "lcd.hasFocus": {
+   "count": 15,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/widget.lua",
+     "line": 424,
+     "start": 424,
+     "snippet": "if not lcd.hasFocus() then return false end"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/dashboard.lua",
+     "line": 726,
+     "start": 726,
+     "snippet": "if category == EVT_KEY and lcd.hasFocus() then"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard.lua",
+     "line": 1893,
+     "start": 1893,
+     "snippet": "if widget.infoPanelVisible and category == EVT_KEY and lcd.hasFocus()"
+    }
+   ]
+  },
+  "lcd.loadBitmap": {
+   "count": 35,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/lib/utils.lua",
+     "line": 113,
+     "start": 113,
+     "snippet": "local bitmap = lcd.loadBitmap(path)"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/PGC/main.lua",
+     "line": 13,
+     "start": 13,
+     "snippet": "local icon = lcd.loadBitmap(\"pgc.png\")"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/utils.lua",
+     "line": 487,
+     "start": 486,
+     "snippet": "if not path then return nil end\nlocal bmp = lcd.loadBitmap(path)"
+    }
+   ]
+  },
+  "lcd.loadMask": {
+   "count": 252,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/SR6MiniE_Cali/main.lua",
+     "line": 113,
+     "start": 113,
+     "snippet": "local icon = lcd.loadMask(\"srx.png\")"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/logs.lua",
+     "line": 15,
+     "start": 15,
+     "snippet": "local folderIcon = lcd.loadMask(\"app/gfx/logs_folder.png\")"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/app.lua",
+     "line": 657,
+     "start": 657,
+     "snippet": "local mask = lcd and lcd.loadMask and lcd.loadMask(path) or nil"
+    }
+   ]
+  },
+  "lcd.drawBitmap": {
+   "count": 39,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-arcade",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/utils.lua",
+     "line": 948,
+     "start": 948,
+     "snippet": "lcd.drawBitmap(img_x, img_y, bitmapPtr, img_w, img_h)"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/render/gps_lock.lua",
+     "line": 64,
+     "start": 64,
+     "snippet": "if not pcall(lcd.drawBitmap, x, y, bmp, w, h) then lcd.drawBitmap(x, y, bmp) end"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/context.lua",
+     "line": 1866,
+     "start": 1866,
+     "snippet": "lcd.drawBitmap(math.floor(imgX + 0.5), math.floor(imgY + 0.5), bitmap, math.floor(imgW + 0.5), math.floor(imgH + 0.5))"
+    }
+   ]
+  },
+  "lcd.drawMask": {
+   "count": 2,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard.lua",
+     "line": 605,
+     "start": 602,
+     "snippet": "local minIconY = labelY + (labelH or 0) + iconGap\nlocal iconY = by + bh - iconSize - iconBottomPad\nif iconY < minIconY then iconY = minIconY end\nlcd.drawMask(math.floor(bx + (bw - iconSize) / 2 + 0.5), math.floor(iconY + 0.5), mask)"
+    }
+   ]
+  },
+  "lcd.getTextSize": {
+   "count": 259,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/tile_grid.lua",
+     "line": 95,
+     "start": 95,
+     "snippet": "local tw = lcd.getTextSize(text)"
+    },
+    {
+     "repo": "robthomson/ethos-bmfa-caller",
+     "path": "src/bmfa-caller/widget_impl.lua",
+     "line": 49,
+     "start": 49,
+     "snippet": "local tw, th = lcd.getTextSize(\"\")"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard.lua",
+     "line": 517,
+     "start": 517,
+     "snippet": "local tw, th = lcd.getTextSize(label)"
+    }
+   ]
+  },
+  "lcd.getWindowSize": {
+   "count": 231,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-gps-heading",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/alignment_visual.lua",
+     "line": 162,
+     "start": 162,
+     "snippet": "local w, h = lcd.getWindowSize()"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/utils.lua",
+     "line": 572,
+     "start": 572,
+     "snippet": "local W, H = lcd.getWindowSize()"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/app/modules/alignment/alignment.lua",
+     "line": 559,
+     "start": 559,
+     "snippet": "lcdW, lcdH = lcd.getWindowSize()"
+    }
+   ]
+  },
+  "lcd.setClipping": {
+   "count": 32,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/objects/navigation/ah.lua",
+     "line": 143,
+     "start": 143,
+     "snippet": "lcd.setClipping(x, y, w, h)"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/render/ah.lua",
+     "line": 189,
+     "start": 189,
+     "snippet": "lcd.setClipping(F.x, F.y, F.w, F.h)"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard/objects/navigation/ah.lua",
+     "line": 270,
+     "start": 270,
+     "snippet": "lcd.setClipping(0, 0, lcd.getWindowSize())"
+    }
+   ]
+  },
+  "lcd.invalidate": {
+   "count": 153,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-gps-heading",
+    "robthomson/ethos-heli-training",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/toolbar.lua",
+     "line": 141,
+     "start": 141,
+     "snippet": "lcd.invalidate(widget)"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/RB25_S/stab/cali/cali.lua",
+     "line": 225,
+     "start": 224,
+     "snippet": "nextStep = false\nlcd.invalidate()"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/widgets/dashboard/lib/logviewer.lua",
+     "line": 915,
+     "start": 914,
+     "snippet": "if lcd.invalidate then\n    lcd.invalidate(widget)"
+    }
+   ]
+  },
+  "lcd.isVisible": {
+   "count": 10,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/widget.lua",
+     "line": 253,
+     "start": 253,
+     "snippet": "local isVisible = lcd.isVisible()"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/dashboard.lua",
+     "line": 594,
+     "start": 594,
+     "snippet": "local visible = lcd.isVisible(widget)"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/widgets/performance/performance.lua",
+     "line": 191,
+     "start": 191,
+     "snippet": "local interval = (lcd.isVisible and lcd.isVisible()) and 0.25 or 1.0"
+    }
+   ]
+  },
+  "model.name": {
+   "count": 32,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/lib/runtime.lua",
+     "line": 571,
+     "start": 571,
+     "snippet": "ofs3.session.craftName = model.name and model.name() or ofs3.session.craftName"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/runtime.lua",
+     "line": 706,
+     "start": 706,
+     "snippet": "dashx.session.craftName = model.name and model.name() or dashx.session.craftName"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/themes/danielrc/common.lua",
+     "line": 425,
+     "start": 425,
+     "snippet": "displayValue = session.craftName or (model and model.name and model.name()) or nil"
+    }
+   ]
+  },
+  "model.path": {
+   "count": 2,
+   "projects": [
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/lib/runtime.lua",
+     "line": 83,
+     "start": 82,
+     "snippet": "local function getModelKey()\n    local path = model.path and model.path() or \"\"\n    local name = model.name and model.name() or \"\"\n    local raw = path ~= \"\" and path or name\n    return ofs3.utils.sanitize_filename(raw)\nend"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/runtime.lua",
+     "line": 88,
+     "start": 87,
+     "snippet": "local function getModelKey()\n    local path = model.path and model.path() or \"\"\n    local name = model.name and model.name() or \"\"\n    local raw = path ~= \"\" and path or name\n    return dashx.utils.sanitize_filename(raw)\nend"
+    }
+   ]
+  },
+  "model.bitmap": {
+   "count": 6,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/objects/image/model.lua",
+     "line": 138,
+     "start": 137,
+     "snippet": "if model and model.bitmap then\n    local bm = model.bitmap()"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard/objects/image/model.lua",
+     "line": 165,
+     "start": 163,
+     "snippet": "local function getModelBitmapName()\n    if not (model and model.bitmap) then return nil end\n    local bm = model.bitmap()\n    if bm and type(bm) == \"string\" and bm ~= \"\" and not string.find(bm, \"default_\") then\n        return bm\n    end\n    return nil\nend"
+    }
+   ]
+  },
+  "model.createSensor": {
+   "count": 8,
+   "projects": [
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/sensors/providers/msp.lua",
+     "line": 201,
+     "start": 201,
+     "snippet": "sensor = model.createSensor({type = SENSOR_TYPE_DIY})"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/sensors/telemetry.lua",
+     "line": 249,
+     "start": 249,
+     "snippet": "local s = model.createSensor({type = SENSOR_TYPE_DIY})"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/sensors.lua",
+     "line": 96,
+     "start": 96,
+     "snippet": "local sensor = model.createSensor({type = SENSOR_TYPE_DIY})"
+    }
+   ]
+  },
+  "model.getModule": {
+   "count": 21,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/runtime.lua",
+     "line": 262,
+     "start": 262,
+     "snippet": "local internalModule = model.getModule and model.getModule(0) or nil"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/tasks/sensors.lua",
+     "line": 143,
+     "start": 142,
+     "snippet": "for moduleIndex = 0, 1 do\n    module = model.getModule(moduleIndex)"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/sensors/telemetry.lua",
+     "line": 209,
+     "start": 208,
+     "snippet": "if not internalModule or not externalModule then\n    internalModule = model.getModule(0)"
+    }
+   ]
+  },
+  "serial.open": {
+   "count": 1,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/XAct/config/ui.lua",
+     "line": 25,
+     "start": 25,
+     "snippet": "SportConnection = serial.open(\"sport\", SportInterfaceBandrate, \"8N1\", true)"
+    }
+   ]
+  },
+  "sport.getSensor": {
+   "count": 16,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/SR6MiniE_Cali/main.lua",
+     "line": 35,
+     "start": 35,
+     "snippet": "local sensor = sport.getSensor(0x0c30);"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/tasks/msp/transport_sport.lua",
+     "line": 33,
+     "start": 31,
+     "snippet": "local function getSensor()\n  if not sensor then\n    sensor = sport.getSensor({module = moduleNumber or 0, primId = REPLY_FRAME_ID})\n  end\n  return sensor\nend"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/tasks/mspcore/transport_sport.lua",
+     "line": 39,
+     "start": 27,
+     "snippet": "function transport:_ensureSensor()\n    local moduleNumber\n\n    if self.sensor then\n        return self.sensor\n    end\n\n    if not sport or not sport.getSensor then\n        return nil\n    end\n\n    moduleNumber = self.session:get(\"telemetryModuleNumber\", 0) or 0\n    self.sensor = sport.getSensor({module = moduleNumber, primId = REPLY_FRAME_ID})\n    return self.sensor\nend"
+    }
+   ]
+  },
+  "storage.read": {
+   "count": 16,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/ethos-bmfa-caller"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 376,
+     "start": 376,
+     "snippet": "widget.pumpSource = storage.read(\"pumpSource\")"
+    },
+    {
+     "repo": "robthomson/ethos-bmfa-caller",
+     "path": "src/bmfa-caller/widget_impl.lua",
+     "line": 154,
+     "start": 153,
+     "snippet": "local function read(widget)\n    widget.discIdx    = storage.read(\"discIdx\")    or widget.discIdx\n    widget.certIdx    = storage.read(\"certIdx\")    or widget.certIdx\n    widget.trigSwitch = storage.read(\"trigSwitch\") or widget.trigSwitch\n    widget.rstSwitch  = storage.read(\"rstSwitch\")  or widget.rstSwitch\n    widget.repSwitch  = storage.read(\"repSwitch\")  or widget.repSwitch\nend"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/widget.lua",
+     "line": 413,
+     "start": 412,
+     "snippet": "function widget.read()\n    local storedPage = storage.read(\"currentPage\")\n    if storedPage then\n        currentPage = tonumber(storedPage)\n    else\n        currentPage = 1\n    end\nend"
+    }
+   ]
+  },
+  "storage.write": {
+   "count": 16,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/ethos-bmfa-caller"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 394,
+     "start": 394,
+     "snippet": "storage.write(\"pumpSource\", widget.pumpSource)"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/widget.lua",
+     "line": 421,
+     "start": 421,
+     "snippet": "function widget.write() storage.write(\"currentPage\", tostring(currentPage or 1)) end"
+    },
+    {
+     "repo": "robthomson/ethos-bmfa-caller",
+     "path": "src/bmfa-caller/widget_impl.lua",
+     "line": 162,
+     "start": 161,
+     "snippet": "local function write(widget)\n    storage.write(\"discIdx\",    widget.discIdx)\n    storage.write(\"certIdx\",    widget.certIdx)\n    storage.write(\"trigSwitch\", widget.trigSwitch)\n    storage.write(\"rstSwitch\",  widget.rstSwitch)\n    storage.write(\"repSwitch\",  widget.repSwitch)\nend"
+    }
+   ]
+  },
+  "system.getLocale": {
+   "count": 17,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/dashx-ethos"
+   ],
+   "snippets": [
+    {
+     "repo": "flyingeek/ethos-gps-qrcode",
+     "path": "gps-qrcode/i18n/i18n.lua",
+     "line": 24,
+     "start": 24,
+     "snippet": "changeLocale(system.getLocale())"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/RB25_S/stab/i18n/i18n.lua",
+     "line": 1,
+     "start": 1,
+     "snippet": "local locale = system.getLocale()"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/utils.lua",
+     "line": 48,
+     "start": 45,
+     "snippet": "dashx.session.telemetryTypeChanged = nil\ndashx.session.telemetrySensor = nil\ndashx.session.repairSensors = false\ndashx.session.locale = system.getLocale()"
+    }
+   ]
+  },
+  "system.getAudioVoice": {
+   "count": 5,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/lib/audio.lua",
+     "line": 26,
+     "start": 26,
+     "snippet": "voice = tostring(system.getAudioVoice() or \"\")"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/lib/utils.lua",
+     "line": 42,
+     "start": 42,
+     "snippet": "local audioVoice = system.getAudioVoice and system.getAudioVoice() or \"AUDIO:/en/default\""
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/utils.lua",
+     "line": 247,
+     "start": 247,
+     "snippet": "local av = system.getAudioVoice():gsub(\"SD:\", \"\"):gsub(\"RADIO:\", \"\"):gsub(\"AUDIO:\", \"\"):gsub(\"VOICE[1-4]:\", \"\"):gsub(\"audio/\", \"\")"
+    }
+   ]
+  },
+  "system.getVersion": {
+   "count": 67,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/lib/utils.lua",
+     "line": 87,
+     "start": 87,
+     "snippet": "env = system.getVersion()"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/logs/logs_view.lua",
+     "line": 47,
+     "start": 47,
+     "snippet": "local res = system.getVersion()"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/widgets/dashboard/lib/utils.lua",
+     "line": 464,
+     "start": 464,
+     "snippet": "local version = system.getVersion()"
+    }
+   ]
+  },
+  "system.getMemoryUsage": {
+   "count": 10,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/tasks/background.lua",
+     "line": 78,
+     "start": 78,
+     "snippet": "local mem = system.getMemoryUsage and system.getMemoryUsage() or {}"
+    },
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/utils.lua",
+     "line": 590,
+     "start": 590,
+     "snippet": "dashx.session.lastMemoryUsage = system.getMemoryUsage().luaRamAvailable"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/pages/diagnostics_rfstatus.lua",
+     "line": 24,
+     "start": 22,
+     "snippet": "local function memoryText()\n  if not system or not system.getMemoryUsage then return \"-\" end\n  local mem = system.getMemoryUsage() or {}\n  return common.formatBytes(mem.ramAvailable or 0)\nend"
+    }
+   ]
+  },
+  "system.getSource": {
+   "count": 104,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-gps-heading",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/sensors.lua",
+     "line": 178,
+     "start": 178,
+     "snippet": "local source = system.getSource(query)"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/sensors/telemetry.lua",
+     "line": 246,
+     "start": 246,
+     "snippet": "local already = system.getSource(sensorDef)"
+    },
+    {
+     "repo": "robthomson/ethos-gps-heading",
+     "path": "src/gps-heading/widget_impl.lua",
+     "line": 197,
+     "start": 197,
+     "snippet": "sportSource = system.getSource({appId = 0xF101})"
+    }
+   ]
+  },
+  "system.playFile": {
+   "count": 28,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/utils.lua",
+     "line": 264,
+     "start": 264,
+     "snippet": "system.playFile(path)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/tasks/audio_events.lua",
+     "line": 186,
+     "start": 185,
+     "snippet": "local function playCommon(file)\n  system.playFile(\"audio/\" .. file)\nend"
+    },
+    {
+     "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
+     "path": "src/inav-dashboard/widget.lua",
+     "line": 339,
+     "start": 337,
+     "snippet": "if fm and (prev == nil or fm ~= prev) then\n    local file = string.format(\"audio/en/default/fm-%d.wav\", fm)\n    system.playFile(file)"
+    }
+   ]
+  },
+  "system.playNumber": {
+   "count": 6,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/lib/events.lua",
+     "line": 153,
+     "start": 152,
+     "snippet": "if system.playNumber then\n    system.playNumber(announcement, UNIT_PERCENT, 0)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/tasks/audio_events.lua",
+     "line": 206,
+     "start": 205,
+     "snippet": "local function playNumber(value, unit, decimals)\n  if system.playNumber then system.playNumber(value, unit, decimals) end\nend"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/lib/events.lua",
+     "line": 52,
+     "start": 50,
+     "snippet": "event = function(value)\n    ofs3.utils.playFile(\"events\", \"alerts/profile.wav\")\n    system.playNumber(math.floor(value))\nend"
+    }
+   ]
+  },
+  "system.playHaptic": {
+   "count": 4,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/tasks/audio_events.lua",
+     "line": 233,
+     "start": 232,
+     "snippet": "local function haptic()\n  if system.playHaptic then system.playHaptic(\". . . .\") end\nend"
+    },
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/app/header.lua",
+     "line": 178,
+     "start": 174,
+     "snippet": "local function show(newText)\n  if not newText or newText == \"\" then return end\n  text = newText\n  expiresAt = os.clock() + BANNER_SECONDS\n  if system and system.playHaptic then system.playHaptic(\". . . .\") end\nend"
+    }
+   ]
+  },
+  "system.killEvents": {
+   "count": 41,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/app.lua",
+     "line": 440,
+     "start": 440,
+     "snippet": "system.killEvents(KEY_ENTER_BREAK)"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/widgets/dashboard/lib/logviewer.lua",
+     "line": 912,
+     "start": 911,
+     "snippet": "if system.killEvents then\n    system.killEvents(value)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/ports.lua",
+     "line": 577,
+     "start": 574,
+     "snippet": "if opts.setEventHandler then\n  opts.setEventHandler(function(category, value)\n    if value == KEY_ENTER_LONG then\n      system.killEvents(KEY_ENTER_BREAK)"
+    }
+   ]
+  },
+  "system.listFiles": {
+   "count": 18,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/omp-ofs3-dashboard"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/modules/logs/lib/utils.lua",
+     "line": 30,
+     "start": 30,
+     "snippet": "local files = system.listFiles(logDir)"
+    },
+    {
+     "repo": "flyingeek/ethos-gps-qrcode",
+     "path": "gps-qrcode/i18n/i18n.lua",
+     "line": 10,
+     "start": 10,
+     "snippet": "local i18nFiles = system.listFiles(\"i18n\")"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/lib/logs.lua",
+     "line": 219,
+     "start": 219,
+     "snippet": "local files = system.listFiles(TELEMETRY_DIR) or {}"
+    }
+   ]
+  },
+  "system.registerLayout": {
+   "count": 1,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community"
+   ],
+   "snippets": [
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/Layout1P3/main.lua",
+     "line": 4,
+     "start": 3,
+     "snippet": "local function init()\n  system.registerLayout({key=\"XL+3\", widgets={\n    {x=8, y=95, w=784, h=248},\n    {x=8, y=351, w=256, h=56},\n    {x=272, y=351, w=256, h=56},\n    {x=536, y=351, w=256, h=56}\n  }})\nend"
+    }
+   ]
+  },
+  "system.registerWidget": {
+   "count": 7,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "iNavFlight/ETHOS-Telemetry-Dashboard",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-bmfa-caller",
+    "robthomson/ethos-gps-heading",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/ethos-gps-heading",
+     "path": "src/gps-heading/widget.lua",
+     "line": 14,
+     "start": 13,
+     "snippet": "local function init()\n    system.registerWidget(widget)\nend"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/JetWidget/main.lua",
+     "line": 398,
+     "start": 397,
+     "snippet": "local function init()\n  system.registerWidget({ key = \"FrkJet\", name = \"Jet dashboard\", create = create, build = build, paint = paint, wakeup = wakeup, configure = configure, read = read, write = write, title = false })\nend"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard.lua",
+     "line": 2208,
+     "start": 2205,
+     "snippet": "local function init(opts)\n  opts = opts or {}\n  systemToolHandle = opts.systemToolHandle\n  system.registerWidget(widget)\nend"
+    }
+   ]
+  },
+  "system.registerSystemTool": {
+   "count": 20,
+   "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
+    "WingFlight/wingflight-lua-ethos-suite",
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/ethos-app-framework",
+    "robthomson/ethos-arcade",
+    "robthomson/ethos-flight-training",
+    "robthomson/ethos-heli-training",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/tool.lua",
+     "line": 635,
+     "start": 634,
+     "snippet": "local function init()\n  return system.registerSystemTool(tool)\nend"
+    },
+    {
+     "repo": "flyingeek/ethos-gps-qrcode",
+     "path": "gps-qrcode/main.lua",
+     "line": 186,
+     "start": 185,
+     "snippet": "local function init()\n    system.registerSystemTool({name=\"GPS QR Code\", icon=icon, create=create, wakeup=wakeup, paint=paint})\nend"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/SR6MiniE_Cali/main.lua",
+     "line": 121,
+     "start": 117,
+     "snippet": "local function init()\n  if system.registerDeviceConfig ~= nil then\n    system.registerDeviceConfig({category = DEVICE_CATEGORY_RECEIVERS, name = name, bitmap = icon, appIdStart = 0x0C30, appIdEnd = 0x0C30, version = LUA_VERSION, pages = { page }})\n  else\n    system.registerSystemTool(page)\n  end\nend"
+    }
+   ]
+  },
+  "system.isSensorDiscoverActive": {
+   "count": 3,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/lib/frsky_sensors.lua",
+     "line": 172,
+     "start": 171,
+     "snippet": "if self.provisioned then return true end\nif system.isSensorDiscoverActive and system.isSensorDiscoverActive() then"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/sensors/providers/frsky.lua",
+     "line": 305,
+     "start": 304,
+     "snippet": "local session = self.framework.session\nlocal discoverActive = system.isSensorDiscoverActive and system.isSensorDiscoverActive() == true"
+    }
+   ]
+  },
+  "system.registerTask": {
+   "count": 3,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/ethos-app-framework",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/tasks/background.lua",
+     "line": 416,
+     "start": 415,
+     "snippet": "local function init()\n  system.registerTask({\n    key = \"wf2bg\",\n    name = \"Wingflight [Background]\",\n    init = taskInit,\n    wakeup = taskWakeup,\n    event = taskEvent,\n  })\nend"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/tasks/background.lua",
+     "line": 209,
+     "start": 208,
+     "snippet": "local function init()\n  system.registerTask({\n    key = \"rf2bg\",\n    name = \"Rotorflight [Background]\",\n    init = taskInit,\n    wakeup = taskWakeup,\n    event = taskEvent,\n  })\nend"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/main.lua",
+     "line": 49,
+     "start": 43,
+     "snippet": "local function registerBackgroundTask()\n    if not system.registerTask then\n        log:warn(\"system.registerTask is unavailable\")\n        return\n    end\n\n    system.registerTask({\n        name = runtime.config.bgTaskName,\n        key = runtime.config.bgTaskKey,\n        init = backgroundTask.init,\n        wakeup = backgroundTask.wakeup,\n        event = backgroundTask.event,\n        read = backgroundTask.read,\n        write = backgroundTask.write\n    })\nend"
+    }
+   ]
+  },
+  "system.exit": {
+   "count": 8,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "robthomson/dashx-ethos",
+    "robthomson/ethos-app-framework",
+    "robthomson/omp-ofs3-dashboard",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/app/app.lua",
+     "line": 407,
+     "start": 404,
+     "snippet": "if value == KEY_RTN_LONG then\n    log(\"KEY_RTN_LONG\", \"info\")\n    invalidatePages()\n    system.exit()"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/menu_container.lua",
+     "line": 169,
+     "start": 165,
+     "snippet": "local function goBack()\n  if menuGuard and menuGuard.close then menuGuard.close() end\n  local hadFrame, parentScreen = nav.pop()\n  if not hadFrame then\n    system.exit()\n    return\n  end\n  openScreen(nav, menus, rootEntries, parentScreen, setEventHandler, setWakeupHandler, setPaintHandler, setCleanupHandler, taskGuard)\nend"
+    },
+    {
+     "repo": "robthomson/omp-ofs3-dashboard",
+     "path": "src/ofs3/tools/logs.lua",
+     "line": 328,
+     "start": 321,
+     "snippet": "local function flushExit()\n    if not tool.exitRequested then\n        return false\n    end\n\n    tool.exitRequested = false\n    if system.exit then\n        system.exit()\n    end\n    return true\nend"
+    }
+   ]
+  },
+  "system.voltageRange": {
+   "count": 2,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard/context.lua",
+     "line": 1317,
+     "start": 1315,
+     "snippet": "function utils.getTxBatteryVoltageRange()\n  if system and system.voltageRange then\n    local vmin, vmax = system.voltageRange()\n    if vmin and vmax and vmin < vmax then return vmin, vmax end\n  end\n  return 7.2, 8.4\nend"
+    }
+   ]
+  },
+  "system.compile": {
+   "count": 5,
+   "projects": [
+    "flyingeek/ethos-gps-qrcode",
+    "robthomson/ethos-bmfa-caller"
+   ],
+   "snippets": [
+    {
+     "repo": "flyingeek/ethos-gps-qrcode",
+     "path": "gps-qrcode/i18n/i18n.lua",
+     "line": 5,
+     "start": 5,
+     "snippet": "system.compile(\"i18n/en.lua\")"
+    },
+    {
+     "repo": "robthomson/ethos-bmfa-caller",
+     "path": "src/bmfa-caller/main.lua",
+     "line": 3,
+     "start": 1,
+     "snippet": "local function compileIfNeeded(source)\n    if os.stat(source) then\n        system.compile(source)\n    end\nend"
+    },
+    {
+     "repo": "flyingeek/ethos-gps-qrcode",
+     "path": "gps-qrcode/main.lua",
+     "line": 18,
+     "start": 17,
+     "snippet": "local QR\nsystem.compile(\"lib/ethos-qrencode.lua\") -- compile but defer load to create"
+    }
+   ]
+  },
+  "system.openPage": {
+   "count": 2,
+   "projects": [
+    "WingFlight/wingflight-lua-ethos-suite",
+    "rotorflight/rotorflight-lua-ethos-suite"
+   ],
+   "snippets": [
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard.lua",
+     "line": 1289,
+     "start": 1284,
+     "snippet": "local function launchSystemTool(widget)\n  if not canOpenSystemTool() then return end\n  setToolbarVisible(widget, false)\n  requestPaint(widget)\n  invalidateWidget(widget)\n  system.openPage({system = systemToolHandle})\nend"
+    }
+   ]
+  }
+ }
+}
