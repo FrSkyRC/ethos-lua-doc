@@ -5,7 +5,7 @@ You can develop most of a script without touching a radio. Pick the environment 
 | Tool | Install | Best for |
 | --- | --- | --- |
 | [Web simulator](web-simulator.md) | Nothing, it runs in Chrome | Quick tries, sharing a reproducible setup, loading a script zip |
-| [Ethos Suite](ethos-suite.md) | FrSky's desktop app | Simulator with a real folder on disk, installing scripts on a radio, backups |
+| [FrSky Suite](frsky-suite.md) | FrSky's desktop app | Simulator with a real folder on disk, installing scripts on a radio, backups |
 | [VS Code + deploy script](vscode.md) | VS Code, the Ethos extension, Python | F5 to deploy to the simulator or a USB radio, with live `print()` output from the radio |
 | [`ethos-tools` + an AI agent](ai-agents.md) | Node.js + a clone or Claude Code plugin | Letting Claude (or another agent) boot a radio, deploy your script, screenshot and drive it, and read its errors |
 

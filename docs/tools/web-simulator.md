@@ -12,7 +12,7 @@ You pick the Ethos release, the radio and the RF protocol, and get the radio's s
 2. **Upload → Upload a Lua plugin (.zip)**.
 3. If your script doesn't show up straight away, use the toolbar's **Restart simulator**. Scripts are loaded at boot. Your widget, tool or task is then available as on a radio.
 
-To start from your real setup instead of a blank radio, make a backup in Ethos Suite and use **Upload → Upload a radio backup**. You get your models, screens and scripts.
+To start from your real setup instead of a blank radio, make a backup in FrSky Suite and use **Upload → Upload a radio backup**. You get your models, screens and scripts.
 
 ## Panels worth opening
 

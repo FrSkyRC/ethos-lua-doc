@@ -38,7 +38,7 @@
 - Tools & testing
     - [Overview](tools/index.md)
     - [Web simulator](tools/web-simulator.md)
-    - [Ethos Suite](tools/ethos-suite.md)
+    - [FrSky Suite](tools/frsky-suite.md)
     - [VS Code deployments](tools/vscode.md)
     - [AI agents & ethos-tools](tools/ai-agents.md)
     - [Debugging](tools/debugging.md)

@@ -87,7 +87,7 @@ When connected and powered on, an Ethos radio presents a **composite USB device*
 
 | Interface | Always? | Is |
 | --- | --- | --- |
-| 0 | Yes | **HID control channel**, the one Ethos Suite uses |
+| 0 | Yes | **HID control channel**, the one FrSky Suite uses |
 | 1 | — | **Either** USB mass storage (the radio's drive) **or** a CDC serial port (debug output) |
 
 Switching interface 1 between storage and serial is a HID command. The radio drops off the bus and re-enumerates, which takes a few seconds.
@@ -119,7 +119,7 @@ dev.close()
 
 Don't guess drive letters. The radio's volumes carry **marker files** at their root: `sdcard.cpuid`, `radio.cpuid` or `flash.cpuid`. Scan removable drives (Windows), `/Volumes/*` (macOS) or `/media/$USER/*` (Linux) for one of these, and the `scripts/` folder next to it is your target. On radios with both internal flash and an SD card, prefer `sdcard`, then `radio`.
 
-Ethos Suite's CLI can do the same lookups: `--get-path SCRIPTS` and `--serial start|stop`. See [Ethos Suite](ethos-suite.md#command-line). Talking HID directly removes the dependency on Suite, works on macOS and Linux, and avoids the `ELECTRON_RUN_AS_NODE` trap when called from VS Code.
+FrSky Suite's CLI can do the same lookups: `--get-path SCRIPTS` and `--serial start|stop`. See [FrSky Suite](frsky-suite.md#command-line). Talking HID directly removes the dependency on Suite, works on macOS and Linux, and avoids the `ELECTRON_RUN_AS_NODE` trap when called from VS Code.
 
 ## 5. Copying safely to removable storage
 
@@ -146,7 +146,7 @@ port = next(p.device for p in list_ports.comports() if p.vid == 0x0483 and p.pid
 
 `ethos_deploy.py --radio --debug` deploys, switches to serial, prints lines until **Ctrl+C**, then switches back to storage so the next deploy finds the drive.
 
-The radio only sends what scripts print. An idle radio is silent, which is normal. Prefix your messages (`[mywidget] ...`), because every script shares the port. Ethos Suite's **Lua development tools → Debug log** is the GUI equivalent.
+The radio only sends what scripts print. An idle radio is silent, which is normal. Prefix your messages (`[mywidget] ...`), because every script shares the port. FrSky Suite's **Lua development tools → Debug log** is the GUI equivalent.
 
 ## 7. The deploy tool
 

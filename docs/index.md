@@ -50,7 +50,7 @@ hide:
 
     ---
 
-    Test without a radio in the browser simulator or Ethos Suite, read the console, and load telemetry.
+    Test without a radio in the browser simulator or FrSky Suite, read the console, and load telemetry.
 
     [:octicons-arrow-right-24: Web simulator](tools/web-simulator.md)
 

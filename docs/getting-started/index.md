@@ -13,7 +13,7 @@ Ethos runs Lua 5.4 scripts that can draw widgets on the home screens, add tools 
 | You need | Why | Where to get it |
 | --- | --- | --- |
 | A text editor | To write `.lua` files | Anything works. VS Code with the Ethos extension gives you a simulator in the editor. |
-| A simulator **or** a radio | To run the script | [Web simulator](../tools/web-simulator.md) (nothing to install) or [Ethos Suite](../tools/ethos-suite.md) |
+| A simulator **or** a radio | To run the script | [Web simulator](../tools/web-simulator.md) (nothing to install) or [FrSky Suite](../tools/frsky-suite.md) |
 | This site | API details | The [API reference](../api/index.md); every call has its own page |
 
 !!! tip "Start in the simulator"

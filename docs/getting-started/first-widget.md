@@ -12,7 +12,7 @@ scripts/
     └── main.lua
 ```
 
-On a radio connected over USB this is the `scripts` folder on the SD card (or internal storage, depending on the radio). In the simulator it is the `scripts` folder inside the simulator's radio directory (see [Web simulator](../tools/web-simulator.md) and [Ethos Suite](../tools/ethos-suite.md)).
+On a radio connected over USB this is the `scripts` folder on the SD card (or internal storage, depending on the radio). In the simulator it is the `scripts` folder inside the simulator's radio directory (see [Web simulator](../tools/web-simulator.md) and [FrSky Suite](../tools/frsky-suite.md)).
 
 ## 2. Write `main.lua`
 

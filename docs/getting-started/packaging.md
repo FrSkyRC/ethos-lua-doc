@@ -25,7 +25,7 @@ scripts/
 
 ## Installable zip packages
 
-Ethos Suite's **Lua Library → Install from local `.zip`** (and the web simulator's **Upload a Lua plugin**) install a zip containing an `ethos_lua_manifest.json` at its root. The manifest says which files to copy and where.
+FrSky Suite's **Lua Library → Install from local `.zip`** (and the web simulator's **Upload a Lua plugin**) install a zip containing an `ethos_lua_manifest.json` at its root. The manifest says which files to copy and where.
 
 ```json title="ethos_lua_manifest.json"
 {

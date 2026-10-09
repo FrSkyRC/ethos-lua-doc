@@ -1,4 +1,4 @@
-# Ethos Suite
+# FrSky Suite
 
 FrSky Suite (formerly *Ethos Suite*) is FrSky's desktop companion app. For Lua developers it has four useful parts: **Lua development tools** (a live debug log from the radio), the **Lua library** (install and update script packages), the **Ethos simulator**, and a **command-line mode** for scripting deployments.
 

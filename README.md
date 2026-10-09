@@ -10,7 +10,7 @@ Lua scripting documentation for FrSky Ethos radios: a full API reference with ex
 - **Guides**: drawing, forms, telemetry, events, storage, audio, translations.
 - **Best practice**: saving RAM and CPU, based on measurements from production suites.
 - **Cookbook**: complete scripts in `examples/cookbook/`, each tested in the Ethos simulator.
-- **Tools**: web simulator, Ethos Suite, debugging, and AI agents with [ethos-tools](https://github.com/FrSkyRC/ethos-tools).
+- **Tools**: web simulator, FrSky Suite, debugging, and AI agents with [ethos-tools](https://github.com/FrSkyRC/ethos-tools).
 
 ## Working on it
 

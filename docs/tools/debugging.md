@@ -5,7 +5,7 @@
 | Environment | `print()` output and Lua errors |
 | --- | --- |
 | Web simulator | **Console** panel |
-| Ethos Suite simulator | **Console** panel |
+| FrSky Suite simulator | **Console** panel |
 | `ethos-tools` (`run_wasm.js`) | `node run_wasm.js log [n]` |
 | Real radio | Serial debug over USB (see [below](#on-a-radio)) |
 

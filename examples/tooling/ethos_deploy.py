@@ -4,7 +4,7 @@
 A small, dependency-light version of the deploy tooling used by large
 open-source Ethos Lua projects:
 
-  * finds the radio over USB HID (the same interface Ethos Suite uses)
+  * finds the radio over USB HID (the same interface FrSky Suite uses)
   * switches it to USB storage mode if it is in serial-debug mode
   * finds the radio's drive by its *.cpuid marker file
   * mirror-copies only changed files (size, then MD5), deleting stale ones
