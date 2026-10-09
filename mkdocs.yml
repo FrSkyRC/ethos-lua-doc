@@ -2,7 +2,7 @@ site_name: Ethos Lua Docs
 site_description: Lua API reference, guides, best practice and examples for FrSky Ethos radios
 site_url: https://frskyrc.github.io/ethos-lua-doc/
 repo_url: https://github.com/FrSkyRC/ethos-lua-doc
-repo_name: ethos-lua-doc
+repo_name: FrSkyRC/ethos-lua-doc
 edit_uri: edit/main/docs/
 docs_dir: docs
 # nav files are read by literate-nav but shouldn't be published as pages
@@ -18,8 +18,9 @@ hooks:
 
 theme:
   name: material
-  logo: assets/ethos-logo-reversed.png
-  favicon: assets/favicon.png
+  # same logo and favicon as the Ethos manual (ethos-doc.frsky-rc.com)
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
   icon:
     repo: fontawesome/brands/github
   palette:
@@ -38,7 +39,6 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.indexes
     - navigation.top

@@ -4,7 +4,7 @@
    ============================================================================= */
 
 [data-md-color-primary="custom"] {
-  --md-primary-fg-color:        #141414;
+  --md-primary-fg-color:        #101010;
   --md-primary-fg-color--light: #2b2b2b;
   --md-primary-fg-color--dark:  #000000;
   --md-primary-bg-color:        #ffffff;
@@ -25,7 +25,20 @@
   --md-typeset-a-color: #8ec31f;
 }
 
-.md-header__button.md-logo img { height: 1.4rem; }
+/* header logo and sidebar indentation: same as the Ethos manual (ethos-doc) */
+.md-header__button.md-logo {
+  margin: 0 0 0 0.2rem;
+  padding: 0 0 0 0.4rem;
+}
+.md-header__button.md-logo img {
+  height: 2rem;
+}
+.md-nav--secondary .md-nav__list .md-nav__list {
+  padding-left: 0.9rem;
+}
+.md-nav__item--section > .md-nav > .md-nav__list > .md-nav__item {
+  padding-left: 0.6rem;
+}
 
 .md-typeset .admonition.note,
 .md-typeset details.note { border-color: #8ec31f; }
