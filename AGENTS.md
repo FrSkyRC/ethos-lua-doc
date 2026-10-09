@@ -95,6 +95,14 @@ mkdocs build --strict
 
 `pymdownx.snippets` paths (`--8<-- "examples/..."`) are relative to the repo root, so run mkdocs from the root.
 
+## Releases (the version on the site's repo button)
+
+Material shows the repo's **latest GitHub release tag** next to the repo name in the header (as on ethos-doc.frsky-rc.com). Tag releases by the Ethos version the docs cover: `26.1` now. When the API moves to a new Ethos line (e.g. the updater switches to `nightly27`), publish a new release:
+
+```bash
+gh release create 27.1 --target main --title "Ethos 27.1 Lua docs" --notes "..."
+```
+
 ## Conventions
 
 - Site URL and repo: `mkdocs.yml` (`site_url`, `repo_url`). The hooks and the overlay edit links depend on `repo_url`.
