@@ -76,4 +76,4 @@ end
     })
     ```
 
-    <small>[src/rfsuite/widgets/activelook.lua:269](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/activelook.lua#L269-L279)</small>
+    <small>[src/rfsuite/widgets/activelook.lua:269](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/activelook.lua#L269-L279)</small>

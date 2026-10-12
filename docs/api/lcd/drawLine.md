@@ -57,7 +57,7 @@ Use [`lcd.pen(PEN_DOTTED)`](pen.md) before drawing for dotted lines (grid lines,
 
 ## Real-world usage
 
-<div class="api-usage">Called 133 times across 9 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 121 times across 8 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 

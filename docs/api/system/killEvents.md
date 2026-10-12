@@ -43,7 +43,7 @@ Real projects also kill touch sequences after acting on a touch (`system.killEve
 
 ## Real-world usage
 
-<div class="api-usage">Called 41 times across 5 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 43 times across 5 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -56,19 +56,16 @@ Real projects also kill touch sequences after acting on a touch (`system.killEve
 === "Example 2"
 
     ```lua
+    if system and system.killEvents then system.killEvents(value) end
+    ```
+
+    <small>[src/rfsuite/widgets/dashboard.lua:1383](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard.lua#L1383-L1383)</small>
+
+=== "Example 3"
+
+    ```lua
     if system.killEvents then
         system.killEvents(value)
     ```
 
     <small>[src/ofs3/widgets/dashboard/lib/logviewer.lua:911](https://github.com/robthomson/omp-ofs3-dashboard/blob/2970572ba2b0a4b47d3789f6cd29c6acdc9b231d/src/ofs3/widgets/dashboard/lib/logviewer.lua#L911-L912)</small>
-
-=== "Example 3"
-
-    ```lua
-    if opts.setEventHandler then
-      opts.setEventHandler(function(category, value)
-        if value == KEY_ENTER_LONG then
-          system.killEvents(KEY_ENTER_BREAK)
-    ```
-
-    <small>[src/rfsuite/app/pages/ports.lua:574](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/ports.lua#L574-L577)</small>

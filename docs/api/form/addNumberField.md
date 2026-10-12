@@ -56,31 +56,32 @@ myField:step(2)
 
 ## Real-world usage
 
-<div class="api-usage">Called 229 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 225 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
-
-    ```lua
-    line = panel:addLine("Max RPM")
-    rpmMaxEdit = form.addNumberField(line, nil, 0, 10000, function() return widget.maxRpm end, function(newValue) widget.maxRpm = newValue end)
-    ```
-
-    <small>[lua/frsky/JetWidget/main.lua:306](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/JetWidget/main.lua#L306-L307)</small>
-
-=== "Example 2"
 
     ```lua
     local rpm_max_line = rpm_panel:addLine("Max")
     formFields[#formFields + 1] = form.addNumberField(rpm_max_line, nil, 1, 20000, function() return config.rpm_max end, function(val) config.rpm_max = clamp(tonumber(val) or THEME_DEFAULTS.rpm_max, config.rpm_min + 1, 20000) end, 1)
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/themes/kevd/configure.lua:53](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/themes/kevd/configure.lua#L53-L54)</small>
+    <small>[src/rfsuite/widgets/dashboard/themes/kevd/configure.lua:53](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/themes/kevd/configure.lua#L53-L54)</small>
 
-=== "Example 3"
+=== "Example 2"
 
     ```lua
     local esc_max_line = esc_panel:addLine("Max")
     formFields[#formFields + 1] = form.addNumberField(esc_max_line, nil, 1, 200, function() return config.esctemp_max end, function(val) config.esctemp_max = clamp(tonumber(val) or THEME_DEFAULTS.esctemp_max, config.esctemp_warn + 1, 200) end, 1)
     ```
 
-    <small>[src/wfsuite/widgets/dashboard/themes/kevd/configure.lua:98](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard/themes/kevd/configure.lua#L98-L99)</small>
+    <small>[src/wfsuite/widgets/dashboard/themes/kevd/configure.lua:98](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/widgets/dashboard/themes/kevd/configure.lua#L98-L99)</small>
+
+=== "Example 3"
+
+    ```lua
+    local panel = form.addExpansionPanel("Copy bank")
+    local line = panel:addLine("From")
+    local numberField = form.addNumberField(line, nil, 0, 15, function() return fromGroup end, function(newValue) fromGroup = newValue end)
+    ```
+
+    <small>[lua/frsky/RB25_S/group/group.lua:126](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/RB25_S/group/group.lua#L126-L128)</small>

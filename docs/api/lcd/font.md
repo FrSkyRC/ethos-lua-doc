@@ -67,7 +67,7 @@ All font constants are under [Fonts](../constants.md#fonts).
 
 ## Real-world usage
 
-<div class="api-usage">Called 323 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 334 times across 10 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -75,7 +75,7 @@ All font constants are under [Fonts](../constants.md#fonts).
     lcd.font(font)
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/themes/danielrc/common.lua:520](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/themes/danielrc/common.lua#L520-L520)</small>
+    <small>[src/rfsuite/widgets/dashboard/themes/danielrc/common.lua:520](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/themes/danielrc/common.lua#L520-L520)</small>
 
 === "Example 2"
 
@@ -83,7 +83,7 @@ All font constants are under [Fonts](../constants.md#fonts).
     lcd.font(FONT_S)
     ```
 
-    <small>[src/ethos-arcade/games/gulaxian/game.lua:914](https://github.com/robthomson/ethos-arcade/blob/0fb9f36a97dc902391c425e97ef79211fc7ae0d9/src/ethos-arcade/games/gulaxian/game.lua#L914-L914)</small>
+    <small>[src/wfsuite/widgets/dashboard/battery_picker.lua:152](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/widgets/dashboard/battery_picker.lua#L152-L152)</small>
 
 === "Example 3"
 
@@ -91,4 +91,4 @@ All font constants are under [Fonts](../constants.md#fonts).
     lcd.font(FONT_XS)
     ```
 
-    <small>[src/wfsuite/app/alignment_visual.lua:223](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/alignment_visual.lua#L223-L223)</small>
+    <small>[src/dashx/widgets/dashboard/lib/toolbar.lua:56](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/widgets/dashboard/lib/toolbar.lua#L56-L56)</small>

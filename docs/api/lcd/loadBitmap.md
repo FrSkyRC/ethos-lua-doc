@@ -49,7 +49,7 @@ end
 
 ## Real-world usage
 
-<div class="api-usage">Called 35 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 27 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -65,7 +65,7 @@ end
     local icon = lcd.loadBitmap("pgc.png")
     ```
 
-    <small>[lua/frsky/PGC/main.lua:13](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/PGC/main.lua#L13-L13)</small>
+    <small>[lua/frsky/PGC/main.lua:13](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/PGC/main.lua#L13-L13)</small>
 
 === "Example 3"
 

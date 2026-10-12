@@ -43,7 +43,7 @@ form.addChoiceField(line, nil, values, function() return value end, function(new
 
 ## Real-world usage
 
-<div class="api-usage">Called 188 times across 9 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 186 times across 9 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -51,7 +51,7 @@ form.addChoiceField(line, nil, values, function() return value end, function(new
     form.addChoiceField(axisLine, nil, AXES, function() return AXES[selected][2] end, onAxis)
     ```
 
-    <small>[src/rfsuite/app/pages/tune_advisor.lua:637](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/tune_advisor.lua#L637-L637)</small>
+    <small>[src/rfsuite/app/pages/tune_advisor.lua:908](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/pages/tune_advisor.lua#L908-L908)</small>
 
 === "Example 2"
 
@@ -62,7 +62,7 @@ form.addChoiceField(line, nil, values, function() return value end, function(new
       field = form.addChoiceField(line, slot, spec.choices, access.get, access.setWithDirty)
     ```
 
-    <small>[src/wfsuite/app/field_layout.lua:408](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/field_layout.lua#L408-L411)</small>
+    <small>[src/wfsuite/app/field_layout.lua:408](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/field_layout.lua#L408-L411)</small>
 
 === "Example 3"
 

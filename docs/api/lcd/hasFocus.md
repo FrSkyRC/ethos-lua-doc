@@ -40,7 +40,7 @@ On the home screen a widget only receives key events while it has focus. See [Ev
 
 ## Real-world usage
 
-<div class="api-usage">Called 15 times across 5 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 17 times across 5 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -56,7 +56,7 @@ On the home screen a widget only receives key events while it has focus. See [Ev
     if category == EVT_KEY and lcd.hasFocus() then
     ```
 
-    <small>[src/dashx/widgets/dashboard/dashboard.lua:726](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/widgets/dashboard/dashboard.lua#L726-L726)</small>
+    <small>[src/rfsuite/widgets/dashboard.lua:1372](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard.lua#L1372-L1372)</small>
 
 === "Example 3"
 
@@ -64,4 +64,4 @@ On the home screen a widget only receives key events while it has focus. See [Ev
     if widget.infoPanelVisible and category == EVT_KEY and lcd.hasFocus()
     ```
 
-    <small>[src/rfsuite/widgets/dashboard.lua:1893](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard.lua#L1893-L1893)</small>
+    <small>[src/wfsuite/widgets/dashboard.lua:2093](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/widgets/dashboard.lua#L2093-L2093)</small>

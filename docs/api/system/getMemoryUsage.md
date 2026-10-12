@@ -57,7 +57,7 @@ On current radios the Lua heap and bitmap memory come from one shared region, so
     local mem = system.getMemoryUsage and system.getMemoryUsage() or {}
     ```
 
-    <small>[src/rfsuite/tasks/background.lua:78](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/tasks/background.lua#L78-L78)</small>
+    <small>[src/rfsuite/tasks/background.lua:85](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/tasks/background.lua#L85-L85)</small>
 
 === "Example 2"
 
@@ -77,4 +77,4 @@ On current radios the Lua heap and bitmap memory come from one shared region, so
     end
     ```
 
-    <small>[src/wfsuite/app/pages/diagnostics_rfstatus.lua:22](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/pages/diagnostics_rfstatus.lua#L22-L26)</small>
+    <small>[src/wfsuite/app/pages/diagnostics_rfstatus.lua:22](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/pages/diagnostics_rfstatus.lua#L22-L26)</small>

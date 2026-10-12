@@ -44,7 +44,7 @@ form.addTextButton(line, nil, "Text Button", function() end)
 
 ## Real-world usage
 
-<div class="api-usage">Called 80 times across 4 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 78 times across 4 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 

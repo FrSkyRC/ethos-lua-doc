@@ -66,7 +66,7 @@ form.addLine("Label", nil, false) -- no separator
 
 ## Real-world usage
 
-<div class="api-usage">Called 667 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 657 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -90,4 +90,4 @@ form.addLine("Label", nil, false) -- no separator
     local line = form.addLine("")
     ```
 
-    <small>[src/rfsuite/app/header.lua:231](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/header.lua#L231-L231)</small>
+    <small>[src/rfsuite/app/header.lua:231](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/header.lua#L231-L231)</small>

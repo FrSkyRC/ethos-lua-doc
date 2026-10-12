@@ -54,17 +54,9 @@ Keep the keys and order in step with your `read` callback.
 
 ## Real-world usage
 
-<div class="api-usage">Called 16 times across 3 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 6 times across 2 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
-
-    ```lua
-    storage.write("pumpSource", widget.pumpSource)
-    ```
-
-    <small>[lua/frsky/JetWidget/main.lua:394](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/JetWidget/main.lua#L394-L394)</small>
-
-=== "Example 2"
 
     ```lua
     function widget.write() storage.write("currentPage", tostring(currentPage or 1)) end
@@ -72,7 +64,7 @@ Keep the keys and order in step with your `read` callback.
 
     <small>[src/inav-dashboard/widget.lua:421](https://github.com/iNavFlight/ETHOS-Telemetry-Dashboard/blob/656975b84cbbbc3bd7861bdf2a92b4686937280e/src/inav-dashboard/widget.lua#L421-L421)</small>
 
-=== "Example 3"
+=== "Example 2"
 
     ```lua
     local function write(widget)

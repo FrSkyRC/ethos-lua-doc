@@ -90,7 +90,7 @@ return {init=init}
     end
     ```
 
-    <small>[src/wfsuite/tasks/background.lua:415](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/tasks/background.lua#L415-L423)</small>
+    <small>[src/wfsuite/tasks/background.lua:473](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/tasks/background.lua#L473-L481)</small>
 
 === "Example 2"
 
@@ -106,7 +106,7 @@ return {init=init}
     end
     ```
 
-    <small>[src/rfsuite/tasks/background.lua:208](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/tasks/background.lua#L208-L216)</small>
+    <small>[src/rfsuite/tasks/background.lua:266](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/tasks/background.lua#L266-L274)</small>
 
 === "Example 3"
 

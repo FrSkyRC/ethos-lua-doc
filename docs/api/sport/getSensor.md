@@ -51,7 +51,7 @@ local sensor = sport.getSensor({module=0, band=0, rx=0, physId=0x1B, appId=0x680
     local sensor = sport.getSensor(0x0c30);
     ```
 
-    <small>[lua/frsky/SR6MiniE_Cali/main.lua:35](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/SR6MiniE_Cali/main.lua#L35-L35)</small>
+    <small>[lua/frsky/SR6MiniE_Cali/main.lua:35](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/SR6MiniE_Cali/main.lua#L35-L35)</small>
 
 === "Example 2"
 
@@ -64,7 +64,7 @@ local sensor = sport.getSensor({module=0, band=0, rx=0, physId=0x1B, appId=0x680
     end
     ```
 
-    <small>[src/rfsuite/tasks/msp/transport_sport.lua:31](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/tasks/msp/transport_sport.lua#L31-L36)</small>
+    <small>[src/rfsuite/tasks/msp/transport_sport.lua:37](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/tasks/msp/transport_sport.lua#L37-L42)</small>
 
 === "Example 3"
 

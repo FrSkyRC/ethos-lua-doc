@@ -65,7 +65,7 @@ Loading is lazy by default (`lazy = true`): the image is decoded on first draw. 
     local icon = lcd.loadMask("srx.png")
     ```
 
-    <small>[lua/frsky/SR6MiniE_Cali/main.lua:113](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/SR6MiniE_Cali/main.lua#L113-L113)</small>
+    <small>[lua/frsky/SR6MiniE_Cali/main.lua:113](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/SR6MiniE_Cali/main.lua#L113-L113)</small>
 
 === "Example 2"
 
@@ -73,7 +73,7 @@ Loading is lazy by default (`lazy = true`): the image is decoded on first draw. 
     local folderIcon = lcd.loadMask("app/gfx/logs_folder.png")
     ```
 
-    <small>[src/rfsuite/app/pages/logs.lua:15](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/logs.lua#L15-L15)</small>
+    <small>[src/rfsuite/app/pages/logs.lua:15](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/pages/logs.lua#L15-L15)</small>
 
 === "Example 3"
 

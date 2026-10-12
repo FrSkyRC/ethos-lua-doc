@@ -50,22 +50,3 @@ return {init=init}
 ## Used in
 
 - [layout](../../examples/official/layout.md)
-
-## Real-world usage
-
-<div class="api-usage">Called 1 times across 1 open-source Ethos Lua project. A few short excerpts:</div>
-
-=== "Example 1"
-
-    ```lua
-    local function init()
-      system.registerLayout({key="XL+3", widgets={
-        {x=8, y=95, w=784, h=248},
-        {x=8, y=351, w=256, h=56},
-        {x=272, y=351, w=256, h=56},
-        {x=536, y=351, w=256, h=56}
-      }})
-    end
-    ```
-
-    <small>[lua/frsky/Layout1P3/main.lua:3](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/Layout1P3/main.lua#L3-L10)</small>
