@@ -2,11 +2,11 @@
  "repos": {
   "rotorflight/rotorflight-lua-ethos-suite": {
    "label": "Rotorflight suite",
-   "sha": "53c7e819afe6293cb7623b5972e4a4d276a90ad1"
+   "sha": "cdf0b8f37d0ea56d7373ce501d489eeebeda234b"
   },
   "WingFlight/wingflight-lua-ethos-suite": {
    "label": "Wingflight suite",
-   "sha": "0a7b1c61ad582033adebbe65183702650d4e377a"
+   "sha": "8222d3c763027018989da480c098e38ac4c32d4f"
   },
   "robthomson/dashx-ethos": {
    "label": "DashX",
@@ -50,7 +50,7 @@
   },
   "FrSkyRC/ETHOS-Feedback-Community": {
    "label": "FrSky official scripts",
-   "sha": "7cab00b5ee95e761965c58ddec2d2b113fedde64"
+   "sha": "b92b58ea6585a7b0060a5ac63e827316aa890b45"
   }
  },
  "calls": {
@@ -192,7 +192,7 @@
    ]
   },
   "form.addExpansionPanel": {
-   "count": 86,
+   "count": 84,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -210,10 +210,10 @@
     },
     {
      "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 342,
-     "start": 342,
-     "snippet": "panel = form.addExpansionPanel(\"EGT configure\")"
+     "path": "lua/frsky/RB25_S/group/group.lua",
+     "line": 126,
+     "start": 126,
+     "snippet": "local panel = form.addExpansionPanel(\"Copy bank\")"
     },
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
@@ -225,7 +225,7 @@
    ]
   },
   "form.addLine": {
-   "count": 667,
+   "count": 657,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -264,7 +264,7 @@
    ]
   },
   "form.addStaticText": {
-   "count": 219,
+   "count": 217,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -335,7 +335,7 @@
    ]
   },
   "form.addNumberField": {
-   "count": 229,
+   "count": 225,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -345,13 +345,6 @@
     "rotorflight/rotorflight-lua-ethos-suite"
    ],
    "snippets": [
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 307,
-     "start": 306,
-     "snippet": "line = panel:addLine(\"Max RPM\")\nrpmMaxEdit = form.addNumberField(line, nil, 0, 10000, function() return widget.maxRpm end, function(newValue) widget.maxRpm = newValue end)"
-    },
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/widgets/dashboard/themes/kevd/configure.lua",
@@ -365,11 +358,18 @@
      "line": 99,
      "start": 98,
      "snippet": "local esc_max_line = esc_panel:addLine(\"Max\")\nformFields[#formFields + 1] = form.addNumberField(esc_max_line, nil, 1, 200, function() return config.esctemp_max end, function(val) config.esctemp_max = clamp(tonumber(val) or THEME_DEFAULTS.esctemp_max, config.esctemp_warn + 1, 200) end, 1)"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/RB25_S/group/group.lua",
+     "line": 128,
+     "start": 126,
+     "snippet": "local panel = form.addExpansionPanel(\"Copy bank\")\nlocal line = panel:addLine(\"From\")\nlocal numberField = form.addNumberField(line, nil, 0, 15, function() return fromGroup end, function(newValue) fromGroup = newValue end)"
     }
    ]
   },
   "form.addChoiceField": {
-   "count": 188,
+   "count": 186,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -385,8 +385,8 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/app/pages/tune_advisor.lua",
-     "line": 637,
-     "start": 637,
+     "line": 908,
+     "start": 908,
      "snippet": "form.addChoiceField(axisLine, nil, AXES, function() return AXES[selected][2] end, onAxis)"
     },
     {
@@ -435,35 +435,6 @@
      "line": 713,
      "start": 713,
      "snippet": "state.fields.slider = form.addSliderField(nil, {\n    x = layout.graphX,\n    y = layout.sliderY,\n    w = layout.sliderWidth,\n    h = layout.buttonHeight\n}, 1, 100,\nfunction()\n    return state.sliderPosition\nend,\nfunction(newValue)\n    state.sliderPosition = newValue\nend)"
-    }
-   ]
-  },
-  "form.addSourceField": {
-   "count": 6,
-   "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community"
-   ],
-   "snippets": [
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 358,
-     "start": 357,
-     "snippet": "line = form.addLine(\"Pump source\")\nform.addSourceField(line, nil, function() return widget.pumpSource end, function(newValue) widget.pumpSource = newValue end)"
-    },
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 295,
-     "start": 294,
-     "snippet": "local line = form.addLine(\"Altitude source\")\nform.addSourceField(line, nil, function() return widget.altSource end, function(newValue) widget.altSource = newValue end)"
-    },
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 345,
-     "start": 342,
-     "snippet": "panel = form.addExpansionPanel(\"EGT configure\")\nlocal egtMaxEdit\nline = panel:addLine(\"EGT source\")\nform.addSourceField(line, nil, function() return widget.egtSource end, function(newValue)\n  widget.egtSource = newValue\n  if egtMaxEdit ~= nil then\n    egtMaxEdit:suffix(widget.egtSource ~= nil and widget.egtSource:stringUnit() or \"\")\n  end\nend)"
     }
    ]
   },
@@ -516,23 +487,23 @@
      "snippet": "control = form.addTextField(form.addLine(\"@i18n(app.modules.configuration.craft_name)@\"), textFieldPos(app),\n    function()\n        return state.currentName\n    end,\n    function(newValue)\n        local value = tostring(newValue or \"\")\n        if value ~= state.currentName then\n            state.currentName = value\n            state.dirty = true\n            app:setPageDirty(true)\n        end\n    end)"
     },
     {
-     "repo": "rotorflight/rotorflight-lua-ethos-suite",
-     "path": "src/rfsuite/app/pages/configuration.lua",
-     "line": 231,
-     "start": 228,
-     "snippet": "-- header comment for why: the first page needing one, and why it\n-- can't be corrected in place like every other field type).\nlocal nameLine = form.addLine(\"@i18n(app.modules.configuration.craft_name)@\")\nlocal nameField = form.addTextField(nameLine, nil,\n  function()\n    local craftName = dataRef.data.craftName\n    return craftName and craftName.name or \"\"\n  end,\n  function(value)\n    markDirty()\n    local craftName = dataRef.data.craftName\n    if craftName then craftName.name = value or \"\" end\n  end)"
-    },
-    {
      "repo": "robthomson/dashx-ethos",
      "path": "src/dashx/app/lib/ui.lua",
      "line": 534,
      "start": 534,
      "snippet": "formFields[i] = form.addTextField(formLines[dashx.session.formLineCnt], posField, function()\n    if not fields or not fields[i] then\n        ui.disableAllFields()\n        ui.disableAllNavigationFields()\n        ui.enableNavigationField('menu')\n        return nil\n    end\n    return dashx.app.utils.getFieldValue(fields[i])\nend, function(value)\n    if f.postEdit then f.postEdit(page) end\n    if f.onChange then f.onChange(page) end\n\n    f.value = dashx.app.utils.saveFieldValue(fields[i], value)\nend)"
+    },
+    {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/app/pages/configuration.lua",
+     "line": 240,
+     "start": 237,
+     "snippet": "-- header comment for why: the first page needing one, and why it\n-- can't be corrected in place like every other field type).\nlocal nameLine = form.addLine(\"@i18n(app.modules.configuration.craft_name)@\")\nlocal nameField = form.addTextField(nameLine, nil,\n  function()\n    local craftName = dataRef.data.craftName\n    return craftName and craftName.name or \"\"\n  end,\n  function(value)\n    markDirty()\n    local craftName = dataRef.data.craftName\n    if craftName then\n      local name = value or \"\"\n      if type(name) ~= \"string\" then name = tostring(name) end\n      craftName.name = name:sub(1, mspName.MAX_NAME_LENGTH)\n    end\n  end)"
     }
    ]
   },
   "form.addTextButton": {
-   "count": 80,
+   "count": 78,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "robthomson/ethos-arcade",
@@ -627,8 +598,8 @@
     {
      "repo": "FrSkyRC/ETHOS-Feedback-Community",
      "path": "lua/frsky/RB25_S/stab/stab.lua",
-     "line": 362,
-     "start": 362,
+     "line": 381,
+     "start": 381,
      "snippet": "local slots = form.getFieldSlots(line, fieldLabels)"
     },
     {
@@ -648,7 +619,7 @@
    ]
   },
   "form.openDialog": {
-   "count": 120,
+   "count": 122,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -745,7 +716,7 @@
    ]
   },
   "lcd.RGB": {
-   "count": 637,
+   "count": 641,
    "projects": [
     "WingFlight/wingflight-lua-ethos-suite",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
@@ -784,7 +755,7 @@
    ]
   },
   "lcd.GREY": {
-   "count": 32,
+   "count": 27,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -792,13 +763,6 @@
     "rotorflight/rotorflight-lua-ethos-suite"
    ],
    "snippets": [
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 115,
-     "start": 115,
-     "snippet": "lcd.color(lcd.GREY(0xFF))"
-    },
     {
      "repo": "robthomson/ethos-app-framework",
      "path": "src/rfsuite/app/modules/governor/tools/curves.lua",
@@ -812,11 +776,18 @@
      "line": 82,
      "start": 82,
      "snippet": "if lcd.color and lcd.GREY then lcd.color(lcd.GREY(90)) end"
+    },
+    {
+     "repo": "FrSkyRC/ETHOS-Feedback-Community",
+     "path": "lua/frsky/RB25_S/stab/cali/cali.lua",
+     "line": 163,
+     "start": 163,
+     "snippet": "lcd.color(lcd.darkMode() and lcd.GREY(0xFF) or lcd.GREY(0))"
     }
    ]
   },
   "lcd.color": {
-   "count": 601,
+   "count": 607,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -879,15 +850,16 @@
     {
      "repo": "WingFlight/wingflight-lua-ethos-suite",
      "path": "src/wfsuite/widgets/dashboard.lua",
-     "line": 466,
-     "start": 464,
+     "line": 468,
+     "start": 466,
      "snippet": "local function resolveToolbarThemeColor(themeColorKey, fallback)\n  if type(themeColorKey) == \"number\" and type(lcd.themeColor) == \"function\" and ensureEthosVersion().atLeast({26, 1, 0}) then\n    return lcd.themeColor(themeColorKey)\n  end\n  return fallback\nend"
     }
    ]
   },
   "lcd.darkMode": {
-   "count": 38,
+   "count": 41,
    "projects": [
+    "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
     "robthomson/dashx-ethos",
@@ -922,9 +894,8 @@
    ]
   },
   "lcd.font": {
-   "count": 323,
+   "count": 334,
    "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
     "flyingeek/ethos-gps-qrcode",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
@@ -945,17 +916,17 @@
      "snippet": "lcd.font(font)"
     },
     {
-     "repo": "robthomson/ethos-arcade",
-     "path": "src/ethos-arcade/games/gulaxian/game.lua",
-     "line": 914,
-     "start": 914,
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard/battery_picker.lua",
+     "line": 152,
+     "start": 152,
      "snippet": "lcd.font(FONT_S)"
     },
     {
-     "repo": "WingFlight/wingflight-lua-ethos-suite",
-     "path": "src/wfsuite/app/alignment_visual.lua",
-     "line": 223,
-     "start": 223,
+     "repo": "robthomson/dashx-ethos",
+     "path": "src/dashx/widgets/dashboard/lib/toolbar.lua",
+     "line": 56,
+     "start": 56,
      "snippet": "lcd.font(FONT_XS)"
     }
    ]
@@ -1016,9 +987,8 @@
    ]
   },
   "lcd.drawLine": {
-   "count": 133,
+   "count": 121,
    "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
     "robthomson/dashx-ethos",
@@ -1127,9 +1097,8 @@
    ]
   },
   "lcd.drawFilledRectangle": {
-   "count": 354,
+   "count": 363,
    "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
     "flyingeek/ethos-gps-qrcode",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
@@ -1268,7 +1237,7 @@
    ]
   },
   "lcd.drawText": {
-   "count": 409,
+   "count": 402,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -1309,7 +1278,7 @@
    ]
   },
   "lcd.hasFocus": {
-   "count": 15,
+   "count": 17,
    "projects": [
     "WingFlight/wingflight-lua-ethos-suite",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
@@ -1326,23 +1295,23 @@
      "snippet": "if not lcd.hasFocus() then return false end"
     },
     {
-     "repo": "robthomson/dashx-ethos",
-     "path": "src/dashx/widgets/dashboard/dashboard.lua",
-     "line": 726,
-     "start": 726,
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard.lua",
+     "line": 1372,
+     "start": 1372,
      "snippet": "if category == EVT_KEY and lcd.hasFocus() then"
     },
     {
-     "repo": "rotorflight/rotorflight-lua-ethos-suite",
-     "path": "src/rfsuite/widgets/dashboard.lua",
-     "line": 1893,
-     "start": 1893,
+     "repo": "WingFlight/wingflight-lua-ethos-suite",
+     "path": "src/wfsuite/widgets/dashboard.lua",
+     "line": 2093,
+     "start": 2093,
      "snippet": "if widget.infoPanelVisible and category == EVT_KEY and lcd.hasFocus()"
     }
    ]
   },
   "lcd.loadBitmap": {
-   "count": 35,
+   "count": 27,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -1410,7 +1379,7 @@
    ]
   },
   "lcd.drawBitmap": {
-   "count": 39,
+   "count": 31,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -1454,14 +1423,14 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/widgets/dashboard.lua",
-     "line": 605,
-     "start": 602,
+     "line": 617,
+     "start": 614,
      "snippet": "local minIconY = labelY + (labelH or 0) + iconGap\nlocal iconY = by + bh - iconSize - iconBottomPad\nif iconY < minIconY then iconY = minIconY end\nlcd.drawMask(math.floor(bx + (bw - iconSize) / 2 + 0.5), math.floor(iconY + 0.5), mask)"
     }
    ]
   },
   "lcd.getTextSize": {
-   "count": 259,
+   "count": 265,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -1492,14 +1461,14 @@
     {
      "repo": "WingFlight/wingflight-lua-ethos-suite",
      "path": "src/wfsuite/widgets/dashboard.lua",
-     "line": 517,
-     "start": 517,
+     "line": 519,
+     "start": 519,
      "snippet": "local tw, th = lcd.getTextSize(label)"
     }
    ]
   },
   "lcd.getWindowSize": {
-   "count": 231,
+   "count": 242,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -1832,8 +1801,8 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/tasks/msp/transport_sport.lua",
-     "line": 33,
-     "start": 31,
+     "line": 39,
+     "start": 37,
      "snippet": "local function getSensor()\n  if not sensor then\n    sensor = sport.getSensor({module = moduleNumber or 0, primId = REPLY_FRAME_ID})\n  end\n  return sensor\nend"
     },
     {
@@ -1846,20 +1815,12 @@
    ]
   },
   "storage.read": {
-   "count": 16,
+   "count": 6,
    "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
     "robthomson/ethos-bmfa-caller"
    ],
    "snippets": [
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 376,
-     "start": 376,
-     "snippet": "widget.pumpSource = storage.read(\"pumpSource\")"
-    },
     {
      "repo": "robthomson/ethos-bmfa-caller",
      "path": "src/bmfa-caller/widget_impl.lua",
@@ -1877,20 +1838,12 @@
    ]
   },
   "storage.write": {
-   "count": 16,
+   "count": 6,
    "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
     "robthomson/ethos-bmfa-caller"
    ],
    "snippets": [
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 394,
-     "start": 394,
-     "snippet": "storage.write(\"pumpSource\", widget.pumpSource)"
-    },
     {
      "repo": "iNavFlight/ETHOS-Telemetry-Dashboard",
      "path": "src/inav-dashboard/widget.lua",
@@ -1972,7 +1925,7 @@
    ]
   },
   "system.getVersion": {
-   "count": 67,
+   "count": 69,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -2019,8 +1972,8 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/tasks/background.lua",
-     "line": 78,
-     "start": 78,
+     "line": 85,
+     "start": 85,
      "snippet": "local mem = system.getMemoryUsage and system.getMemoryUsage() or {}"
     },
     {
@@ -2097,8 +2050,8 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/tasks/audio_events.lua",
-     "line": 186,
-     "start": 185,
+     "line": 194,
+     "start": 193,
      "snippet": "local function playCommon(file)\n  system.playFile(\"audio/\" .. file)\nend"
     },
     {
@@ -2129,8 +2082,8 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/tasks/audio_events.lua",
-     "line": 206,
-     "start": 205,
+     "line": 214,
+     "start": 213,
      "snippet": "local function playNumber(value, unit, decimals)\n  if system.playNumber then system.playNumber(value, unit, decimals) end\nend"
     },
     {
@@ -2152,8 +2105,8 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/tasks/audio_events.lua",
-     "line": 233,
-     "start": 232,
+     "line": 241,
+     "start": 240,
      "snippet": "local function haptic()\n  if system.playHaptic then system.playHaptic(\". . . .\") end\nend"
     },
     {
@@ -2166,7 +2119,7 @@
    ]
   },
   "system.killEvents": {
-   "count": 41,
+   "count": 43,
    "projects": [
     "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
@@ -2183,18 +2136,18 @@
      "snippet": "system.killEvents(KEY_ENTER_BREAK)"
     },
     {
+     "repo": "rotorflight/rotorflight-lua-ethos-suite",
+     "path": "src/rfsuite/widgets/dashboard.lua",
+     "line": 1383,
+     "start": 1383,
+     "snippet": "if system and system.killEvents then system.killEvents(value) end"
+    },
+    {
      "repo": "robthomson/omp-ofs3-dashboard",
      "path": "src/ofs3/widgets/dashboard/lib/logviewer.lua",
      "line": 912,
      "start": 911,
      "snippet": "if system.killEvents then\n    system.killEvents(value)"
-    },
-    {
-     "repo": "rotorflight/rotorflight-lua-ethos-suite",
-     "path": "src/rfsuite/app/pages/ports.lua",
-     "line": 577,
-     "start": 574,
-     "snippet": "if opts.setEventHandler then\n  opts.setEventHandler(function(category, value)\n    if value == KEY_ENTER_LONG then\n      system.killEvents(KEY_ENTER_BREAK)"
     }
    ]
   },
@@ -2232,25 +2185,9 @@
     }
    ]
   },
-  "system.registerLayout": {
-   "count": 1,
-   "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community"
-   ],
-   "snippets": [
-    {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/Layout1P3/main.lua",
-     "line": 4,
-     "start": 3,
-     "snippet": "local function init()\n  system.registerLayout({key=\"XL+3\", widgets={\n    {x=8, y=95, w=784, h=248},\n    {x=8, y=351, w=256, h=56},\n    {x=272, y=351, w=256, h=56},\n    {x=536, y=351, w=256, h=56}\n  }})\nend"
-    }
-   ]
-  },
   "system.registerWidget": {
-   "count": 7,
+   "count": 6,
    "projects": [
-    "FrSkyRC/ETHOS-Feedback-Community",
     "WingFlight/wingflight-lua-ethos-suite",
     "iNavFlight/ETHOS-Telemetry-Dashboard",
     "robthomson/ethos-app-framework",
@@ -2267,18 +2204,18 @@
      "snippet": "local function init()\n    system.registerWidget(widget)\nend"
     },
     {
-     "repo": "FrSkyRC/ETHOS-Feedback-Community",
-     "path": "lua/frsky/JetWidget/main.lua",
-     "line": 398,
-     "start": 397,
-     "snippet": "local function init()\n  system.registerWidget({ key = \"FrkJet\", name = \"Jet dashboard\", create = create, build = build, paint = paint, wakeup = wakeup, configure = configure, read = read, write = write, title = false })\nend"
-    },
-    {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/widgets/dashboard.lua",
-     "line": 2208,
-     "start": 2205,
+     "line": 2331,
+     "start": 2328,
      "snippet": "local function init(opts)\n  opts = opts or {}\n  systemToolHandle = opts.systemToolHandle\n  system.registerWidget(widget)\nend"
+    },
+    {
+     "repo": "robthomson/ethos-app-framework",
+     "path": "src/rfsuite/main.lua",
+     "line": 70,
+     "start": 70,
+     "snippet": "system.registerWidget({\n    name = meta.name,\n    key = meta.key,\n    create = widget.create,\n    wakeup = widget.wakeup,\n    paint = widget.paint,\n    event = widget.event,\n    close = widget.close,\n    persistent = widget.persistent or false,\n    configure = widget.configure,\n    read = widget.read,\n    write = widget.write,\n    menu = widget.menu,\n    title = widget.title\n})"
     }
    ]
   },
@@ -2353,15 +2290,15 @@
     {
      "repo": "WingFlight/wingflight-lua-ethos-suite",
      "path": "src/wfsuite/tasks/background.lua",
-     "line": 416,
-     "start": 415,
+     "line": 474,
+     "start": 473,
      "snippet": "local function init()\n  system.registerTask({\n    key = \"wf2bg\",\n    name = \"Wingflight [Background]\",\n    init = taskInit,\n    wakeup = taskWakeup,\n    event = taskEvent,\n  })\nend"
     },
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/tasks/background.lua",
-     "line": 209,
-     "start": 208,
+     "line": 267,
+     "start": 266,
      "snippet": "local function init()\n  system.registerTask({\n    key = \"rf2bg\",\n    name = \"Rotorflight [Background]\",\n    init = taskInit,\n    wakeup = taskWakeup,\n    event = taskEvent,\n  })\nend"
     },
     {
@@ -2462,8 +2399,8 @@
     {
      "repo": "rotorflight/rotorflight-lua-ethos-suite",
      "path": "src/rfsuite/widgets/dashboard.lua",
-     "line": 1289,
-     "start": 1284,
+     "line": 1395,
+     "start": 1390,
      "snippet": "local function launchSystemTool(widget)\n  if not canOpenSystemTool() then return end\n  setToolbarVisible(widget, false)\n  requestPaint(widget)\n  invalidateWidget(widget)\n  system.openPage({system = systemToolHandle})\nend"
     }
    ]

@@ -50,7 +50,7 @@ system.playHaptic("- . -") -- Bzzz Bz Bzzz
     end
     ```
 
-    <small>[src/rfsuite/tasks/audio_events.lua:232](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/tasks/audio_events.lua#L232-L234)</small>
+    <small>[src/rfsuite/tasks/audio_events.lua:240](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/tasks/audio_events.lua#L240-L242)</small>
 
 === "Example 2"
 
@@ -63,4 +63,4 @@ system.playHaptic("- . -") -- Bzzz Bz Bzzz
     end
     ```
 
-    <small>[src/wfsuite/app/header.lua:174](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/header.lua#L174-L179)</small>
+    <small>[src/wfsuite/app/header.lua:174](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/header.lua#L174-L179)</small>

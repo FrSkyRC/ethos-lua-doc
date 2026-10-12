@@ -70,7 +70,7 @@ local dialog = form.openDialog({
 
 ## Real-world usage
 
-<div class="api-usage">Called 120 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 122 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -98,4 +98,4 @@ local dialog = form.openDialog({
     end
     ```
 
-    <small>[lua/frsky/RB25_S/stab/common.lua:46](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/RB25_S/stab/common.lua#L46-L48)</small>
+    <small>[lua/frsky/RB25_S/stab/common.lua:46](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/RB25_S/stab/common.lua#L46-L48)</small>

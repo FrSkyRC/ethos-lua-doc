@@ -64,7 +64,7 @@ Full example in [Drawing on screen](../../guides/drawing.md#shapes).
     lcd.drawAnnulusSector(cx, cy, inner, outer, segStart, segEnd)
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/objects/dial/rainbow.lua:97](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/objects/dial/rainbow.lua#L97-L98)</small>
+    <small>[src/rfsuite/widgets/dashboard/objects/dial/rainbow.lua:97](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/objects/dial/rainbow.lua#L97-L98)</small>
 
 === "Example 2"
 

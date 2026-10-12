@@ -8,7 +8,7 @@ title: API reference
 
 # API reference
 
-<div class="api-source">Generated from <code>lua-doc.zip</code> (nightly26, fetched 2026-10-09, sha256 <code>42165986832d</code>).</div>
+<div class="api-source">Generated from <code>lua-doc.zip</code> (nightly26, fetched 2026-10-12, sha256 <code>4d305931deca</code>).</div>
 
 ## Namespaces
 
@@ -68,21 +68,21 @@ The calls that real scripts use most, counted across the open-source projects li
 
 | Function | Calls | Projects |
 | --- | --- | --- |
-| [`form.addLine()`](form/addLine.md) | 667 | 11 |
-| [`lcd.RGB()`](lcd/RGB.md) | 637 | 11 |
-| [`lcd.color()`](lcd/color.md) | 601 | 11 |
-| [`lcd.drawText()`](lcd/drawText.md) | 409 | 13 |
-| [`lcd.drawFilledRectangle()`](lcd/drawFilledRectangle.md) | 354 | 12 |
-| [`lcd.font()`](lcd/font.md) | 323 | 11 |
-| [`lcd.getTextSize()`](lcd/getTextSize.md) | 259 | 10 |
+| [`form.addLine()`](form/addLine.md) | 657 | 11 |
+| [`lcd.RGB()`](lcd/RGB.md) | 641 | 11 |
+| [`lcd.color()`](lcd/color.md) | 607 | 11 |
+| [`lcd.drawText()`](lcd/drawText.md) | 402 | 13 |
+| [`lcd.drawFilledRectangle()`](lcd/drawFilledRectangle.md) | 363 | 11 |
+| [`lcd.font()`](lcd/font.md) | 334 | 10 |
+| [`lcd.getTextSize()`](lcd/getTextSize.md) | 265 | 10 |
 | [`lcd.loadMask()`](lcd/loadMask.md) | 252 | 6 |
-| [`lcd.getWindowSize()`](lcd/getWindowSize.md) | 231 | 13 |
-| [`form.addNumberField()`](form/addNumberField.md) | 229 | 6 |
+| [`lcd.getWindowSize()`](lcd/getWindowSize.md) | 242 | 13 |
 | [`form.clear()`](form/clear.md) | 227 | 9 |
-| [`form.addStaticText()`](form/addStaticText.md) | 219 | 10 |
-| [`form.addChoiceField()`](form/addChoiceField.md) | 188 | 9 |
+| [`form.addNumberField()`](form/addNumberField.md) | 225 | 6 |
+| [`form.addStaticText()`](form/addStaticText.md) | 217 | 10 |
+| [`form.addChoiceField()`](form/addChoiceField.md) | 186 | 9 |
 | [`lcd.invalidate()`](lcd/invalidate.md) | 153 | 13 |
-| [`lcd.drawLine()`](lcd/drawLine.md) | 133 | 9 |
+| [`form.openDialog()`](form/openDialog.md) | 122 | 6 |
 
 ## What's new
 

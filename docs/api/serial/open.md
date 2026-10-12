@@ -49,4 +49,4 @@ conn:flush()
     SportConnection = serial.open("sport", SportInterfaceBandrate, "8N1", true)
     ```
 
-    <small>[lua/frsky/XAct/config/ui.lua:25](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/XAct/config/ui.lua#L25-L25)</small>
+    <small>[lua/frsky/XAct/config/ui.lua:25](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/XAct/config/ui.lua#L25-L25)</small>

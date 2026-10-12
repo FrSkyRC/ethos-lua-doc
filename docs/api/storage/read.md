@@ -52,17 +52,9 @@ Use it inside `read` callbacks of widgets, tasks and sources. Values live in the
 
 ## Real-world usage
 
-<div class="api-usage">Called 16 times across 3 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 6 times across 2 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
-
-    ```lua
-    widget.pumpSource = storage.read("pumpSource")
-    ```
-
-    <small>[lua/frsky/JetWidget/main.lua:376](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/JetWidget/main.lua#L376-L376)</small>
-
-=== "Example 2"
 
     ```lua
     local function read(widget)
@@ -76,7 +68,7 @@ Use it inside `read` callbacks of widgets, tasks and sources. Values live in the
 
     <small>[src/bmfa-caller/widget_impl.lua:153](https://github.com/robthomson/ethos-bmfa-caller/blob/f4bb5511dbe666567fc5406ca60124be65b9c830/src/bmfa-caller/widget_impl.lua#L153-L159)</small>
 
-=== "Example 3"
+=== "Example 2"
 
     ```lua
     function widget.read()

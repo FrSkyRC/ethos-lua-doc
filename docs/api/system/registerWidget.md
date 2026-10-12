@@ -93,7 +93,7 @@ return {init=init}
 
 ## Real-world usage
 
-<div class="api-usage">Called 7 times across 7 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 6 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -108,16 +108,6 @@ return {init=init}
 === "Example 2"
 
     ```lua
-    local function init()
-      system.registerWidget({ key = "FrkJet", name = "Jet dashboard", create = create, build = build, paint = paint, wakeup = wakeup, configure = configure, read = read, write = write, title = false })
-    end
-    ```
-
-    <small>[lua/frsky/JetWidget/main.lua:397](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/JetWidget/main.lua#L397-L399)</small>
-
-=== "Example 3"
-
-    ```lua
     local function init(opts)
       opts = opts or {}
       systemToolHandle = opts.systemToolHandle
@@ -125,4 +115,26 @@ return {init=init}
     end
     ```
 
-    <small>[src/rfsuite/widgets/dashboard.lua:2205](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard.lua#L2205-L2209)</small>
+    <small>[src/rfsuite/widgets/dashboard.lua:2328](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard.lua#L2328-L2332)</small>
+
+=== "Example 3"
+
+    ```lua
+    system.registerWidget({
+        name = meta.name,
+        key = meta.key,
+        create = widget.create,
+        wakeup = widget.wakeup,
+        paint = widget.paint,
+        event = widget.event,
+        close = widget.close,
+        persistent = widget.persistent or false,
+        configure = widget.configure,
+        read = widget.read,
+        write = widget.write,
+        menu = widget.menu,
+        title = widget.title
+    })
+    ```
+
+    <small>[src/rfsuite/main.lua:70](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/main.lua#L70-L84)</small>

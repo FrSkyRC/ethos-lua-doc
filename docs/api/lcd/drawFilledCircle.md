@@ -59,7 +59,7 @@ end
     lcd.drawFilledCircle(p.x, p.y, r)
     ```
 
-    <small>[src/wfsuite/app/curves_visual.lua:102](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/curves_visual.lua#L102-L103)</small>
+    <small>[src/wfsuite/app/curves_visual.lua:102](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/curves_visual.lua#L102-L103)</small>
 
 === "Example 3"
 

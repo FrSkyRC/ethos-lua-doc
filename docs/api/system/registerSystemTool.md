@@ -66,7 +66,7 @@ end
     end
     ```
 
-    <small>[src/rfsuite/app/tool.lua:634](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/tool.lua#L634-L636)</small>
+    <small>[src/rfsuite/app/tool.lua:634](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/tool.lua#L634-L636)</small>
 
 === "Example 2"
 
@@ -90,4 +90,4 @@ end
     end
     ```
 
-    <small>[lua/frsky/SR6MiniE_Cali/main.lua:117](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/SR6MiniE_Cali/main.lua#L117-L123)</small>
+    <small>[lua/frsky/SR6MiniE_Cali/main.lua:117](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/SR6MiniE_Cali/main.lua#L117-L123)</small>

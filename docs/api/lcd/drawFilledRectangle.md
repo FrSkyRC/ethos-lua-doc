@@ -54,7 +54,7 @@ See the [battery gauge recipe](../../cookbook/battery-gauge.md) for a complete w
 
 ## Real-world usage
 
-<div class="api-usage">Called 354 times across 12 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 363 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -62,7 +62,7 @@ See the [battery gauge recipe](../../cookbook/battery-gauge.md) for a complete w
     lcd.drawFilledRectangle(x, y, w, h)
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/objects/gauge/bar.lua:129](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/objects/gauge/bar.lua#L129-L129)</small>
+    <small>[src/rfsuite/widgets/dashboard/objects/gauge/bar.lua:129](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/objects/gauge/bar.lua#L129-L129)</small>
 
 === "Example 2"
 

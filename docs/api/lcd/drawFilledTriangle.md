@@ -53,7 +53,7 @@ Nothing.
     lcd.drawFilledTriangle(p1x, p1y, p2x, p2y, p3x, p3y)
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/objects/navigation/ah.lua:172](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/objects/navigation/ah.lua#L172-L172)</small>
+    <small>[src/rfsuite/widgets/dashboard/objects/navigation/ah.lua:172](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/objects/navigation/ah.lua#L172-L172)</small>
 
 === "Example 3"
 

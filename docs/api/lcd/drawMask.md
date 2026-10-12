@@ -59,4 +59,4 @@ Masks are single-channel images, cheaper than full-color bitmaps and recolorable
     lcd.drawMask(math.floor(bx + (bw - iconSize) / 2 + 0.5), math.floor(iconY + 0.5), mask)
     ```
 
-    <small>[src/rfsuite/widgets/dashboard.lua:602](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard.lua#L602-L605)</small>
+    <small>[src/rfsuite/widgets/dashboard.lua:614](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard.lua#L614-L617)</small>

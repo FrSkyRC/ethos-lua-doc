@@ -56,7 +56,7 @@ The current color applies to every following `lcd.draw*` call **and** to masks d
 
 ## Real-world usage
 
-<div class="api-usage">Called 601 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 607 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -64,7 +64,7 @@ The current color applies to every following `lcd.draw*` call **and** to masks d
     lcd.color(bg)
     ```
 
-    <small>[src/rfsuite/app/alignment_visual.lua:183](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/alignment_visual.lua#L183-L183)</small>
+    <small>[src/rfsuite/app/alignment_visual.lua:183](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/alignment_visual.lua#L183-L183)</small>
 
 === "Example 2"
 
@@ -72,7 +72,7 @@ The current color applies to every following `lcd.draw*` call **and** to masks d
     lcd.color(grid)
     ```
 
-    <small>[src/wfsuite/app/alignment_visual.lua:219](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/alignment_visual.lua#L219-L219)</small>
+    <small>[src/wfsuite/app/alignment_visual.lua:219](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/alignment_visual.lua#L219-L219)</small>
 
 === "Example 3"
 

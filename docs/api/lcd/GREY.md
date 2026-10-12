@@ -42,17 +42,9 @@ local SUBTLE = lcd.GREY(160, 0.5)    -- light grey, 50 % transparent
 
 ## Real-world usage
 
-<div class="api-usage">Called 32 times across 4 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 27 times across 4 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
-
-    ```lua
-    lcd.color(lcd.GREY(0xFF))
-    ```
-
-    <small>[lua/frsky/JetWidget/main.lua:115](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/JetWidget/main.lua#L115-L115)</small>
-
-=== "Example 2"
 
     ```lua
     lcd.color(isDark and lcd.GREY(80) or lcd.GREY(180))
@@ -60,10 +52,18 @@ local SUBTLE = lcd.GREY(160, 0.5)    -- light grey, 50 % transparent
 
     <small>[src/rfsuite/app/modules/governor/tools/curves.lua:443](https://github.com/robthomson/ethos-app-framework/blob/fdfd6e70f8f2865a2742102e009b791ae18e3ca9/src/rfsuite/app/modules/governor/tools/curves.lua#L443-L443)</small>
 
-=== "Example 3"
+=== "Example 2"
 
     ```lua
     if lcd.color and lcd.GREY then lcd.color(lcd.GREY(90)) end
     ```
 
-    <small>[src/rfsuite/app/pages/setup_governor_curves.lua:82](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/setup_governor_curves.lua#L82-L82)</small>
+    <small>[src/rfsuite/app/pages/setup_governor_curves.lua:82](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/pages/setup_governor_curves.lua#L82-L82)</small>
+
+=== "Example 3"
+
+    ```lua
+    lcd.color(lcd.darkMode() and lcd.GREY(0xFF) or lcd.GREY(0))
+    ```
+
+    <small>[lua/frsky/RB25_S/stab/cali/cali.lua:163](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/RB25_S/stab/cali/cali.lua#L163-L163)</small>

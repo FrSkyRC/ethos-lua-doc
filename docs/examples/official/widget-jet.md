@@ -413,11 +413,11 @@ return { init = init }
 
 ## Assets
 
-![egt_panel.png](widget-jet/egt_panel.png){ loading=lazy style="max-height:120px" }
-![egt_pointer.png](widget-jet/egt_pointer.png){ loading=lazy style="max-height:120px" }
-![pump_panel.png](widget-jet/pump_panel.png){ loading=lazy style="max-height:120px" }
-![pump_pointer.png](widget-jet/pump_pointer.png){ loading=lazy style="max-height:120px" }
 ![rpm_panel.png](widget-jet/rpm_panel.png){ loading=lazy style="max-height:120px" }
 ![rpm_pointer.png](widget-jet/rpm_pointer.png){ loading=lazy style="max-height:120px" }
+![pump_pointer.png](widget-jet/pump_pointer.png){ loading=lazy style="max-height:120px" }
+![egt_pointer.png](widget-jet/egt_pointer.png){ loading=lazy style="max-height:120px" }
 ![speed_panel.png](widget-jet/speed_panel.png){ loading=lazy style="max-height:120px" }
+![pump_panel.png](widget-jet/pump_panel.png){ loading=lazy style="max-height:120px" }
 ![speed_pointer.png](widget-jet/speed_pointer.png){ loading=lazy style="max-height:120px" }
+![egt_panel.png](widget-jet/egt_panel.png){ loading=lazy style="max-height:120px" }

@@ -60,7 +60,7 @@ Prefer feature checks (`if system.getSources then`) over version checks where po
 
 ## Real-world usage
 
-<div class="api-usage">Called 67 times across 9 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 69 times across 9 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 

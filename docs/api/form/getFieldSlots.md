@@ -50,7 +50,7 @@ form.getFieldSlots(line, {100, 0, "slot3"})
     local slots = form.getFieldSlots(line, fieldLabels)
     ```
 
-    <small>[lua/frsky/RB25_S/stab/stab.lua:362](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/RB25_S/stab/stab.lua#L362-L362)</small>
+    <small>[lua/frsky/RB25_S/stab/stab.lua:381](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/RB25_S/stab/stab.lua#L381-L381)</small>
 
 === "Example 2"
 
@@ -58,7 +58,7 @@ form.getFieldSlots(line, {100, 0, "slot3"})
     local slots = form.getFieldSlots(line, {0, SLOT_HINT, SLOT_HINT, SLOT_HINT, SLOT_HINT})
     ```
 
-    <small>[src/rfsuite/app/header.lua:255](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/header.lua#L255-L255)</small>
+    <small>[src/rfsuite/app/header.lua:255](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/header.lua#L255-L255)</small>
 
 === "Example 3"
 
@@ -67,4 +67,4 @@ form.getFieldSlots(line, {100, 0, "slot3"})
     local slot = form.getFieldSlots(line, {0})[1]
     ```
 
-    <small>[src/wfsuite/app/pages/alignment.lua:60](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/pages/alignment.lua#L60-L61)</small>
+    <small>[src/wfsuite/app/pages/alignment.lua:60](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/pages/alignment.lua#L60-L61)</small>

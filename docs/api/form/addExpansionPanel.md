@@ -41,7 +41,7 @@ panel:open(false) -- by default the panel is open, let's keep it closed!
 
 ## Real-world usage
 
-<div class="api-usage">Called 86 times across 5 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 84 times across 5 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -49,15 +49,15 @@ panel:open(false) -- by default the panel is open, let's keep it closed!
     local rpm_panel = form.addExpansionPanel("RPM")
     ```
 
-    <small>[src/wfsuite/widgets/dashboard/themes/kevd/configure.lua:47](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard/themes/kevd/configure.lua#L47-L47)</small>
+    <small>[src/wfsuite/widgets/dashboard/themes/kevd/configure.lua:47](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/widgets/dashboard/themes/kevd/configure.lua#L47-L47)</small>
 
 === "Example 2"
 
     ```lua
-    panel = form.addExpansionPanel("EGT configure")
+    local panel = form.addExpansionPanel("Copy bank")
     ```
 
-    <small>[lua/frsky/JetWidget/main.lua:342](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/JetWidget/main.lua#L342-L342)</small>
+    <small>[lua/frsky/RB25_S/group/group.lua:126](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/RB25_S/group/group.lua#L126-L126)</small>
 
 === "Example 3"
 
@@ -65,4 +65,4 @@ panel:open(false) -- by default the panel is open, let's keep it closed!
     local radio = form.addExpansionPanel("Radio link")
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/themes/bastion/configure.lua:154](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/themes/bastion/configure.lua#L154-L154)</small>
+    <small>[src/rfsuite/widgets/dashboard/themes/bastion/configure.lua:154](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/themes/bastion/configure.lua#L154-L154)</small>

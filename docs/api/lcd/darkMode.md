@@ -26,7 +26,7 @@ darkMode (boolean)
 
 ## Real-world usage
 
-<div class="api-usage">Called 38 times across 8 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 41 times across 9 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -42,7 +42,7 @@ darkMode (boolean)
     local isDark = lcd.darkMode()
     ```
 
-    <small>[src/rfsuite/app/alignment_visual.lua:168](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/alignment_visual.lua#L168-L168)</small>
+    <small>[src/rfsuite/app/alignment_visual.lua:168](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/alignment_visual.lua#L168-L168)</small>
 
 === "Example 3"
 

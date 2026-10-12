@@ -88,4 +88,4 @@ form.addBooleanField(line, nil, function() return value end, function(newValue) 
     end)
     ```
 
-    <small>[src/rfsuite/app/pages/blackbox_edit_page.lua:364](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/blackbox_edit_page.lua#L364-L370)</small>
+    <small>[src/rfsuite/app/pages/blackbox_edit_page.lua:364](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/pages/blackbox_edit_page.lua#L364-L370)</small>

@@ -38,7 +38,7 @@ Nothing.
     if form.invalidate then form.invalidate() end
     ```
 
-    <small>[src/rfsuite/app/pages/power_smartfuel.lua:129](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/power_smartfuel.lua#L129-L129)</small>
+    <small>[src/rfsuite/app/pages/power_smartfuel.lua:129](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/pages/power_smartfuel.lua#L129-L129)</small>
 
 === "Example 2"
 
@@ -48,7 +48,7 @@ Nothing.
     if form.invalidate then form.invalidate() end
     ```
 
-    <small>[src/wfsuite/app/pages/telemetry.lua:294](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/pages/telemetry.lua#L294-L296)</small>
+    <small>[src/wfsuite/app/pages/telemetry.lua:294](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/pages/telemetry.lua#L294-L296)</small>
 
 === "Example 3"
 

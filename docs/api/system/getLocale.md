@@ -63,7 +63,7 @@ See [Translations](../../guides/i18n.md) for a translation-file pattern.
     local locale = system.getLocale()
     ```
 
-    <small>[lua/frsky/RB25_S/stab/i18n/i18n.lua:1](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/RB25_S/stab/i18n/i18n.lua#L1-L1)</small>
+    <small>[lua/frsky/RB25_S/stab/i18n/i18n.lua:1](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/RB25_S/stab/i18n/i18n.lua#L1-L1)</small>
 
 === "Example 3"
 

@@ -67,7 +67,7 @@ lcd.invalidate(0, 0, 100, 100)
     lcd.invalidate()
     ```
 
-    <small>[lua/frsky/RB25_S/stab/cali/cali.lua:224](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/7cab00b5ee95e761965c58ddec2d2b113fedde64/lua/frsky/RB25_S/stab/cali/cali.lua#L224-L225)</small>
+    <small>[lua/frsky/RB25_S/stab/cali/cali.lua:224](https://github.com/FrSkyRC/ETHOS-Feedback-Community/blob/b92b58ea6585a7b0060a5ac63e827316aa890b45/lua/frsky/RB25_S/stab/cali/cali.lua#L224-L225)</small>
 
 === "Example 3"
 

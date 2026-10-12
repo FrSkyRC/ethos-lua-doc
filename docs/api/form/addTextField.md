@@ -69,26 +69,6 @@ form.addTextField(line, form.getFieldSlots(line, {100, 0, "slot3"})[0], function
 === "Example 2"
 
     ```lua
-    -- header comment for why: the first page needing one, and why it
-    -- can't be corrected in place like every other field type).
-    local nameLine = form.addLine("@i18n(app.modules.configuration.craft_name)@")
-    local nameField = form.addTextField(nameLine, nil,
-      function()
-        local craftName = dataRef.data.craftName
-        return craftName and craftName.name or ""
-      end,
-      function(value)
-        markDirty()
-        local craftName = dataRef.data.craftName
-        if craftName then craftName.name = value or "" end
-      end)
-    ```
-
-    <small>[src/rfsuite/app/pages/configuration.lua:228](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/pages/configuration.lua#L228-L240)</small>
-
-=== "Example 3"
-
-    ```lua
     formFields[i] = form.addTextField(formLines[dashx.session.formLineCnt], posField, function()
         if not fields or not fields[i] then
             ui.disableAllFields()
@@ -106,3 +86,27 @@ form.addTextField(line, form.getFieldSlots(line, {100, 0, "slot3"})[0], function
     ```
 
     <small>[src/dashx/app/lib/ui.lua:534](https://github.com/robthomson/dashx-ethos/blob/6dcae492715da80d210cb4c6b16c3881c9791e2a/src/dashx/app/lib/ui.lua#L534-L547)</small>
+
+=== "Example 3"
+
+    ```lua
+    -- header comment for why: the first page needing one, and why it
+    -- can't be corrected in place like every other field type).
+    local nameLine = form.addLine("@i18n(app.modules.configuration.craft_name)@")
+    local nameField = form.addTextField(nameLine, nil,
+      function()
+        local craftName = dataRef.data.craftName
+        return craftName and craftName.name or ""
+      end,
+      function(value)
+        markDirty()
+        local craftName = dataRef.data.craftName
+        if craftName then
+          local name = value or ""
+          if type(name) ~= "string" then name = tostring(name) end
+          craftName.name = name:sub(1, mspName.MAX_NAME_LENGTH)
+        end
+      end)
+    ```
+
+    <small>[src/rfsuite/app/pages/configuration.lua:237](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/pages/configuration.lua#L237-L253)</small>

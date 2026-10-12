@@ -66,7 +66,7 @@ end
 
 ## Real-world usage
 
-<div class="api-usage">Called 409 times across 13 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 402 times across 13 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 

@@ -73,7 +73,7 @@ Using theme colors keeps a script readable on light and dark themes. All indexes
     end
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/context.lua:412](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/context.lua#L412-L417)</small>
+    <small>[src/rfsuite/widgets/dashboard/context.lua:412](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/context.lua#L412-L417)</small>
 
 === "Example 3"
 
@@ -86,4 +86,4 @@ Using theme colors keeps a script readable on light and dark themes. All indexes
     end
     ```
 
-    <small>[src/wfsuite/widgets/dashboard.lua:464](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/widgets/dashboard.lua#L464-L469)</small>
+    <small>[src/wfsuite/widgets/dashboard.lua:466](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/widgets/dashboard.lua#L466-L471)</small>

@@ -43,7 +43,7 @@ local sensor = crsf.getSensor()
     end
     ```
 
-    <small>[src/rfsuite/tasks/msp/transport_crsf.lua:22](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/tasks/msp/transport_crsf.lua#L22-L25)</small>
+    <small>[src/rfsuite/tasks/msp/transport_crsf.lua:22](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/tasks/msp/transport_crsf.lua#L22-L25)</small>
 
 === "Example 2"
 
@@ -81,4 +81,4 @@ local sensor = crsf.getSensor()
     end
     ```
 
-    <small>[src/wfsuite/lib/elrslink_task.lua:243](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/lib/elrslink_task.lua#L243-L254)</small>
+    <small>[src/wfsuite/lib/elrslink_task.lua:243](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/lib/elrslink_task.lua#L243-L254)</small>

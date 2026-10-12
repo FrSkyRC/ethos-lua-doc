@@ -53,7 +53,7 @@ The same widget can be placed in slots of very different sizes (and radios range
 
 ## Real-world usage
 
-<div class="api-usage">Called 231 times across 13 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 242 times across 13 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -61,7 +61,7 @@ The same widget can be placed in slots of very different sizes (and radios range
     local w, h = lcd.getWindowSize()
     ```
 
-    <small>[src/rfsuite/app/alignment_visual.lua:162](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/app/alignment_visual.lua#L162-L162)</small>
+    <small>[src/rfsuite/app/alignment_visual.lua:162](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/app/alignment_visual.lua#L162-L162)</small>
 
 === "Example 2"
 

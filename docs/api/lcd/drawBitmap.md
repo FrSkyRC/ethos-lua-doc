@@ -52,7 +52,7 @@ Scaling at draw time is convenient, but an image that is always shown small shou
 
 ## Real-world usage
 
-<div class="api-usage">Called 39 times across 7 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 31 times across 7 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -76,4 +76,4 @@ Scaling at draw time is convenient, but an image that is always shown small shou
     lcd.drawBitmap(math.floor(imgX + 0.5), math.floor(imgY + 0.5), bitmap, math.floor(imgW + 0.5), math.floor(imgH + 0.5))
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/context.lua:1866](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/context.lua#L1866-L1866)</small>
+    <small>[src/rfsuite/widgets/dashboard/context.lua:1866](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/context.lua#L1866-L1866)</small>

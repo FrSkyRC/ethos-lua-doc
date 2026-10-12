@@ -61,7 +61,7 @@ end
 
 ## Real-world usage
 
-<div class="api-usage">Called 637 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
+<div class="api-usage">Called 641 times across 11 open-source Ethos Lua projects. A few short excerpts:</div>
 
 === "Example 1"
 
@@ -85,4 +85,4 @@ end
     local skyColor = lcd.RGB(70, 130, 180)
     ```
 
-    <small>[src/rfsuite/widgets/dashboard/objects/navigation/ah.lua:140](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/53c7e819afe6293cb7623b5972e4a4d276a90ad1/src/rfsuite/widgets/dashboard/objects/navigation/ah.lua#L140-L140)</small>
+    <small>[src/rfsuite/widgets/dashboard/objects/navigation/ah.lua:140](https://github.com/rotorflight/rotorflight-lua-ethos-suite/blob/cdf0b8f37d0ea56d7373ce501d489eeebeda234b/src/rfsuite/widgets/dashboard/objects/navigation/ah.lua#L140-L140)</small>

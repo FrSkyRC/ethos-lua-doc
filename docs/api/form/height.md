@@ -53,7 +53,7 @@ print(form.height())
     local preCountHeight = form.height()
     ```
 
-    <small>[src/wfsuite/app/pages/curves.lua:376](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/0a7b1c61ad582033adebbe65183702650d4e377a/src/wfsuite/app/pages/curves.lua#L376-L376)</small>
+    <small>[src/wfsuite/app/pages/curves.lua:376](https://github.com/WingFlight/wingflight-lua-ethos-suite/blob/8222d3c763027018989da480c098e38ac4c32d4f/src/wfsuite/app/pages/curves.lua#L376-L376)</small>
 
 === "Example 3"
 
