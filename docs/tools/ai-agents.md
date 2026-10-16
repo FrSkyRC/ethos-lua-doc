@@ -169,6 +169,59 @@ Ethos Lua script for FrSky radios. Source in `src/<folder>/`, deployed to `scrip
 
 The same agent can deploy to a USB-connected radio with [`ethos_deploy.py`](vscode.md#7-the-deploy-tool) and read the radio's `print()` output over serial (`--radio --debug-only --for 30` stops after 30 s, so a non-interactive agent isn't left waiting).
 
+### Driving a real radio
+
+Recent firmware answers the same **remote control protocol** as the simulator on its USB serial port, so an agent can operate a physical radio the way it operates the simulator: screenshot, read it, press a key or tap, repeat. `ethos-tools` has a client for it, [`simulation/radio_remote.py`](https://github.com/FrSkyRC/ethos-tools/blob/main/simulation/radio_remote.md), which works like `run_wasm.js --serve`: one process holds the connection, and each command is a one-shot call that prints JSON.
+
+| Requirement | Notes |
+| --- | --- |
+| **Ethos 26 nightly from 2026-10-16 or later** | Earlier firmware has no remote control over USB |
+| **Python 3.8+** | `pip install pyserial hidapi` (`hidapi` only for `mode`) |
+| **The radio in Serial USB mode** | Choose *Serial* when plugging in, or switch over HID with `mode serial` (the [`81 68` request](vscode.md#4-talking-to-the-radio-over-usb)) |
+
+```bash
+python radio_remote.py mode serial                 # radio drops off the bus, COM/tty port appears
+python radio_remote.py --serve &                   # finds the port by VID/PID, then waits...
+# ...for you to ACCEPT the connection prompt on the radio screen (60 s, --accept-timeout)
+python radio_remote.py status                      # board, firmware, protocol version
+python radio_remote.py press SYS
+python radio_remote.py screenshot shots/system.png
+python radio_remote.py quit
+```
+
+| Command | Effect |
+| --- | --- |
+| `screenshot [out.png] [main\|top\|glasses]` | Save a display as PNG (800×480 on an X20S) |
+| `press KEY [holdMs]` | `SYS` `MDL` `DISP` `PAGE` `RTN` `ENTER` `UP` `DOWN` `LEFT` `RIGHT`; trims are keys too: `T1+` ... `T6-` |
+| `tap X Y`, `longpress X Y`, `swipe X1 Y1 X2 Y2`, `wheel N` | Touch and rotary encoder |
+| `ls PATH`, `read PATH [out]`, `write SRC PATH`, `rm PATH` | The radio's storage (`/scripts`, `/models`, ...), without switching to storage mode |
+| `trims`, `load PATH`, `text STRING`, `fswitch I` | Trim values, load a model, type on the on-screen keyboard, press a function switch |
+
+The server listens on port 8766, so it can run next to a `run_wasm.js` simulator on 8765.
+
+What differs from the simulator:
+
+- **Someone has to accept each connection on the radio.** Before that, every command except `HELLO` is refused. A new serial connection asks again, which is why one server process keeps the port open. An agent can't do this step, so start the server while you're at the radio.
+- **No sticks, pots or switches.** The protocol defines commands for them, but FrSky's web simulator doesn't send them to a physical radio, and they haven't been tested on one. A radio bound to a powered model would move its servos or motor, so don't try them with RF on.
+- **No macros or model JSON.** Those are simulator-only functions.
+- **Deploy over the protocol.** `write` copies a script to `/scripts/<folder>/` while the radio stays in serial mode. Scripts still load at boot, so restart the radio before testing the new version.
+
+*Verified on an X20S running Ethos 26.1.3 (nightly, protocol version 6) on Windows: connect and accept, screenshots, keys, trims, tap, rotary encoder, and listing, reading, writing and deleting files. On Windows, open the port with overlapped I/O as pyserial does. A synchronous handle (Node's `fs.open('\\\\.\\COM6')`, for example) gets `HELLO` through, then later commands time out.*
+
+The protocol itself (frame format, the version 6 payloads, tiled screenshots, connection events) is documented in [`radio_remote.md`](https://github.com/FrSkyRC/ethos-tools/blob/main/simulation/radio_remote.md#protocol-notes-for-a-physical-radio).
+
+### Through the web simulator instead
+
+The [web simulator](web-simulator.md) can connect to a radio by Web Serial (Chrome or Edge) and has a **Connect Claude** dialog. It gives an MCP server URL that FrSky's server relays to the open browser tab:
+
+```bash
+claude mcp add --transport http ethos-simulator https://ethos-simulator.frsky-rc.com/mcp/<token>
+```
+
+With a radio connected to that tab, its `screenshot`, `pressKey`, `touch` and `swipe` tools reach the radio. `runMacro`, `getModelJson` and `applyModelJson` only work with the simulator. It needs no install, but the browser tab has to stay open and the traffic goes through FrSky's server. `radio_remote.py` is local only and also gives file access.
+
+*This option was read from the web simulator's code (October 2026), not tested.*
+
 !!! warning "`ELECTRON_RUN_AS_NODE` breaks FrSky Suite's CLI"
     Agents running inside VS Code inherit `ELECTRON_RUN_AS_NODE=1`. With it set, `FrSky Suite.exe --get-path SCRIPTS` runs as plain Node.js and fails with `bad option`. Unset the variable before calling Suite (details on [FrSky Suite](frsky-suite.md#command-line)), or use `ethos_deploy.py`, which talks to the radio over USB HID and doesn't need Suite.
 
