@@ -78,4 +78,4 @@ Two habits:
 - Before relying on a new API, check its **since** version on its [API page](../api/index.md), then load an older release in the simulator to confirm your fallback works.
 
 !!! note "Command-line and AI use"
-    The same WebAssembly builds can run headless from a terminal with [`ethos-tools`](ai-agents.md), which also lets an AI agent drive the radio.
+    The same WebAssembly builds can run headless from a terminal with [`ethos-tools`](ai-agents.md), which also lets an AI agent drive the radio. The web simulator can also connect to a real radio by Web Serial and pair with Claude through its **Connect Claude** dialog: see [Through the web simulator instead](ai-agents.md#through-the-web-simulator-instead).
