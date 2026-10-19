@@ -2,7 +2,7 @@
 
 Lua scripting documentation for FrSky Ethos radios: a full API reference with examples, guides, RAM and CPU best practice, a tested cookbook, and tooling for the simulator and AI agents.
 
-**Site:** https://frskyrc.github.io/ethos-lua-doc/
+**Site:** https://ethos-lua-doc.frsky-rc.com/
 
 ## What's here
 
