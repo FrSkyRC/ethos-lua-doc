@@ -8,3 +8,6 @@ site/
 .venv/
 __pycache__/
 *.pyc
+
+# local editor env
+.vscode/
