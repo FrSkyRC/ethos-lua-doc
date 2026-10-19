@@ -38,7 +38,7 @@ form.addSwitchField(line, nil, function() return switch end, function(newValue) 
 ## Used in
 
 - [tool-form](../../examples/official/tool-form.md)
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
 
 ## Real-world usage
 

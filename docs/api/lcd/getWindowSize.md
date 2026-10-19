@@ -49,7 +49,7 @@ The same widget can be placed in slots of very different sizes (and radios range
 - [widget-lcddemo](../../examples/official/widget-lcddemo.md)
 - [widget-rssi](../../examples/official/widget-rssi.md)
 - [widget-sinus](../../examples/official/widget-sinus.md)
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
 
 ## Real-world usage
 

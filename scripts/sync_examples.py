@@ -42,7 +42,8 @@ DESCRIPTIONS = {
     "widget-lcddemo": "Tour of the `lcd` drawing API.",
     "widget-rssi": "Classic RSSI bar widget.",
     "widget-sinus": "The smallest useful widget: draws a sine wave.",
-    "wizard": "Model setup wizard built with forms.",
+    "wizard-page": "Page added to the model wizard (`system.registerWizardPage()`), built with forms.",
+    "wizard-tank": "New model category in the wizard (`system.registerWizard()`): a tank, with its own pages and mixes.",
     "xxxxl": "Large-text value widget.",
 }
 

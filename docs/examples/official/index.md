@@ -23,5 +23,6 @@ These are FrSky's own example scripts from [ETHOS-Feedback-Community](https://gi
 | [widget-lcddemo](widget-lcddemo.md) | Widget | Tour of the `lcd` drawing API. |
 | [widget-rssi](widget-rssi.md) | Widget | Classic RSSI bar widget. |
 | [widget-sinus](widget-sinus.md) | Widget | The smallest useful widget: draws a sine wave. |
-| [wizard](wizard.md) | Script | Model setup wizard built with forms. |
+| [wizard-page](wizard-page.md) | Script | Page added to the model wizard (`system.registerWizardPage()`), built with forms. |
+| [wizard-tank](wizard-tank.md) | Script | New model category in the wizard (`system.registerWizard()`): a tank, with its own pages and mixes. |
 | [xxxxl](xxxxl.md) | Widget | Large-text value widget. |

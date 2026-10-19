@@ -8,7 +8,7 @@ title: system.registerGlasses
 
 # system.registerGlasses
 
-<div class="api-badges"><span class="api-badge api-badge--new">since 26.1.3</span></div>
+<div class="api-badges"><span class="api-badge api-badge--new">since 26.2.0</span></div>
 
 Register the ActiveLook glasses support (shows the Model / Glasses page)
 

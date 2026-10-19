@@ -44,7 +44,7 @@ Masks are single-channel images, cheaper than full-color bitmaps and recolorable
 ## Used in
 
 - [widget-lcddemo](../../examples/official/widget-lcddemo.md)
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
 
 ## Real-world usage
 

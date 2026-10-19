@@ -53,7 +53,8 @@ Loading is lazy by default (`lazy = true`): the image is decoded on first draw. 
 - [tool-form](../../examples/official/tool-form.md)
 - [tool-servo](../../examples/official/tool-servo.md)
 - [widget-lcddemo](../../examples/official/widget-lcddemo.md)
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
+- [wizard-tank](../../examples/official/wizard-tank.md)
 
 ## Real-world usage
 

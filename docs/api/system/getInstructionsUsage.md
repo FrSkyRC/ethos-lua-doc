@@ -8,7 +8,7 @@ title: system.getInstructionsUsage
 
 # system.getInstructionsUsage
 
-<div class="api-badges"><span class="api-badge api-badge--new">since 26.1.3</span></div>
+<div class="api-badges"><span class="api-badge api-badge--new">since 26.2.0</span></div>
 
 Return the percentage of Lua instructions already used in the current script execution cycle.
 

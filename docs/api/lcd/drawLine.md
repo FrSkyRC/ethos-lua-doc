@@ -53,7 +53,7 @@ Use [`lcd.pen(PEN_DOTTED)`](pen.md) before drawing for dotted lines (grid lines,
 - [tool-form](../../examples/official/tool-form.md)
 - [widget-jet](../../examples/official/widget-jet.md)
 - [widget-sinus](../../examples/official/widget-sinus.md)
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
 
 ## Real-world usage
 

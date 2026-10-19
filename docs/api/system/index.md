@@ -18,7 +18,7 @@ title: system namespace
 | [`getAudioVoice()`](getAudioVoice.md) | Return the current audio voice. | 1.5.7 |
 | [`getVersion()`](getVersion.md) | Return Ethos version. | 1.1.0 |
 | [`getMemoryUsage()`](getMemoryUsage.md) | Return Ethos Memory Usage. | 1.1.0 |
-| [`getInstructionsUsage()`](getInstructionsUsage.md) | Return the percentage of Lua instructions already used in the current script execution cycle. | 26.1.3 |
+| [`getInstructionsUsage()`](getInstructionsUsage.md) | Return the percentage of Lua instructions already used in the current script execution cycle. | 26.2.0 |
 | [`getStickMode()`](getStickMode.md) | Return the stick mode. | 1.1.0 |
 | [`getSources()`](getSources.md) | Return the list of sources within a category. | 26.1.0 |
 | [`getSource()`](getSource.md) | Return a Source. | 1.1.0 |
@@ -31,6 +31,8 @@ title: system namespace
 | [`registerLayout()`](registerLayout.md) | Register a Lua Layout. | 1.5.8 |
 | [`registerTheme()`](registerTheme.md) | Register a Lua Theme. | 26.1.0 |
 | [`registerWidget()`](registerWidget.md) | Register a Lua Widget. | 1.1.0 |
+| [`registerWizardPage()`](registerWizardPage.md) | Register a page in the model wizard | 1.6.5 |
+| [`registerWizard()`](registerWizard.md) | Register a model category in the model wizard, shown on its first page with the built-in model types (Plane, Glider...). When it is chosen, the wizard shows its pages, then the model name page. Its models are of the "Other" type. | 26.2.0 |
 | [`registerSystemTool()`](registerSystemTool.md) | Register a Lua System Tool. | 1.1.0 |
 | [`registerMultimoduleProtocol()`](registerMultimoduleProtocol.md) | Register a Multimodule Protocol. | 1.3.0 |
 | [`isSensorDiscoverActive()`](isSensorDiscoverActive.md) | Return if the sensor discover is active. | 1.6.4 |
@@ -38,9 +40,9 @@ title: system namespace
 | [`registerElrsModule()`](registerElrsModule.md) | Register the ELRS Module. | 1.3.1 |
 | [`registerMlrsModule()`](registerMlrsModule.md) | Register the mLRS Module. | 26.1.0 |
 | [`registerCrossfireModule()`](registerCrossfireModule.md) | Register the TBS Crossfire Module. | 1.3.1 |
-| [`registerGlasses()`](registerGlasses.md) | Register the ActiveLook glasses support (shows the Model / Glasses page) | 26.1.3 |
+| [`registerGlasses()`](registerGlasses.md) | Register the ActiveLook glasses support (shows the Model / Glasses page) | 26.2.0 |
 | [`registerSource()`](registerSource.md) | Register a Lua Source. | 1.1.0 |
-| [`registerSensor()`](registerSensor.md) | Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor. | 26.1.3 |
+| [`registerSensor()`](registerSensor.md) | Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor. | 26.2.0 |
 | [`registerTask()`](registerTask.md) | Register a Lua Task. | 1.5.0 |
 | [`exit()`](exit.md) | Exit the current script. | 1.1.0 |
 | [`emergency()`](emergency.md) | Launch the Emergency Mode (EM) - for testing purposes only. | 1.5.8 |

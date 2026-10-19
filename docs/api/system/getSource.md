@@ -49,7 +49,8 @@ system.getSource({category=CATEGORY_FUNCTION_SWITCH, member=5})
 
 - [widget-flvss](../../examples/official/widget-flvss.md)
 - [widget-rssi](../../examples/official/widget-rssi.md)
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
+- [wizard-tank](../../examples/official/wizard-tank.md)
 
 ## Real-world usage
 

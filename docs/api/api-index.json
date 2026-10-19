@@ -665,6 +665,13 @@
   "url": "simulator/touch/"
  },
  {
+  "name": "simulator.swipe",
+  "signature": "simulator.swipe(x1, y1, x2, y2)",
+  "brief": "Simulate a finger slide on the touchscreen",
+  "since": "26.2.0",
+  "url": "simulator/swipe/"
+ },
+ {
   "name": "simulator.setReadOnly",
   "signature": "simulator.setReadOnly(path)",
   "brief": "Load a model.",
@@ -857,7 +864,7 @@
   "name": "system.getInstructionsUsage",
   "signature": "local usage = system.getInstructionsUsage()",
   "brief": "Return the percentage of Lua instructions already used in the current script execution cycle.",
-  "since": "26.1.3",
+  "since": "26.2.0",
   "url": "system/getInstructionsUsage/"
  },
  {
@@ -945,6 +952,20 @@
   "url": "system/registerWidget/"
  },
  {
+  "name": "system.registerWizardPage",
+  "signature": "system.registerWizardPage(params)",
+  "brief": "Register a page in the model wizard",
+  "since": "1.6.5",
+  "url": "system/registerWizardPage/"
+ },
+ {
+  "name": "system.registerWizard",
+  "signature": "system.registerWizard(name, icon, pages)",
+  "brief": "Register a model category in the model wizard, shown on its first page with the built-in model types (Plane, Glider...). When it is chosen, the wizard shows its pages, then the model name page. Its models are of the \"Other\" type.",
+  "since": "26.2.0",
+  "url": "system/registerWizard/"
+ },
+ {
   "name": "system.registerSystemTool",
   "signature": "system.registerSystemTool(params)",
   "brief": "Register a Lua System Tool.",
@@ -997,7 +1018,7 @@
   "name": "system.registerGlasses",
   "signature": "system.registerGlasses()",
   "brief": "Register the ActiveLook glasses support (shows the Model / Glasses page)",
-  "since": "26.1.3",
+  "since": "26.2.0",
   "url": "system/registerGlasses/"
  },
  {
@@ -1011,7 +1032,7 @@
   "name": "system.registerSensor",
   "signature": "system.registerSensor(params)",
   "brief": "Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.",
-  "since": "26.1.3",
+  "since": "26.2.0",
   "url": "system/registerSensor/"
  },
  {

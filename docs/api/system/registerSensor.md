@@ -8,7 +8,7 @@ title: system.registerSensor
 
 # system.registerSensor
 
-<div class="api-badges"><span class="api-badge api-badge--new">since 26.1.3</span></div>
+<div class="api-badges"><span class="api-badge api-badge--new">since 26.2.0</span></div>
 
 Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.
 
@@ -27,7 +27,7 @@ Fields of `params`:
 - `manufacturer` (string, optional): restricts this definition to models that have this manufacturer selected (Model / Edit) - omit it to make the definition usable regardless of the model's manufacturer choice
 - `appIdStart` (integer): first S.Port appId this definition matches
 - `appIdEnd` (integer, optional): last S.Port appId this definition matches (defaults to `appIdStart`, ie a single appId)
-- `name` (string): sensor name
+- `name` (string or function): sensor name, or a function called with the sensor's appId and returning its name
 - `unit` (integer, optional): sensor unit (UNIT_* constant, defaults to UNIT_NONE)
 - `decimals` (integer, optional): number of decimals (defaults to 0)
 - `min` (number, optional): protocol minimum value, in display units (eg 100.0 with 1 decimal is stored as 1000)
@@ -45,6 +45,11 @@ Nothing.
 
 ```lua title="From the official Ethos documentation"
 system.registerSensor({appIdStart=0x5150, appIdEnd=0x515F, name="My sensor", unit=UNIT_VOLT, decimals=2, min=0, max=42.0})
+
+local function cellName(appId)
+  return "Cell " .. (appId - 0x5160 + 1)
+end
+system.registerSensor({appIdStart=0x5160, appIdEnd=0x516B, name=cellName, unit=UNIT_VOLT, decimals=2})
 ```
 
 ## Used in

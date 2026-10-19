@@ -15,6 +15,7 @@ title: simulator namespace
 | Function | Description | Since |
 | --- | --- | --- |
 | [`touch()`](touch.md) | Simulate a touch event. | 1.5.0 |
+| [`swipe()`](swipe.md) | Simulate a finger slide on the touchscreen | 26.2.0 |
 | [`setReadOnly()`](setReadOnly.md) | Load a model. | 1.5.0 |
 | [`resetInactivityTimer()`](resetInactivityTimer.md) | Reset the inactivity timer. | 26.1.0 |
 | [`resetBacklightTimer()`](resetBacklightTimer.md) | Reset the backlight timer. | 26.1.0 |

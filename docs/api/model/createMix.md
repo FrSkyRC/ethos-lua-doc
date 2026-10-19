@@ -32,4 +32,5 @@ model.createMix("free", {actions={{action="offset", condition=armSwitch, active=
 
 ## Used in
 
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
+- [wizard-tank](../../examples/official/wizard-tank.md)

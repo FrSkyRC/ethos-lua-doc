@@ -45,6 +45,7 @@ form.addBooleanField(line, nil, function() return value end, function(newValue) 
 ## Used in
 
 - [lazy-loading](../../examples/official/lazy-loading.md)
+- [wizard-tank](../../examples/official/wizard-tank.md)
 
 ## Real-world usage
 

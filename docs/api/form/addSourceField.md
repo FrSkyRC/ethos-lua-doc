@@ -58,6 +58,7 @@ form.addSourceField(line, nil, function() return source end, function(newValue) 
 - [widget-form](../../examples/official/widget-form.md)
 - [widget-gauge](../../examples/official/widget-gauge.md)
 - [widget-jet](../../examples/official/widget-jet.md)
+- [wizard-tank](../../examples/official/wizard-tank.md)
 
 ## Real-world usage
 

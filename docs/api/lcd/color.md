@@ -51,7 +51,7 @@ The current color applies to every following `lcd.draw*` call **and** to masks d
 - [widget-jet](../../examples/official/widget-jet.md)
 - [widget-lcddemo](../../examples/official/widget-lcddemo.md)
 - [widget-sinus](../../examples/official/widget-sinus.md)
-- [wizard](../../examples/official/wizard.md)
+- [wizard-page](../../examples/official/wizard-page.md)
 - [xxxxl](../../examples/official/xxxxl.md)
 
 ## Real-world usage

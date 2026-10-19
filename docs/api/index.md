@@ -24,10 +24,10 @@ Global tables of functions, called with a dot: `lcd.drawText(...)`.
 | [`model`](model/index.md) | 16 | 1.1.0 |
 | [`multimodule`](multimodule/index.md) | 1 | 1.6.0 |
 | [`serial`](serial/index.md) | 1 | 1.1.0 |
-| [`simulator`](simulator/index.md) | 21 | 1.5.0 |
+| [`simulator`](simulator/index.md) | 22 | 1.5.0 |
 | [`sport`](sport/index.md) | 1 | 1.1.0 |
 | [`storage`](storage/index.md) | 2 | 1.1.0 |
-| [`system`](system/index.md) | 36 | 1.1.0 |
+| [`system`](system/index.md) | 38 | 1.1.0 |
 
 ## Objects
 
@@ -86,8 +86,10 @@ The calls that real scripts use most, counted across the open-source projects li
 
 ## What's new
 
-Added in **26.1.3**:
+Added in **26.2.0**:
 
+- [`simulator.swipe()`](simulator/swipe.md): Simulate a finger slide on the touchscreen
 - [`system.getInstructionsUsage()`](system/getInstructionsUsage.md): Return the percentage of Lua instructions already used in the current script execution cycle.
+- [`system.registerWizard()`](system/registerWizard.md): Register a model category in the model wizard, shown on its first page with the built-in model types (Plane, Glider...). When it is chosen, the wizard shows its pages, then the model name page. Its models are of the "Other" type.
 - [`system.registerGlasses()`](system/registerGlasses.md): Register the ActiveLook glasses support (shows the Model / Glasses page)
 - [`system.registerSensor()`](system/registerSensor.md): Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.
