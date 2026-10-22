@@ -1099,6 +1099,13 @@
   "url": "system/openPage/"
  },
  {
+  "name": "system.toast",
+  "signature": "system.toast(text[, color[, duration]])",
+  "brief": "Display a short message at the bottom of the screen, closed after a delay or when touched. A new toast replaces the previous one.",
+  "since": "26.2.0",
+  "url": "system/toast/"
+ },
+ {
   "name": "Bitmap:width",
   "signature": "local width = bitmap:width()",
   "brief": "Return the bitmap width.",

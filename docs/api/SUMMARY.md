@@ -171,6 +171,7 @@
         - [voltageRange](system/voltageRange.md)
         - [compile](system/compile.md)
         - [openPage](system/openPage.md)
+        - [toast](system/toast.md)
 - Objects
     - [Bitmap](objects/Bitmap/index.md)
         - [width](objects/Bitmap/width.md)

@@ -20,7 +20,7 @@ bitmap:rotate(angle)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `angle` | number in degrees | yes |  |
+| `angle` | number in degrees, clockwise | yes |  |
 
 ## Returns
 

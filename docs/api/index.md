@@ -27,7 +27,7 @@ Global tables of functions, called with a dot: `lcd.drawText(...)`.
 | [`simulator`](simulator/index.md) | 22 | 1.5.0 |
 | [`sport`](sport/index.md) | 1 | 1.1.0 |
 | [`storage`](storage/index.md) | 2 | 1.1.0 |
-| [`system`](system/index.md) | 38 | 1.1.0 |
+| [`system`](system/index.md) | 39 | 1.1.0 |
 
 ## Objects
 
@@ -93,3 +93,4 @@ Added in **26.2.0**:
 - [`system.registerWizard()`](system/registerWizard.md): Register a model category in the model wizard, shown on its first page with the built-in model types (Plane, Glider...). When it is chosen, the wizard shows its pages, then the model name page. Its models are of the "Other" type.
 - [`system.registerGlasses()`](system/registerGlasses.md): Register the ActiveLook glasses support (shows the Model / Glasses page)
 - [`system.registerSensor()`](system/registerSensor.md): Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.
+- [`system.toast()`](system/toast.md): Display a short message at the bottom of the screen, closed after a delay or when touched. A new toast replaces the previous one.

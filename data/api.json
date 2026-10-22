@@ -43,7 +43,7 @@
           "since": "1.5.9",
           "params": [
             {
-              "type": "number in degrees",
+              "type": "number in degrees, clockwise",
               "optional": false,
               "description": "",
               "name": "angle"
@@ -9227,6 +9227,39 @@
           "returns": "",
           "examples": [
             "system.openPage({system=nil}) -- System menu page\nsystem.openPage({system=0}) -- System / File manager\nsystem.openPage({model=nil}) -- Model menu page\nsystem.openPage({model=0}) -- Model / Model select\nsystem.openPage({home=0}) -- Home page 1\nsystem.openPage({timer=0}) -- Timer 1 configuration\nsystem.openPage({logicSwitch=0}) -- Logic switch 1 configuration\nsystem.openPage({sensor=0}) -- Sensor 1 configuration"
+          ],
+          "notes": []
+        },
+        {
+          "name": "toast",
+          "kind": "function",
+          "anchor": "a0794b89bfd5c129dd8b1259711900437",
+          "brief": "Display a short message at the bottom of the screen, closed after a delay or when touched. A new toast replaces the previous one.",
+          "description": "",
+          "since": "26.2.0",
+          "params": [
+            {
+              "type": "string",
+              "optional": false,
+              "description": "",
+              "name": "text"
+            },
+            {
+              "type": "number",
+              "optional": true,
+              "description": "background color, the theme \"safe\" color (green) by default. The text color (black or white) is chosen for contrast",
+              "name": "color"
+            },
+            {
+              "type": "number",
+              "optional": true,
+              "description": "in ms, 2000 by default, 10000 max",
+              "name": "duration"
+            }
+          ],
+          "returns": "",
+          "examples": [
+            "system.toast(\"Saved\")\nsystem.toast(\"Battery low\", lcd.RGB(255, 0, 0), 5000)\nsystem.toast(\"No GPS fix\", lcd.themeColor(THEME_ERROR_COLOR))"
           ],
           "notes": []
         }

@@ -52,3 +52,4 @@ title: system namespace
 | [`voltageRange()`](voltageRange.md) | Return the Radio voltage range. | 1.5.16 |
 | [`compile()`](compile.md) | Compile the lua script into luac. | 1.5.3 |
 | [`openPage()`](openPage.md) | Open a page. | 26.1.0 |
+| [`toast()`](toast.md) | Display a short message at the bottom of the screen, closed after a delay or when touched. A new toast replaces the previous one. | 26.2.0 |
