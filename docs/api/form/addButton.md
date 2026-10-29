@@ -30,6 +30,7 @@ Fields of `params`:
 - `icon` (Mask): button bitmap
 - `press` (function): the function which will be called on button press
 - `options` (number): text flags like TEXT_LEFT, TEXT_CENTERED, etc.
+- `paint` (function, optional, since 26.2.0): the function which draws the button instead of the default look, with the lcd functions, in the button coordinates. It can call button:defaultPaint() to draw the default look first
 
 
 ## Returns

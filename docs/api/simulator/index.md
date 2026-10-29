@@ -29,6 +29,7 @@ title: simulator namespace
 | [`connectUsb()`](connectUsb.md) | Simulate USB connect / disconnect. | 1.5.0 |
 | [`advertizeBluetooth()`](advertizeBluetooth.md) | Simulate Bluetooth advertize. | 26.1.0 |
 | [`injectSPortFrame()`](injectSPortFrame.md) | Simulate S.Port telemetry. | 26.1.0 |
+| [`injectCrsfFrame()`](injectCrsfFrame.md) | Simulate CRSF telemetry received from the external module. The length and the CRC are computed. | 26.2.0 |
 | [`setDateTime()`](setDateTime.md) | Set the date & time. | 1.5.0 |
 | [`screenshot()`](screenshot.md) | Take a screenshot. | 1.5.0 |
 | [`sleep()`](sleep.md) | Sleep. | 1.5.0 |

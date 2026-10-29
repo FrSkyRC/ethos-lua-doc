@@ -78,7 +78,7 @@
  },
  {
   "name": "form.addBooleanField",
-  "signature": "form.addBooleanField(line, rect, getValue, setValue)",
+  "signature": "form.addBooleanField(line, rect, getValue, setValue, params)",
   "brief": "Add a boolean field to the current form.",
   "since": "1.1.0",
   "url": "form/addBooleanField/"
@@ -763,6 +763,13 @@
   "url": "simulator/injectSPortFrame/"
  },
  {
+  "name": "simulator.injectCrsfFrame",
+  "signature": "simulator.injectCrsfFrame(frameId, payload)",
+  "brief": "Simulate CRSF telemetry received from the external module. The length and the CRC are computed.",
+  "since": "26.2.0",
+  "url": "simulator/injectCrsfFrame/"
+ },
+ {
   "name": "simulator.setDateTime",
   "signature": "simulator.setDateTime(params)",
   "brief": "Set the date & time.",
@@ -1342,6 +1349,13 @@
   "brief": "Get the field rect.",
   "since": "1.5.14",
   "url": "objects/FormFieldLib/rect/"
+ },
+ {
+  "name": "FormFieldWithPaintLib:defaultPaint",
+  "signature": "formFieldWithPaintLib:defaultPaint()",
+  "brief": "Draw the field with its default look. Only works from the field paint handler.",
+  "since": "26.2.0",
+  "url": "objects/FormFieldWithPaintLib/defaultPaint/"
  },
  {
   "name": "FrSkyStaticTextLib:color",

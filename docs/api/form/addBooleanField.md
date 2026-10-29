@@ -13,7 +13,7 @@ title: form.addBooleanField
 Add a boolean field to the current form.
 
 ```lua
-form.addBooleanField(line, rect, getValue, setValue)
+form.addBooleanField(line, rect, getValue, setValue, params)
 ```
 
 ## Parameters
@@ -22,8 +22,18 @@ form.addBooleanField(line, rect, getValue, setValue)
 | --- | --- | --- | --- |
 | `line` | FormLine | yes | the line where the field should be added |
 | `rect` | Rect | yes | the coordinates |
-| `getValue` | function | yes | the function which will return the current value |
-| `setValue` | function | yes | the function which will be called on value change |
+| `getValue` | function | yes | the function which will return the current value, or the params table below |
+| `setValue` | function | yes | the function which will be called on value change, omitted when params is used |
+| `params` | table | yes | since 26.2.0, given instead of getValue and setValue, with elements: |
+
+Fields of `params`:
+
+- `get` (function): the function which will return the current value
+- `set` (function): the function which will be called on value change
+- `paint` (function, optional): the function which draws the field instead of the default look, with the lcd functions, in the field coordinates. It can call field:defaultPaint() to draw the default look first
+- `onLabel` (string, optional): the label shown when the value is true
+- `offLabel` (string, optional): the label shown when the value is false
+
 
 ## Returns
 
@@ -40,6 +50,12 @@ form.addBooleanField(line, nil,
 
 ```lua title="From the official Ethos documentation"
 form.addBooleanField(line, nil, function() return value end, function(newValue) value = newValue end)
+form.addBooleanField(line, nil, {get=function() return value end, set=function(newValue) value = newValue end, onLabel="Yes", offLabel="No"})
+local field
+field = form.addBooleanField(line, nil, {get=getValue, set=setValue, paint=function()
+  field:defaultPaint()
+  lcd.drawText(4, 4, "!")
+end})
 ```
 
 ## Used in

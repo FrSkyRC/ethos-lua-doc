@@ -720,6 +720,33 @@
       ]
     },
     {
+      "name": "FormFieldWithPaintLib",
+      "kind": "class",
+      "file": "classFormFieldWithPaintLib.html",
+      "since": "",
+      "description": "",
+      "examples": [],
+      "bases": [
+        "FormFieldLib"
+      ],
+      "members": [
+        {
+          "name": "defaultPaint",
+          "kind": "function",
+          "anchor": "a01c3959e2b4bc92312c6dd3542099ed7",
+          "brief": "Draw the field with its default look. Only works from the field paint handler.",
+          "description": "",
+          "since": "26.2.0",
+          "params": [],
+          "returns": "",
+          "examples": [
+            "local button\nbutton = form.addButton(line, nil, {text=\"OK\", press=onPress, paint=function()\n  button:defaultPaint()\n  lcd.drawFilledCircle(8, 8, 4)\nend})"
+          ],
+          "notes": []
+        }
+      ]
+    },
+    {
       "name": "FormLine",
       "kind": "class",
       "file": "classFormLine.html",
@@ -5483,19 +5510,25 @@
             {
               "type": "function",
               "optional": false,
-              "description": "the function which will return the current value",
+              "description": "the function which will return the current value, or the params table below",
               "name": "getValue"
             },
             {
               "type": "function",
               "optional": false,
-              "description": "the function which will be called on value change",
+              "description": "the function which will be called on value change, omitted when params is used",
               "name": "setValue"
+            },
+            {
+              "type": "table",
+              "optional": false,
+              "description": "since 26.2.0, given instead of getValue and setValue, with elements:\n\n- `get` (function): the function which will return the current value\n- `set` (function): the function which will be called on value change\n- `paint` (function, optional): the function which draws the field instead of the default look, with the lcd functions, in the field coordinates. It can call field:defaultPaint() to draw the default look first\n- `onLabel` (string, optional): the label shown when the value is true\n- `offLabel` (string, optional): the label shown when the value is false",
+              "name": "params"
             }
           ],
           "returns": "The new field",
           "examples": [
-            "form.addBooleanField(line, nil, function() return value end, function(newValue) value = newValue end)"
+            "form.addBooleanField(line, nil, function() return value end, function(newValue) value = newValue end)\nform.addBooleanField(line, nil, {get=function() return value end, set=function(newValue) value = newValue end, onLabel=\"Yes\", offLabel=\"No\"})\nlocal field\nfield = form.addBooleanField(line, nil, {get=getValue, set=setValue, paint=function()\n  field:defaultPaint()\n  lcd.drawText(4, 4, \"!\")\nend})"
           ],
           "notes": []
         },
@@ -5948,7 +5981,7 @@
             {
               "type": "",
               "optional": false,
-              "description": "table with elements:\n\n- `text` (string): button labem\n- `icon` (Mask): button bitmap\n- `press` (function): the function which will be called on button press\n- `options` (number): text flags like TEXT_LEFT, TEXT_CENTERED, etc.",
+              "description": "table with elements:\n\n- `text` (string): button labem\n- `icon` (Mask): button bitmap\n- `press` (function): the function which will be called on button press\n- `options` (number): text flags like TEXT_LEFT, TEXT_CENTERED, etc.\n- `paint` (function, optional, since 26.2.0): the function which draws the button instead of the default look, with the lcd functions, in the button coordinates. It can call button:defaultPaint() to draw the default look first",
               "name": "params"
             }
           ],
@@ -8250,6 +8283,33 @@
           "notes": []
         },
         {
+          "name": "injectCrsfFrame",
+          "kind": "function",
+          "anchor": "a1e9f8f4e59eeb5f71fb294076f9144e6",
+          "brief": "Simulate CRSF telemetry received from the external module. The length and the CRC are computed.",
+          "description": "",
+          "since": "26.2.0",
+          "params": [
+            {
+              "type": "integer",
+              "optional": false,
+              "description": "",
+              "name": "frameId"
+            },
+            {
+              "type": "table",
+              "optional": false,
+              "description": "",
+              "name": "payload"
+            }
+          ],
+          "returns": "",
+          "examples": [
+            "simulator.injectCrsfFrame(0x08, {0x00, 0x7E, 0x00, 0x0A, 0x00, 0x01, 0xF4, 0x50}) -- Battery: 12.6V, 1.0A, 500mAh, 80%"
+          ],
+          "notes": []
+        },
+        {
           "name": "setDateTime",
           "kind": "function",
           "anchor": "a0689d7ac540d5416bc99e82b8666b860",
@@ -9055,13 +9115,13 @@
             {
               "type": "",
               "optional": false,
-              "description": "table with elements:\n\n- `manufacturer` (string, optional): restricts this definition to models that have this manufacturer selected (Model / Edit) - omit it to make the definition usable regardless of the model's manufacturer choice\n- `appIdStart` (integer): first S.Port appId this definition matches\n- `appIdEnd` (integer, optional): last S.Port appId this definition matches (defaults to `appIdStart`, ie a single appId)\n- `name` (string or function): sensor name, or a function called with the sensor's appId and returning its name\n- `unit` (integer, optional): sensor unit (UNIT_* constant, defaults to UNIT_NONE)\n- `decimals` (integer, optional): number of decimals (defaults to 0)\n- `min` (number, optional): protocol minimum value, in display units (eg 100.0 with 1 decimal is stored as 1000)\n- `max` (number, optional): protocol maximum value, in display units\n- `userMin` (number, optional): user-editable minimum value, in display units (defaults to `min`)\n- `userMax` (number, optional): user-editable maximum value, in display units (defaults to `max`)\n- `onDiscover` (function, optional): handler called with the newly created sensor's source, when the sensors Discover creates it",
+              "description": "table with elements:\n\n- `manufacturer` (string, optional, 15 chars max): when the definitions of several manufacturers match the same appId, the sensors Discover asks the user which one to use, in a menu showing \"manufacturer - name\". The characteristics of the definition (unit, decimals, limits) are saved with the sensor in the model, which then doesn't need this script anymore\n- `appIdStart` (integer): first S.Port appId this definition matches\n- `appIdEnd` (integer, optional): last S.Port appId this definition matches (defaults to `appIdStart`, ie a single appId)\n- `name` (string or function): sensor name, or a function called with the sensor's appId and returning its name\n- `unit` (integer, optional): sensor unit (UNIT_* constant, defaults to UNIT_NONE)\n- `decimals` (integer, optional): number of decimals (defaults to 0)\n- `min` (number, optional): protocol minimum value, in display units (eg 100.0 with 1 decimal is stored as 1000)\n- `max` (number, optional): protocol maximum value, in display units\n- `userMin` (number, optional): user-editable minimum value, in display units (defaults to `min`)\n- `userMax` (number, optional): user-editable maximum value, in display units (defaults to `max`)\n- `onDiscover` (function, optional): handler called with the newly created sensor's source, when the sensors Discover creates it",
               "name": "params"
             }
           ],
           "returns": "",
           "examples": [
-            "system.registerSensor({appIdStart=0x5150, appIdEnd=0x515F, name=\"My sensor\", unit=UNIT_VOLT, decimals=2, min=0, max=42.0})\n\nlocal function cellName(appId)\n  return \"Cell \" .. (appId - 0x5160 + 1)\nend\nsystem.registerSensor({appIdStart=0x5160, appIdEnd=0x516B, name=cellName, unit=UNIT_VOLT, decimals=2})"
+            "system.registerSensor({appIdStart=0x5150, appIdEnd=0x515F, name=\"My sensor\", unit=UNIT_VOLT, decimals=2, min=0, max=42.0})\n\nlocal function cellName(appId)\n  return \"Cell \" .. (appId - 0x5160 + 1)\nend\nsystem.registerSensor({appIdStart=0x5160, appIdEnd=0x516B, name=cellName, unit=UNIT_VOLT, decimals=2})\n\n-- another manufacturer uses 0x5150 too: the Discover will ask which sensor it is\nsystem.registerSensor({manufacturer=\"ACME\", appIdStart=0x5150, name=\"ACME current\", unit=UNIT_AMPERE, decimals=1})"
           ],
           "notes": []
         },

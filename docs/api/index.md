@@ -24,7 +24,7 @@ Global tables of functions, called with a dot: `lcd.drawText(...)`.
 | [`model`](model/index.md) | 16 | 1.1.0 |
 | [`multimodule`](multimodule/index.md) | 1 | 1.6.0 |
 | [`serial`](serial/index.md) | 1 | 1.1.0 |
-| [`simulator`](simulator/index.md) | 22 | 1.5.0 |
+| [`simulator`](simulator/index.md) | 23 | 1.5.0 |
 | [`sport`](sport/index.md) | 1 | 1.1.0 |
 | [`storage`](storage/index.md) | 2 | 1.1.0 |
 | [`system`](system/index.md) | 39 | 1.1.0 |
@@ -42,6 +42,7 @@ Values returned by API calls, with methods called using a colon: `source:value()
 | [`Curve`](objects/Curve/index.md) | 10 |  |
 | [`ExpansionPanel`](objects/ExpansionPanel/index.md) | 5 |  |
 | [`FormFieldLib`](objects/FormFieldLib/index.md) | 3 |  |
+| [`FormFieldWithPaintLib`](objects/FormFieldWithPaintLib/index.md) | 1 |  |
 | [`FrSkyStaticTextLib`](objects/FrSkyStaticTextLib/index.md) | 2 |  |
 | [`GlassesLayout`](objects/GlassesLayout/index.md) | 2 | `glasses.createLayout()` |
 | [`LogicSwitch`](objects/LogicSwitch/index.md) | 10 |  |
@@ -89,8 +90,10 @@ The calls that real scripts use most, counted across the open-source projects li
 Added in **26.2.0**:
 
 - [`simulator.swipe()`](simulator/swipe.md): Simulate a finger slide on the touchscreen
+- [`simulator.injectCrsfFrame()`](simulator/injectCrsfFrame.md): Simulate CRSF telemetry received from the external module. The length and the CRC are computed.
 - [`system.getInstructionsUsage()`](system/getInstructionsUsage.md): Return the percentage of Lua instructions already used in the current script execution cycle.
 - [`system.registerWizard()`](system/registerWizard.md): Register a model category in the model wizard, shown on its first page with the built-in model types (Plane, Glider...). When it is chosen, the wizard shows its pages, then the model name page. Its models are of the "Other" type.
 - [`system.registerGlasses()`](system/registerGlasses.md): Register the ActiveLook glasses support (shows the Model / Glasses page)
 - [`system.registerSensor()`](system/registerSensor.md): Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.
 - [`system.toast()`](system/toast.md): Display a short message at the bottom of the screen, closed after a delay or when touched. A new toast replaces the previous one.
+- [`FormFieldWithPaintLib:defaultPaint()`](objects/FormFieldWithPaintLib/defaultPaint.md): Draw the field with its default look. Only works from the field paint handler.

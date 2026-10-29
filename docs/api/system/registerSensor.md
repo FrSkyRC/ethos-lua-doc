@@ -24,7 +24,7 @@ system.registerSensor(params)
 
 Fields of `params`:
 
-- `manufacturer` (string, optional): restricts this definition to models that have this manufacturer selected (Model / Edit) - omit it to make the definition usable regardless of the model's manufacturer choice
+- `manufacturer` (string, optional, 15 chars max): when the definitions of several manufacturers match the same appId, the sensors Discover asks the user which one to use, in a menu showing "manufacturer - name". The characteristics of the definition (unit, decimals, limits) are saved with the sensor in the model, which then doesn't need this script anymore
 - `appIdStart` (integer): first S.Port appId this definition matches
 - `appIdEnd` (integer, optional): last S.Port appId this definition matches (defaults to `appIdStart`, ie a single appId)
 - `name` (string or function): sensor name, or a function called with the sensor's appId and returning its name
@@ -50,6 +50,9 @@ local function cellName(appId)
   return "Cell " .. (appId - 0x5160 + 1)
 end
 system.registerSensor({appIdStart=0x5160, appIdEnd=0x516B, name=cellName, unit=UNIT_VOLT, decimals=2})
+
+-- another manufacturer uses 0x5150 too: the Discover will ask which sensor it is
+system.registerSensor({manufacturer="ACME", appIdStart=0x5150, name="ACME current", unit=UNIT_AMPERE, decimals=1})
 ```
 
 ## Used in
