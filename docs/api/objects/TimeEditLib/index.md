@@ -23,3 +23,4 @@ title: TimeEditLib object
 | [`enable()`](../FormFieldLib/enable.md) | Enable / disable the field. |
 | [`focus()`](../FormFieldLib/focus.md) | Give the focus to the field. |
 | [`rect()`](../FormFieldLib/rect.md) | Get the field rect. |
+| [`defaultPaint()`](../FormFieldLib/defaultPaint.md) | Draw the field with its default look, i.e. from the paint handler of a button or a boolean field. |

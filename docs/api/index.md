@@ -41,8 +41,7 @@ Values returned by API calls, with methods called using a colon: `source:value()
 | [`CrsfSensor`](objects/CrsfSensor/index.md) | 2 | `crsf.getSensor()` |
 | [`Curve`](objects/Curve/index.md) | 10 |  |
 | [`ExpansionPanel`](objects/ExpansionPanel/index.md) | 5 |  |
-| [`FormFieldLib`](objects/FormFieldLib/index.md) | 3 |  |
-| [`FormFieldWithPaintLib`](objects/FormFieldWithPaintLib/index.md) | 1 |  |
+| [`FormFieldLib`](objects/FormFieldLib/index.md) | 4 |  |
 | [`FrSkyStaticTextLib`](objects/FrSkyStaticTextLib/index.md) | 2 |  |
 | [`GlassesLayout`](objects/GlassesLayout/index.md) | 2 | `glasses.createLayout()` |
 | [`LogicSwitch`](objects/LogicSwitch/index.md) | 10 |  |
@@ -96,4 +95,4 @@ Added in **26.2.0**:
 - [`system.registerGlasses()`](system/registerGlasses.md): Register the ActiveLook glasses support (shows the Model / Glasses page)
 - [`system.registerSensor()`](system/registerSensor.md): Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.
 - [`system.toast()`](system/toast.md): Display a short message at the bottom of the screen, closed after a delay or when touched. A new toast replaces the previous one.
-- [`FormFieldWithPaintLib:defaultPaint()`](objects/FormFieldWithPaintLib/defaultPaint.md): Draw the field with its default look. Only works from the field paint handler.
+- [`FormFieldLib:defaultPaint()`](objects/FormFieldLib/defaultPaint.md): Draw the field with its default look, i.e. from the paint handler of a button or a boolean field.

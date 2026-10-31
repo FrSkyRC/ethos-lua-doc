@@ -1351,11 +1351,11 @@
   "url": "objects/FormFieldLib/rect/"
  },
  {
-  "name": "FormFieldWithPaintLib:defaultPaint",
-  "signature": "formFieldWithPaintLib:defaultPaint()",
-  "brief": "Draw the field with its default look. Only works from the field paint handler.",
+  "name": "FormFieldLib:defaultPaint",
+  "signature": "field:defaultPaint()",
+  "brief": "Draw the field with its default look, i.e. from the paint handler of a button or a boolean field.",
   "since": "26.2.0",
-  "url": "objects/FormFieldWithPaintLib/defaultPaint/"
+  "url": "objects/FormFieldLib/defaultPaint/"
  },
  {
   "name": "FrSkyStaticTextLib:color",

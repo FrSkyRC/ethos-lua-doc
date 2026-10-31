@@ -716,25 +716,12 @@
           "returns": "rect (Rect)",
           "examples": [],
           "notes": []
-        }
-      ]
-    },
-    {
-      "name": "FormFieldWithPaintLib",
-      "kind": "class",
-      "file": "classFormFieldWithPaintLib.html",
-      "since": "",
-      "description": "",
-      "examples": [],
-      "bases": [
-        "FormFieldLib"
-      ],
-      "members": [
+        },
         {
           "name": "defaultPaint",
           "kind": "function",
-          "anchor": "a01c3959e2b4bc92312c6dd3542099ed7",
-          "brief": "Draw the field with its default look. Only works from the field paint handler.",
+          "anchor": "a7d10bfdcfb5650f8f91a668de3e16014",
+          "brief": "Draw the field with its default look, i.e. from the paint handler of a button or a boolean field.",
           "description": "",
           "since": "26.2.0",
           "params": [],

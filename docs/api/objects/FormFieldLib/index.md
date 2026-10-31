@@ -17,3 +17,4 @@ title: FormFieldLib object
 | [`enable()`](enable.md) | Enable / disable the field. | 1.1.0 |
 | [`focus()`](focus.md) | Give the focus to the field. | 1.5.10 |
 | [`rect()`](rect.md) | Get the field rect. | 1.5.14 |
+| [`defaultPaint()`](defaultPaint.md) | Draw the field with its default look, i.e. from the paint handler of a button or a boolean field. | 26.2.0 |
