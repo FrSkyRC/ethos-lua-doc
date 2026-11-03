@@ -20,7 +20,30 @@ local source = system.getSource(name)
 
 | Name | Type | Required | Description |
 | --- | --- | --- | --- |
-| `name` | string / table | yes | Source name or table {name, category, member, options} |
+| `name` | string / table | yes | Source name or table with elements (all optional): |
+
+Fields of `name`:
+
+- `name` (string): source name
+- `category` (integer): source category (CATEGORY_xxx)
+- `member` (integer): member index inside the category
+- `options` (integer): source options (OPTION_xxx)
+- `module` (integer): telemetry sensors only, module index
+- `band` (integer): telemetry sensors only, band index
+- `appId` (integer): telemetry sensors only, S.Port application id
+- `appIdStart` (integer): telemetry sensors only, lowest S.Port application id
+- `appIdEnd` (integer): telemetry sensors only, highest S.Port application id
+- `subId` (integer): telemetry sensors only, sub id (S.Port, CRSF)
+- `subIdStart` (integer): telemetry sensors only, lowest sub id
+- `subIdEnd` (integer): telemetry sensors only, highest sub id
+- `crsfId` (integer): telemetry sensors only, CRSF frame id
+- `spektrumId` (integer): telemetry sensors only, Spektrum sensor id
+- `mlinkId` (integer): telemetry sensors only, M-Link sensor id
+- `hottId` (integer): telemetry sensors only, HoTT sensor id
+- `hitecId` (integer): telemetry sensors only, Hitec sensor id
+- `flyskyId` (integer): telemetry sensors only, FlySky sensor id
+- `ghostId` (integer): telemetry sensors only, Ghost sensor id
+
 
 ## Returns
 
@@ -39,6 +62,8 @@ system.getSource({category=CATEGORY_TELEMETRY_SENSOR, appId=0x0F10})
 system.getSource({category=CATEGORY_TELEMETRY_SENSOR, appIdStart=0x0F10, appIdEnd=0x0F1F})
 system.getSource({category=CATEGORY_TELEMETRY_SENSOR, appId=0xF101, subId=0})
 system.getSource({category=CATEGORY_TELEMETRY_SENSOR, crsfId=0x14, subIdStart=0, subIdEnd=1})
+system.getSource({category=CATEGORY_TELEMETRY_SENSOR, spektrumId=0x7E})
+system.getSource({category=CATEGORY_TELEMETRY_SENSOR, hottId=0x89, module=0})
 system.getSource({category=CATEGORY_TIMER, member=1, options=0})
 system.getSource({category=CATEGORY_SYSTEM, member=MAIN_VOLTAGE})
 system.getSource({category=CATEGORY_SYSTEM_EVENT, member=SYSTEM_EVENT_RSSI_LOW})
