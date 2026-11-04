@@ -38,4 +38,3 @@ form.addModelChoice(line, nil, function() return modelPath end, function(newValu
 ## Used in
 
 - [Official examples](../../examples/official/index.md)
-- [wizard-robot](../../examples/official/wizard-robot.md)
