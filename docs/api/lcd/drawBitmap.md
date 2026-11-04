@@ -23,8 +23,8 @@ lcd.drawBitmap(x, y, bitmap[, w[, h]])
 | `x` | number | yes | X coordinate |
 | `y` | number | yes | Y coordinate |
 | `bitmap` | [Bitmap](../objects/Bitmap/index.md) | yes | bitmap |
-| `w` | number | optional (default `0`) | the width of the bitmap displayed |
-| `h` | number | optional (default `0`) | the height of the bitmap display |
+| `w` | number | optional (default `0`) | the width of the bitmap displayed. If h is not given, the aspect ratio is preserved |
+| `h` | number | optional (default `0`) | the height of the bitmap displayed. If w is not given, the aspect ratio is preserved |
 
 ## Returns
 
