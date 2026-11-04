@@ -40,6 +40,10 @@ local function drawLed(x, y, r, on)
 end
 ```
 
+## Used in
+
+- [tool-form](../../examples/official/tool-form.md)
+
 ## Real-world usage
 
 <div class="api-usage">Called 54 times across 6 open-source Ethos Lua projects. A few short excerpts:</div>

@@ -147,6 +147,13 @@
   "url": "form/addTextField/"
  },
  {
+  "name": "form.addModelChoice",
+  "signature": "form.addModelChoice(line, rect, getValue, setValue)",
+  "brief": "Add a model choice field to the current form, it opens the models list on press.",
+  "since": "26.2.0",
+  "url": "form/addModelChoice/"
+ },
+ {
   "name": "form.addTextButton",
   "signature": "form.addTextButton(line, rect, text, press)",
   "brief": "Add a text button to the current form (deprecated)",
@@ -1132,6 +1139,13 @@
   "brief": "Return the rotated bitmap.",
   "since": "1.5.9",
   "url": "objects/Bitmap/rotate/"
+ },
+ {
+  "name": "Bitmap:scale",
+  "signature": "bitmap:scale(width[, height])",
+  "brief": "Return the bitmap resized to the given dimensions.",
+  "since": "26.2.0",
+  "url": "objects/Bitmap/scale/"
  },
  {
   "name": "Channel:name",

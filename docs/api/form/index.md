@@ -31,6 +31,7 @@ title: form namespace
 | [`addColorField()`](addColorField.md) | Add a color field to the current form. | 1.1.0 |
 | [`addTimeField()`](addTimeField.md) | Add a time field to the current form. | 26.1.0 |
 | [`addTextField()`](addTextField.md) | Add a text field to the current form. | 1.1.0 |
+| [`addModelChoice()`](addModelChoice.md) | Add a model choice field to the current form, it opens the models list on press. | 26.2.0 |
 | [`addTextButton()`](addTextButton.md) | Add a text button to the current form (deprecated) *(deprecated)* | 1.1.0 |
 | [`addButton()`](addButton.md) | Add a button to the current form. | 1.5.10 |
 | [`addFileField()`](addFileField.md) | Add a file field to the current form. | 1.5.5 |

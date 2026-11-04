@@ -18,7 +18,7 @@ Global tables of functions, called with a dot: `lcd.drawText(...)`.
 | --- | --- | --- |
 | [`bluetooth`](bluetooth/index.md) | 3 | 26.1.0 |
 | [`crsf`](crsf/index.md) | 1 | 1.6.0 |
-| [`form`](form/index.md) | 31 | 1.1.0 |
+| [`form`](form/index.md) | 32 | 1.1.0 |
 | [`glasses`](glasses/index.md) | 4 | 26.1.0 |
 | [`lcd`](lcd/index.md) | 37 | 1.1.0 |
 | [`model`](model/index.md) | 16 | 1.1.0 |
@@ -35,7 +35,7 @@ Values returned by API calls, with methods called using a colon: `source:value()
 
 | Object | Methods | Typical source |
 | --- | --- | --- |
-| [`Bitmap`](objects/Bitmap/index.md) | 3 |  |
+| [`Bitmap`](objects/Bitmap/index.md) | 4 |  |
 | [`Channel`](objects/Channel/index.md) | 8 |  |
 | [`ChoiceLib`](objects/ChoiceLib/index.md) | 3 |  |
 | [`CrsfSensor`](objects/CrsfSensor/index.md) | 2 | `crsf.getSensor()` |
@@ -88,6 +88,7 @@ The calls that real scripts use most, counted across the open-source projects li
 
 Added in **26.2.0**:
 
+- [`form.addModelChoice()`](form/addModelChoice.md): Add a model choice field to the current form, it opens the models list on press.
 - [`simulator.swipe()`](simulator/swipe.md): Simulate a finger slide on the touchscreen
 - [`simulator.injectCrsfFrame()`](simulator/injectCrsfFrame.md): Simulate CRSF telemetry received from the external module. The length and the CRC are computed.
 - [`system.getInstructionsUsage()`](system/getInstructionsUsage.md): Return the percentage of Lua instructions already used in the current script execution cycle.
@@ -95,4 +96,5 @@ Added in **26.2.0**:
 - [`system.registerGlasses()`](system/registerGlasses.md): Register the ActiveLook glasses support (shows the Model / Glasses page)
 - [`system.registerSensor()`](system/registerSensor.md): Register an S.Port sensor definition, so that it gets recognized (name, unit, decimals, protocol min/max) when the sensors Discover finds an appId in this range, instead of falling back to a generic unnamed sensor.
 - [`system.toast()`](system/toast.md): Display a short message at the bottom of the screen, closed after a delay or when touched. A new toast replaces the previous one.
+- [`Bitmap:scale()`](objects/Bitmap/scale.md): Return the bitmap resized to the given dimensions.
 - [`FormFieldLib:defaultPaint()`](objects/FormFieldLib/defaultPaint.md): Draw the field with its default look, i.e. from the paint handler of a button or a boolean field.

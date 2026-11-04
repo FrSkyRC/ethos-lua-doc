@@ -52,6 +52,31 @@
           "returns": "the rotated bitmap (Bitmap)",
           "examples": [],
           "notes": []
+        },
+        {
+          "name": "scale",
+          "kind": "function",
+          "anchor": "scale_bitmap",
+          "brief": "Return the bitmap resized to the given dimensions.",
+          "description": "",
+          "since": "26.2.0",
+          "params": [
+            {
+              "type": "integer, in pixels",
+              "optional": false,
+              "description": "If 0, the aspect ratio is preserved (height must be given)",
+              "name": "width"
+            },
+            {
+              "type": "integer, in pixels",
+              "optional": true,
+              "description": "If 0 or omitted, the aspect ratio is preserved",
+              "name": "height"
+            }
+          ],
+          "returns": "the scaled bitmap (Bitmap), or nil if the dimensions are invalid or there is not enough memory",
+          "examples": [],
+          "notes": []
         }
       ]
     },
@@ -5907,6 +5932,45 @@
           "notes": []
         },
         {
+          "name": "addModelChoice",
+          "kind": "function",
+          "anchor": "a9edac97a12cad56cc2e9e006c96ebfc5",
+          "brief": "Add a model choice field to the current form, it opens the models list on press.",
+          "description": "",
+          "since": "26.2.0",
+          "params": [
+            {
+              "type": "FormLine",
+              "optional": false,
+              "description": "the line where the field should be added",
+              "name": "line"
+            },
+            {
+              "type": "Rect",
+              "optional": false,
+              "description": "the coordinates",
+              "name": "rect"
+            },
+            {
+              "type": "function",
+              "optional": false,
+              "description": "the function which will return the current model path, relative to the models folder (i.e. \"robot.bin\" or \"Droids/head.bin\"), or an empty string if no model is selected",
+              "name": "getValue"
+            },
+            {
+              "type": "function",
+              "optional": false,
+              "description": "the function which will be called with the new model path on selection",
+              "name": "setValue"
+            }
+          ],
+          "returns": "The new field",
+          "examples": [
+            "form.addModelChoice(line, nil, function() return modelPath end, function(newValue) modelPath = newValue end)"
+          ],
+          "notes": []
+        },
+        {
           "name": "addTextButton",
           "kind": "function",
           "anchor": "a357430954609b28374dd38cd14309e74",
@@ -7352,14 +7416,14 @@
             {
               "type": "number",
               "optional": true,
-              "description": "the width of the bitmap displayed",
+              "description": "the width of the bitmap displayed. If h is not given, the aspect ratio is preserved",
               "default": "0",
               "name": "w"
             },
             {
               "type": "number",
               "optional": true,
-              "description": "the height of the bitmap display",
+              "description": "the height of the bitmap displayed. If w is not given, the aspect ratio is preserved",
               "default": "0",
               "name": "h"
             }

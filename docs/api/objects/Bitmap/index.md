@@ -17,3 +17,4 @@ title: Bitmap object
 | [`width()`](width.md) | Return the bitmap width. | 1.1.0 |
 | [`height()`](height.md) | Return the bitmap height. | 1.1.0 |
 | [`rotate()`](rotate.md) | Return the rotated bitmap. | 1.5.9 |
+| [`scale()`](scale.md) | Return the bitmap resized to the given dimensions. | 26.2.0 |

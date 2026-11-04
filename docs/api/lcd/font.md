@@ -58,6 +58,7 @@ All font constants are under [Fonts](../constants.md#fonts).
 - [Timer control](../../cookbook/timer-control.md)
 - [Telemetry value widget](../../cookbook/value-widget.md)
 - [lazy-loading](../../examples/official/lazy-loading.md)
+- [tool-form](../../examples/official/tool-form.md)
 - [widget-flvss](../../examples/official/widget-flvss.md)
 - [widget-gauge](../../examples/official/widget-gauge.md)
 - [widget-jet](../../examples/official/widget-jet.md)

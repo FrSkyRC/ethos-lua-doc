@@ -48,6 +48,7 @@ See the [battery gauge recipe](../../cookbook/battery-gauge.md) for a complete w
 ## Used in
 
 - [Battery gauge widget](../../cookbook/battery-gauge.md)
+- [tool-form](../../examples/official/tool-form.md)
 - [widget-form](../../examples/official/widget-form.md)
 - [widget-gauge](../../examples/official/widget-gauge.md)
 - [widget-jet](../../examples/official/widget-jet.md)

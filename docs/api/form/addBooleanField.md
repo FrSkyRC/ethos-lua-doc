@@ -61,6 +61,7 @@ end})
 ## Used in
 
 - [lazy-loading](../../examples/official/lazy-loading.md)
+- [tool-form](../../examples/official/tool-form.md)
 - [wizard-tank](../../examples/official/wizard-tank.md)
 
 ## Real-world usage
