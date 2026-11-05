@@ -16,6 +16,14 @@ Load a mask from a file. Allowed formats are BMP / JPG / PNG, 8-bit/color, RGB.
 local maskHandle = lcd.loadMask(path[, lazy])
 ```
 
+Accepted image formats:
+
+- **BMP** (the file extension must be `.bmp`): 16-bit/pixel (RGB565), 32-bit/pixel (BGRA), 4-bit/pixel grayscale (16-level palette). Not supported: 1-bit, 8-bit (paletted), 24-bit and compressed (RLE) BMP.
+- **PNG**: all standard variants (grayscale, grayscale + alpha, RGB, RGB + alpha, paletted, 8 or 16 bits per channel, interlaced).
+- **JPEG**: baseline and progressive. Not supported: arithmetic coding, 12-bit and lossless JPEG.
+
+Any other format (GIF, TIFF, WebP, SVG, PSD, ...) is not supported and loading fails. A file whose extension is not `.bmp` is detected by its content (PNG or JPEG). Dimensions are limited to 65535 pixels, and the mask must fit in the RAM available for Lua bitmaps.
+
 ## Parameters
 
 | Name | Type | Required | Description |

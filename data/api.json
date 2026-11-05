@@ -7277,7 +7277,7 @@
           "kind": "function",
           "anchor": "a6b02a7d0d8fc7994a0eeefc3b9e76c06",
           "brief": "Load a bitmap from a file. Allowed formats are BMP / JPG / PNG. Transparency is supported, but it will use more resources.",
-          "description": "",
+          "description": "Accepted image formats:\n\n- **BMP** (the file extension must be `.bmp`): 16-bit/pixel (RGB565), 32-bit/pixel (BGRA, transparency supported), 4-bit/pixel grayscale (16-level palette). Not supported: 1-bit, 8-bit (paletted), 24-bit and compressed (RLE) BMP.\n- **PNG**: all standard variants (grayscale, grayscale + alpha, RGB, RGB + alpha, paletted, 8 or 16 bits per channel, interlaced). Transparency (alpha channel) is supported.\n- **JPEG**: baseline and progressive (no transparency). Not supported: arithmetic coding, 12-bit and lossless JPEG.\n\nAny other format (GIF, TIFF, WebP, SVG, PSD, ...) is not supported and loading fails. A file whose extension is not `.bmp` is detected by its content (PNG or JPEG). Dimensions are limited to 65535 pixels, and the bitmap must fit in the RAM available for Lua bitmaps.",
           "since": "1.1.0",
           "params": [
             {
@@ -7303,7 +7303,7 @@
           "kind": "function",
           "anchor": "a5886a24280fe651722ce72a4fac0d0f9",
           "brief": "Load a mask from a file. Allowed formats are BMP / JPG / PNG, 8-bit/color, RGB.",
-          "description": "",
+          "description": "Accepted image formats:\n\n- **BMP** (the file extension must be `.bmp`): 16-bit/pixel (RGB565), 32-bit/pixel (BGRA), 4-bit/pixel grayscale (16-level palette). Not supported: 1-bit, 8-bit (paletted), 24-bit and compressed (RLE) BMP.\n- **PNG**: all standard variants (grayscale, grayscale + alpha, RGB, RGB + alpha, paletted, 8 or 16 bits per channel, interlaced).\n- **JPEG**: baseline and progressive. Not supported: arithmetic coding, 12-bit and lossless JPEG.\n\nAny other format (GIF, TIFF, WebP, SVG, PSD, ...) is not supported and loading fails. A file whose extension is not `.bmp` is detected by its content (PNG or JPEG). Dimensions are limited to 65535 pixels, and the mask must fit in the RAM available for Lua bitmaps.",
           "since": "1.1.0",
           "params": [
             {
